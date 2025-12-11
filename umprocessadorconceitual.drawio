@@ -1,0 +1,295 @@
+<mxfile host="app.diagrams.net" modified="2024-03-23T17:05:31.021Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="rCS4YmrT5C3c5W7kGkaM" version="24.0.7" type="device">
+  <diagram name="Page-1" id="Krhi6iFX4kxe7ZgypJtP">
+    <mxGraphModel dx="794" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-40" value="Flags:&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Zero&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Carry&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Interrupt Mask&lt;div&gt;Interrupt Flag&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="410" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-20" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="40" width="160" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-18" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="420" y="40" width="160" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-15" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="40" width="330" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-1" value="Registrador A&lt;br&gt;8 bits" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-2" value="Registrador B&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;8 bits" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-3" value="Registrador C&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;8 bits" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-4" value="Registrador D&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;8 bits" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-7" value="Registrador X&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;16 bits" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-8" value="Registrador Y&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;16 bits" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-9" value="Registrador PC&lt;br&gt;16 bits" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-10" value="Flags&lt;br&gt;3 bits" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-11" value="BUS" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="910" width="400" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-12" value="Registradores&lt;br&gt;de uso geral" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-13" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="99.5" y="905" as="sourcePoint" />
+            <mxPoint x="99.5" y="835" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-14" value="Registradores de controle" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="180" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-16" value="Instrução&lt;br&gt;8 bits" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-17" value="Registradores de uso geral" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="240" y="310" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-19" value="Registradores de Controle" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="470" y="325" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-21" value="Registradores de Aritimética e Lógica" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="670" y="325" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-23" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="240" y="905" as="sourcePoint" />
+            <mxPoint x="240" y="835" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-24" value="Registradores de Aritimética e Lógica" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-25" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="380" y="905" as="sourcePoint" />
+            <mxPoint x="380" y="835" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-26" value="Resultado&lt;br&gt;8 bits" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-31" value="Registradores&lt;br&gt;de endereço de memória" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1020" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-32" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="99.5" y="1010" as="sourcePoint" />
+            <mxPoint x="99.5" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-33" value="Memória RAM/ROM" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1170" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-34" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="91" y="1160" as="sourcePoint" />
+            <mxPoint x="91" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-35" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="240" y="1160" as="sourcePoint" />
+            <mxPoint x="240" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-36" value="Interrupções" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="1020" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-37" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="379.5" y="1010" as="sourcePoint" />
+            <mxPoint x="379.5" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-39" value="Retorno&lt;br&gt;16 bits" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-41" value="Sinais do Master Bus:&lt;br&gt;Clock (1 bit):&amp;nbsp;CLK&lt;br&gt;Dados (8 bits):&amp;nbsp;D0~D7&lt;br&gt;Seletor Leitura (4 bits):&amp;nbsp;RD0~RD3&lt;br&gt;Seletor Escrita (5 bits):&amp;nbsp;WR0~WR4&lt;br&gt;Seletor memória/PC (1 bit): BUS_ADDR_SEL&lt;br&gt;&lt;div&gt;Reset (1 bit):&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;RST&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Halt (1 bit):&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;HLT&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Int (1 bits):&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;INT&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Incrementa PC (1 bit):&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;PCINC&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Limpar interrupção (1 bit):&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;CLRINT&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Incrementa endereço memória (1 bit):&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;ADDRINC&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Limpa flag C (1 bit): CLRC&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Seletor operação (4 bits): ULASEL&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Liga o flag C (1 bit): SETC&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Flag Z (1 bit): FLAGZ&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Flag C (1 bit): FLAGC&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Flag Interrupt Mask (1 bit): INTMASK&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="470" y="770" width="210" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-42" value="Seletor leitura:&lt;br&gt;&lt;br&gt;1: ULA OUT (R)&lt;br&gt;2: MEMD (R/W)&lt;br&gt;3: ADDRL (R/W)&lt;div&gt;&lt;br&gt;4: Registrador PCL&amp;nbsp;(R/W)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;5: Registrador PCH&amp;nbsp;(R/W)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;6: Registrador RL&amp;nbsp;(R/W)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;7: Registrador RH&amp;nbsp;(R/W)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;8: Registrador A&amp;nbsp;(R/W)&lt;br&gt;9: Registrador B&amp;nbsp;(R/W)&lt;br&gt;10: Registrador C&amp;nbsp;(R/W)&lt;br&gt;11: Registrador D&amp;nbsp;(R/W)&lt;br&gt;12: Registrador XL&amp;nbsp;(R/W)&lt;br&gt;13: Registrador XH&amp;nbsp;(R/W)&lt;br&gt;14: Registrador YL&amp;nbsp;(R/W)&lt;br&gt;15: Registrador YH&amp;nbsp;(R/W)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="700" y="770" width="160" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-43" value="FETCH&lt;br&gt;Busca a próxima instrução na memória&lt;br&gt;0: ADDR_SEL_PC RD_MEMD WR_INS&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;(PCINC precisa ir para cada instrução)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1280" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-44" value="MOV (1) [0x08~0x0F]&lt;br&gt;Copia REG8 para REG8&lt;br&gt;1: PCINC RD_b WR_OP2&lt;div&gt;2: EXTEND&lt;/div&gt;&lt;div&gt;1: PCINC&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;RD_OP2&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;WR_a&lt;/span&gt;&lt;/div&gt;&lt;div&gt;2: FINISH&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;MOV a, b&lt;/div&gt;&lt;div&gt;00001bbb 00001aaa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="635" y="1280" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-45" value="MOV (2) [0x10~0x13]&lt;br&gt;Copia REG16 para REG16&lt;br&gt;1: PCINC RD_bL WR_ADDRL&lt;br&gt;2: RD_bH WR_OP2&lt;div&gt;3:EXTEND&lt;/div&gt;&lt;div&gt;1:PCINC RD_ADDRL WR_aL&lt;br&gt;2: RD_OP2 WR_aH&lt;/div&gt;&lt;div&gt;3: FINISH&lt;br&gt;&lt;br&gt;MOV a, b&lt;/div&gt;&lt;div&gt;000100bb 000100aa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1430" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-46" value="LD (1) [0x18~0x1F]&lt;br&gt;Carrega 8 bits imediatos da memória para REG8&lt;br&gt;1: PCINC ADDR_SEL_PC RD_MEMD WR_a&lt;div&gt;2: PCINC&lt;/div&gt;&lt;div&gt;3: FINISH&lt;br&gt;&lt;br&gt;LD a, 15&lt;/div&gt;&lt;div&gt;00011aaa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="1430" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-47" value="LD (2) [0x14~0x17]&lt;br&gt;Carrega 16 bits imediatos da memória para REG16&lt;br&gt;1: PCINC ADDR_SEL_PC RD_MEMD WR_aL&lt;div&gt;2: PCINC&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;ADDR_SEL_PC RD_MEMD WR_aH&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3: PCINC&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4: FINISH&lt;/span&gt;&lt;/div&gt;&lt;br&gt;LD a, 1234&lt;div&gt;000101aa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="1430" width="180" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-48" value="LD (3) [0x20~0x23]&lt;br&gt;Carrega 8 bits de um endereço de memória para REG8&lt;br&gt;1: PCINC RD_bL WR_ADDRL&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;2: RD_bH WR_ADDRH&lt;div&gt;3: EXTEND&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;1: PCINC ADDR_SEL_MEM RD_MEMD WR_a&lt;/div&gt;&lt;div&gt;2: FINISH&lt;br&gt;&lt;br&gt;LD a, [b]&lt;div&gt;001000bb 00011aaa&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="635" y="1430" width="180" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-49" value="LD (4) [0x20~0x23]&lt;br&gt;Carrega 16 bits de um endereço de memória para REG16&lt;br&gt;1: PCINC RD_bL WR_ADDRL&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;2: RD_bH WR_ADDRH&lt;div&gt;3: EXTEND&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;1: PCINC ADDR_SEL_MEM RD_MEMD WR_aL&lt;br&gt;2: ADDRINC&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ADDR_SEL_MEM&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;RD_MEMD WR_aH&lt;/span&gt;&lt;/div&gt;&lt;div&gt;3: FINISH&lt;br&gt;&lt;br&gt;LD a, [b]&lt;/div&gt;&lt;div&gt;001000bb 001000aa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1640" width="180" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-52" value="STO (1) [0x20~0x23]&lt;br&gt;Armazena REG8 em um endereço de memória apontado por REG16&lt;br&gt;1: PCINC RD_aL WR_ADDRL&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;2: RD_aH WR_ADDRH&lt;div&gt;3: EXTEND&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;1: PCINC&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;ADDR_SEL_MEM&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;RD_b WR_MEMD&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2: FINISH&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;STO [a], b&lt;/div&gt;&lt;div&gt;001000aa 00101bbb&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="1640" width="180" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-53" value="STO (2) [0x20~0x23]&lt;br&gt;Armazena REG16 em um endereço de memória apontado por REG16&lt;br&gt;1: PCINC RD_aL WR_ADDRL&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;2: RD_aH WR_ADDRH&lt;div&gt;3: EXTEND&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;1: PCINC&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;ADDR_SEL_MEM&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;RD_bL WR_MEMD&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2: ADDRINC&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ADDR_SEL_MEM&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;RD_bH WR_MEMD&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3: FINISH&lt;/span&gt;&lt;/div&gt;&lt;br&gt;STO [a], b&lt;div&gt;001000aa 001100bb&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="1640" width="180" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-54" value="ADC (1) [0x30~0x37]&lt;br&gt;Acumula REG8 em REG8,&lt;div&gt;com carry&lt;br&gt;1: PCINC RD_b WR_OP2&lt;div&gt;2: RD_ZERO WR_ADDRL&lt;br&gt;&lt;div&gt;3: EXTEND&lt;/div&gt;&lt;div&gt;1: PCINC RD_a ULASEL_ADD&lt;br&gt;2: RD_ULAOUT WR_a&lt;div&gt;3: FINISH&lt;br&gt;&lt;br&gt;ADC a, b&lt;/div&gt;&lt;div&gt;00110bbb 00111aaa&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="2180" width="180" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-55" value="ADC (2) [0x24~0x27]&lt;br&gt;Acumula REG16 REG16,&lt;div&gt;com carry&lt;br&gt;1: PCINC RD_bL WR_OP2&lt;div&gt;2: RD_bH WR_ADDRL&lt;br&gt;&lt;div&gt;3: EXTEND&lt;/div&gt;&lt;div&gt;1: PCINC RD_a ULASEL_ADD&lt;br&gt;2: RD_ULAOUT WR_aL&lt;/div&gt;&lt;div&gt;3: RD_ADDRL WR_OP2&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4: RD_aH ULASEL_ADD&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5: RD_ULAOUT WR_aH&lt;br&gt;&lt;div&gt;6: FINISH&lt;/div&gt;&lt;/div&gt;&lt;br&gt;ADC a, b&lt;/div&gt;&lt;div&gt;001001bb 010000aa&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="2180" width="180" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-56" value="ADC (3) [0x30~0x37]&lt;br&gt;Acumula REG8 em REG16,&lt;div&gt;com carry&lt;br&gt;1: PCINC RD_b WR_OP2&lt;div&gt;2: RD_ZERO WR_ADDRL&lt;br&gt;&lt;div&gt;3: EXTEND&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;1: PCINC RD_aL ULASEL_ADD&lt;br&gt;2: RD_ULAOUT WR_aL&lt;/div&gt;&lt;div&gt;3: RD_ADDRL WR_OP2&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4: RD_aH ULASEL_ADD&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5: RD_ULAOUT WR_aH&lt;br&gt;&lt;div&gt;6: FINISH&lt;/div&gt;&lt;/div&gt;&lt;br&gt;ADC a, b&lt;/div&gt;&lt;div&gt;00110bbb 010000aa&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="2180" width="180" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-57" value="ADD (1) [0x38~0x3F]&lt;br&gt;Acumula REG8 em REG8&lt;br&gt;1: PCINC RD_ZERO ULASEL_SETCF&lt;div&gt;2: RD_b WR_OP2&lt;/div&gt;&lt;div&gt;3: RD_ZERO WR_ADDRL&lt;br&gt;&lt;/div&gt;&lt;div&gt;4: EXTEND&lt;br&gt;1: PCINC RD_a ULASEL_ADD&lt;br&gt;2: RD_ULAOUT WR_a&lt;div&gt;3: FINISH&lt;/div&gt;&lt;br&gt;ADD a, b&lt;/div&gt;&lt;div&gt;00111bbb 00111aaa&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="2180" width="180" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-59" value="ADD (2) [0x40~0x43]&lt;br&gt;Acumula REG16 em REG16&lt;br&gt;1: PCINC RD_ZERO ULASEL_SETCF&lt;div&gt;2:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;RD_b WR_OP2&lt;/span&gt;&lt;div&gt;&lt;div&gt;3: RD_b&#39; WR_ADDRL&lt;br&gt;&lt;div&gt;4: EXTEND&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;1: PCINC RD_a ULASEL_ADD&lt;br&gt;2: RD_ULAOUT WR_a&lt;/div&gt;&lt;div&gt;3: RD_ADDRL WR_OP2&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4: RD_a&#39; ULASEL_ADD&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5: RD_ULAOUT WR_a&#39;&lt;br&gt;&lt;div&gt;6: FINISH&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br&gt;ADD X, a&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;010000bb 010000aa&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="2430" width="180" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-60" value="ADD (3) [0x38~0x3F]&lt;br&gt;Acumula REG8 em REG16&lt;br&gt;1: PCINC RD_ZERO ULASEL_SETCF&lt;div&gt;2: RD_b WR_OP2&lt;/div&gt;&lt;div&gt;3: RD_ZERO WR_ADDRL&lt;/div&gt;&lt;div&gt;4: EXTEND&lt;/div&gt;&lt;div&gt;&lt;div&gt;1: PCINC RD_a ULASEL_ADD&lt;br&gt;2: RD_ULAOUT WR_a&lt;/div&gt;&lt;div&gt;3: RD_ADDRL WR_OP2&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4: RD_a&#39; ULASEL_ADD&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5: RD_ULAOUT WR_a&#39;&lt;br&gt;&lt;div&gt;6: FINISH&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;br&gt;ADD a, b&lt;div&gt;00111bbb 010000aa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="2430" width="180" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-61" value="SBB (1) [0x30~0x37]&lt;br&gt;Subtrai REG8 de REG8,&amp;nbsp;&lt;div&gt;com borrow&lt;br&gt;1: PCINC RD_b WR_OP2&lt;div&gt;2: RD_ZERO WR_ADDRL&lt;br&gt;&lt;div&gt;3: EXTEND&lt;/div&gt;&lt;div&gt;1: PCINC RD_a ULASEL_SUB&lt;br&gt;2: RD_ULAOUT WR_a&lt;div&gt;3: FINISH&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;br&gt;SBB a, b&lt;/div&gt;&lt;div&gt;00110bbb 01001aaa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="2430" width="180" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-62" value="SBB (2)&amp;nbsp; [0x24~0x27]&lt;br&gt;Subtrai REG16 de REG16,&amp;nbsp;&lt;div&gt;com borrow&lt;br&gt;1: PCINC RD_b WR_OP2&lt;div&gt;2: RD_b&#39; WR_ADDRL&lt;br&gt;&lt;div&gt;3: EXTEND&lt;/div&gt;&lt;div&gt;1: PCINC RD_a ULASEL_SUB&lt;br&gt;2: RD_ULAOUT WR_a&lt;/div&gt;&lt;div&gt;3: RD_ADDRL WR_OP2&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4: RD_a&#39; ULASEL_SUB&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5: RD_ULAOUT WR_a&#39;&lt;br&gt;&lt;div&gt;6: FINISH&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;br&gt;SBB a, b&lt;/div&gt;&lt;div&gt;001001bb 010100aa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="2430" width="180" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-63" value="Operador 2&lt;br&gt;8 bits" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-64" value="Operações da ULA:&lt;br&gt;0: ADD&lt;br&gt;1: SUB&lt;br&gt;2: AND&lt;br&gt;3: OR&lt;br&gt;4: XOR&lt;br&gt;5: NOT&lt;br&gt;6: SHR&lt;br&gt;7: SHL&lt;br&gt;8:RR&lt;br&gt;9: RL&lt;div&gt;10: SetCF&lt;/div&gt;&lt;div&gt;11: SetNCF&lt;/div&gt;&lt;div&gt;13: Set IntMask&lt;/div&gt;&lt;div&gt;14: Clear IntMask&lt;/div&gt;&lt;div&gt;15: Clear Int Flag&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="620" y="410" width="160" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-65" value="SBB (3) [0x30~0x37]&lt;br&gt;Subtrai REG8 de REG16,&amp;nbsp;&lt;div&gt;com borrow&lt;/div&gt;&lt;div&gt;1: PCINC&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;RD_b WR_OP2&lt;/span&gt;&lt;div&gt;3: RD_ZERO WR_ADDRL&lt;/div&gt;&lt;div&gt;4: EXTEND&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;1: PCINC RD_a ULASEL_SUB&lt;br&gt;2: RD_ULAOUT WR_a&lt;/div&gt;&lt;div&gt;3: RD_ADDRL WR_OP2&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4: RD_a&#39; ULASEL_SUB&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5: RD_ULAOUT WR_a&#39;&lt;br&gt;&lt;div&gt;6: FINISH&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;SBB a, b&lt;/div&gt;&lt;div&gt;00110bbb 010100aa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="2700" width="180" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-66" value="SUB (1) [0x38~0x3F]&lt;br&gt;Subtrai REG8 de REG8&lt;div&gt;1: PCINC RD_ZERO ULASEL_SETCF&lt;div&gt;2: RD_b WR_OP2&lt;/div&gt;&lt;div&gt;3: RD_ZERO WR_ADDRL&lt;/div&gt;&lt;div&gt;4: EXTEND&lt;/div&gt;&lt;/div&gt;&lt;div&gt;1: PCINC RD_a ULASEL_SUB&lt;br&gt;2: RD_ULAOUT WR_a&lt;div&gt;3: FINISH&lt;/div&gt;&lt;br&gt;SUB a, b&lt;/div&gt;&lt;div&gt;00111bbb 01001aaa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="2700" width="180" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-67" value="SUB (2) [0x40~0x43]&lt;br&gt;Subtrai REG16 de REG16&lt;br&gt;1: PCINC RD_ZERO ULASEL_SETCF&lt;div&gt;2:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;RD_b WR_OP2&lt;/span&gt;&lt;div&gt;3: RD_b&#39; WR_ADDRL&lt;br&gt;&lt;div&gt;4: EXTEND&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;1: PCINC RD_a ULASEL_SUB&lt;br&gt;2: RD_ULAOUT WR_a&lt;/div&gt;&lt;div&gt;3: RD_ADDRL WR_OP2&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4: RD_a&#39; ULASEL_SUB&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5: RD_ULAOUT WR_a&#39;&lt;br&gt;&lt;div&gt;6: FINISH&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;SUB a, b&lt;div&gt;010000bb 010100aa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="2700" width="180" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-68" value="SUB (3) [0x38~0x3F]&lt;br&gt;Subtrai REG8 de REG16&lt;br&gt;&lt;div&gt;1: PCINC RD_ZERO ULASEL_SETCF&lt;div&gt;2: RD_b WR_OP2&lt;/div&gt;&lt;div&gt;3: RD_ZERO WR_ADDRL&lt;/div&gt;&lt;div&gt;4: EXTEND&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;1: PCINC RD_a ULASEL_SUB&lt;br&gt;2: RD_ULAOUT WR_a&lt;/div&gt;&lt;div&gt;3: RD_ADDRL WR_OP2&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4: RD_a&#39; ULASEL_SUB&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5: RD_ULAOUT WR_a&#39;&lt;br&gt;&lt;div&gt;6: FINISH&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;br&gt;SUB a, b&lt;div&gt;00111bbb 010100aa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="2700" width="180" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-69" value="AND&lt;br&gt;Bitwise AND 8 bits de BUS em A&lt;br&gt;1: RD_A WR_ULAOP2&lt;br&gt;2: RD_a ULASEL_AND&lt;br&gt;3: RD_ULAOUT WR_A&lt;br&gt;&lt;br&gt;AND A, a" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="3500" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-70" value="OR&lt;br&gt;Bitwise OR 8 bits de BUS em A&lt;br&gt;1: RD_A WR_ULAOP2&lt;br&gt;2: RD_a ULASEL_OR&lt;br&gt;3: RD_ULAOUT WR_A&lt;br&gt;&lt;br&gt;OR A, a" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="3500" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-71" value="XOR&lt;br&gt;Bitwise XOR 8 bits de BUS em A&lt;br&gt;1: RD_A WR_ULAOP2&lt;br&gt;2: RD_a ULASEL_XOR&lt;br&gt;3: RD_ULAOUT WR_A&lt;br&gt;&lt;br&gt;XOR A, a" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="3500" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-72" value="NOT&lt;br&gt;Bitwise NOT 8 bits em BUS&lt;br&gt;1: RD_a ULASEL_NOT&lt;br&gt;2: RD_ULAOUT WR_a&lt;br&gt;&lt;br&gt;NOT a" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="3500" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-73" value="SHLC&lt;br&gt;Deslocamento de 8 bits à esquerda no BUS, com carry&lt;br&gt;1: RD_a WR_ULAOP2&lt;br&gt;2: RD_b ULASEL_SHL&lt;br&gt;3: RD_ULAOUT WR_a&lt;br&gt;&lt;br&gt;SHLC a, b" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="3640" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-74" value="SHRC&lt;br&gt;Deslocamento de 8 bits à direita no BUS, com carry&lt;br&gt;1: RD_a WR_ULAOP2&lt;br&gt;2: RD_b ULASEL_SHR&lt;br&gt;3: RD_ULAOUT WR_a&lt;br&gt;&lt;br&gt;SHRC a, b" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="3640" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-75" value="SHL&lt;br&gt;Deslocamento de 8 bits à esquerda no BUS&lt;br&gt;1: CLRC RD_a WR_ULAOP2&lt;br&gt;2: RD_b ULASEL_SHL&lt;br&gt;3: RD_ULAOUT WR_a&lt;br&gt;&lt;br&gt;SHL a, b" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="3640" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-76" value="SHR&lt;br&gt;Deslocamento de 8 bits à direita no BUS&lt;br&gt;1: CLRC RD_a WR_ULAOP2&lt;br&gt;2: RD_b ULASEL_SHR&lt;br&gt;3: RD_ULAOUT WR_a&lt;br&gt;&lt;br&gt;SHR a, b" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="3640" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-77" value="RL&lt;br&gt;Rotaciona 8 bits à esquerda no BUS&lt;br&gt;1: RD_a WR_ULAOP2&lt;br&gt;2: RD_b ULASEL_RL&lt;br&gt;3: RD_ULAOUT WR_a&lt;br&gt;&lt;br&gt;RL a, b" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="3790" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-78" value="RR&lt;br&gt;Rotaciona de 8 bits à direita no BUS&lt;br&gt;1: RD_a WR_ULAOP2&lt;br&gt;2: RD_b ULASEL_RR&lt;br&gt;3: RD_ULAOUT WR_a&lt;br&gt;&lt;br&gt;RR a, b" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="3790" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-79" value="CLRC&lt;br&gt;Limpa o flag C&lt;br&gt;1: CLRC&lt;br&gt;&lt;br&gt;CLRC" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="3790" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-80" value="SETC&lt;br&gt;Liga o flag C&lt;br&gt;1: SETC&lt;br&gt;&lt;br&gt;SETC" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="3790" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-81" value="CMP&lt;br&gt;Compara dois registradores de 8 bits&lt;br&gt;1: CLRC RD_b WR_ULAOP2&lt;br&gt;2: RD_a ULASEL_SUB&lt;br&gt;&lt;br&gt;CMP a, b" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="3940" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-84" value="JMP (2)&lt;br&gt;Pula para um endereço armazenado em registrador&lt;br&gt;1: RD_a WR_PCH&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;2: RD_a&#39; WR_PCL&lt;br&gt;&lt;br&gt;JMP a" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="4080" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-85" value="JMP (3)&lt;br&gt;Pula para um endereço apontado em registrador&lt;br&gt;1: RD_a WR_ADDRH&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;2: RD_a&#39; WR_ADDRL&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;3: RD_MEMD WR_PCH&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;4: ADDRINC&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;5: RD_MEMD WR_PCL&lt;br&gt;&lt;br&gt;JMP [a]" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="4080" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="q6ROftm7dM8OOHhGwtgu-86" value="JMP (4)&lt;br&gt;Avança ou retrocede 8 bits imediatos em relação ao endereço atual&lt;br&gt;1: RD_PCH WR_ADDRH&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;2: RD_PCL WR_ADDRL&lt;br&gt;3: RD_MEMD WR_ULAOP2&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;4: ADDRINC&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;5: RD_MEMD WR_PCL&lt;br&gt;&lt;br&gt;JMP +i" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="4080" width="180" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="MCicXXxJElYp6e-oE4Sk-1" value="Seletor escrita:&lt;br&gt;&lt;br&gt;1: ULA OP2 (W)&lt;br&gt;&lt;br&gt;6: Registrador RL&amp;nbsp;(R/W)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;7: Registrador RH&amp;nbsp;(R/W)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;8: Registrador A&amp;nbsp;(R/W)&lt;br&gt;9: Registrador B&amp;nbsp;(R/W)&lt;br&gt;10: Registrador C&amp;nbsp;(R/W)&lt;br&gt;11: Registrador D&amp;nbsp;(R/W)&lt;br&gt;12: Registrador XL&amp;nbsp;(R/W)&lt;br&gt;13: Registrador XH&amp;nbsp;(R/W)&lt;br&gt;14: Registrador YL&amp;nbsp;(R/W)&lt;br&gt;15: Registrador YH&amp;nbsp;(R/W)&lt;br&gt;&lt;br&gt;16: MEMD (R/W)&lt;br&gt;17: Registrador INS (W)&lt;div&gt;18: Registrador PCL&amp;nbsp;(R/W)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;19: Registrador PCH&amp;nbsp;(R/W)&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;20: ADDRL (R/W)&lt;br&gt;21: ADDRH (W)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="870" y="770" width="160" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="6MJi0FD1g0p4oUxmG0gI-1" value="Endereço de memória&lt;br&gt;16 bits" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6MJi0FD1g0p4oUxmG0gI-2" value="NOP 0x00&lt;br&gt;Sem operação&lt;br&gt;1: PCINC&lt;div&gt;2: FINISH&lt;br&gt;&lt;div&gt;&lt;br&gt;NOP&lt;/div&gt;&lt;div&gt;00000000&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="1280" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="6MJi0FD1g0p4oUxmG0gI-3" value="HALT [0x01]&lt;br&gt;Paralisa o processador. A única forma de voltar a funcionar é com reset&lt;br&gt;1: PCINC&lt;br&gt;&lt;div&gt;2: HALT&lt;div&gt;&lt;div&gt;&lt;br&gt;HALT&lt;/div&gt;&lt;div&gt;00000001&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="1280" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="6MJi0FD1g0p4oUxmG0gI-4" value="SWAP (1) [0x28~0x2F]&lt;br&gt;Inverte o conteúdo de A com REG8&lt;br&gt;1: PCINC RD_A WR_OP2&lt;div&gt;2: RD_a WR_A&lt;div&gt;3: RD_OP2 WR_a&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4: FINISH&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;SWAP A, a&lt;div&gt;00101aaa&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="635" y="1640" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="6MJi0FD1g0p4oUxmG0gI-5" value="SWAP (1) [0x02]&lt;br&gt;Inverte o conteúdo de X com Y&lt;br&gt;1: PCINC RD_XL WR_OP2&lt;div&gt;2: RD_YL WR_XL&lt;div&gt;3: RD_OP2 WR_YL&lt;/div&gt;&lt;div&gt;4: RD_XH WR_OP2&lt;div&gt;5: RD_YH WR_XH&lt;div&gt;6: RD_OP2 WR_YH&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;7: FINISH&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;SWAP X, Y&lt;div&gt;00000010&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1910" width="180" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="6MJi0FD1g0p4oUxmG0gI-6" value="REG8&lt;br&gt;0: A&lt;br&gt;1: B&lt;br&gt;2: C&lt;br&gt;3: D&lt;br&gt;4: XL&lt;br&gt;5: XH&lt;br&gt;6: YL&lt;br&gt;7: YH" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="410" width="90" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="6MJi0FD1g0p4oUxmG0gI-7" value="REG16&lt;br&gt;0: X&lt;br&gt;1: Y&lt;br&gt;2: R&lt;br&gt;3: PC" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="140" y="410" width="80" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="6MJi0FD1g0p4oUxmG0gI-9" value="NEG (1) [0x48~0x4F]&lt;br&gt;Complemento de 2 em REG8&lt;br&gt;1: PCINC RD_a WR_OP2 ULASEL_SETC&lt;div&gt;2: ULASEL_NOT&lt;/div&gt;&lt;div&gt;3: RD_ZERO ULASEL_ADD&lt;/div&gt;&lt;div&gt;4: RD_ULAOUT WR_a&lt;br&gt;&lt;/div&gt;&lt;div&gt;5: FINISH&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;NEG a&lt;/div&gt;&lt;div&gt;01001aaa&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="2980" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="6MJi0FD1g0p4oUxmG0gI-10" value="NEG (2) [0x44~0x47]&lt;br&gt;Complemento de 2 em REG16&lt;br&gt;1: PCINC RD_ZERO ULA_SETCF&lt;div&gt;2: RD_aL WR_OP2&lt;div&gt;3: ULA_NOT&lt;/div&gt;&lt;div&gt;4: RD_ULAOUT WR_OP2&lt;/div&gt;&lt;div&gt;5: RD_ZERO ULASEL_ADD&lt;/div&gt;&lt;div&gt;6: RD_ULAOUT WR_aL&lt;br&gt;&lt;/div&gt;&lt;div&gt;5: RD_aH WR_OP2&amp;nbsp;&lt;div&gt;6: ULA_NOT&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;7: RD_ULAOUT WR_aH&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;8: FINISH&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;NEG a&lt;/div&gt;&lt;div&gt;010001aa&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="2980" width="180" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="6MJi0FD1g0p4oUxmG0gI-11" value="JMP (1)&lt;br&gt;Pula para o endereço relativo&lt;div&gt;de 8 bits imediato&lt;br&gt;1: PCINC RD_PCL WR_ADDRL&lt;/div&gt;&lt;div&gt;2: RD_PCH WR_ADDRH&lt;/div&gt;&lt;div&gt;3: PCINC&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;ADDR_SEL_ADDR RD_MEMD WR_OP2&lt;/span&gt;&lt;/div&gt;&lt;div&gt;4: RD_ZERO ULA_SETCF&lt;/div&gt;&lt;div&gt;5:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;RD_PCL ULA_ADD&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;5: RD_ULAOUT WR_PCL&lt;/div&gt;&lt;div&gt;6:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;ADDR_SEL_ADDR RD_MEMD ULA_SETNCF&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;6: RD_ZERO WR_OP2&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ULA_ADD&lt;/span&gt;&lt;/div&gt;&lt;div&gt;7: RD_ULAOUT WR_aH&lt;/div&gt;&lt;div&gt;8: FINISH&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="3250" width="180" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="6MJi0FD1g0p4oUxmG0gI-12" value="&lt;div&gt;MOVSX&lt;/div&gt;&lt;div&gt;Estende sinal de REG8 para REG16&lt;/div&gt;&lt;div&gt;1: PCINC RD_b WR_OP2&lt;/div&gt;&lt;div&gt;2: EXTEND&lt;/div&gt;&lt;div&gt;1: PCINC RD_OP2&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;ULA_SETNCF&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2: RD_OP2 WR_aL&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;RD_ZERO WR_OP2&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4: ULA_NOT&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;5: RD_ULAOUT WR_OP2&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;6: RD_ZERO ULA_ADD&lt;/span&gt;&lt;/div&gt;&lt;div&gt;7: RD_ULAOUT WR_aH&lt;/div&gt;&lt;div&gt;8: FINISH&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;MOVSX a, b&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="1910" width="180" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="6MJi0FD1g0p4oUxmG0gI-13" value="MOV (3)&lt;br&gt;Copia REG8 para REG16&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;1: PCINC RD_b WR_OP2&lt;/div&gt;&lt;div&gt;2: EXTEND&lt;/div&gt;&lt;div&gt;1: PCINC&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;RD_OP2 WR_aL&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2:&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;RD_ZERO&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;WR_aH&lt;/span&gt;&lt;/div&gt;&lt;div&gt;3: FINISH&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;MOV a, b&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="440" y="1910" width="180" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="bxx00iyR1yGAAKnBeDaX-2" value="&lt;font style=&quot;font-size: 48px;&quot;&gt;LSB&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="700" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="bxx00iyR1yGAAKnBeDaX-3" value="JMP (1)&lt;br&gt;Pula para um endereço imediato de 16 bits&lt;br&gt;1: RD_PCL WR_ADDRL&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;2: RD_PCH WR_ADDRH&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;3: ADDR_SEL_ADDR RD_MEMD WR_PCH&lt;br&gt;4: ADDRINC&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;5: RD_MEMD WR_PCL&lt;br&gt;&lt;br&gt;JMP i" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="3250" width="180" height="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
