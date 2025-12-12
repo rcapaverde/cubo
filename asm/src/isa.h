@@ -9,15 +9,14 @@ typedef struct
     char user;
 } Register;
 
-typedef void (* OpcodeBuilder)(unsigned char *opcode, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen);
+typedef int (* OpcodeBuilder)(unsigned char *opcode, int options, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen);
 
 typedef struct
 {
     const char *name;
     const char *signature;
-    int size;
-    const unsigned short opcode;
     OpcodeBuilder builder;
+    int options;
 } Instruction;
 
 const Instruction *findInstructionByName(char *instruction, char *types);

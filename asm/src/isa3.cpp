@@ -9,14 +9,15 @@
 #include "util.h"
 #include "isa.h"
 
-#define INS_CONTROL         (0 << 12)
-#define INS_TRANSFER8       (1 << 12)
-#define INS_TRANSFER16      (2 << 12)
-#define INS_TRANSFER8_IND   (3 << 12)
-#define INS_TRANSFER16_IND  (4 << 12)
-#define INS_ULA             (5 << 12)
-#define INS_ULA_SINGLE      (6 << 12)
-#define INS_ULA_IND         (7 << 12)
+#define INS_CONTROL         (0 << 4)
+#define INS_TRANSFER8       (1 << 4)
+#define INS_TRANSFER16      (2 << 4)
+#define INS_TRANSFER8_IND   (3 << 4)
+#define INS_TRANSFER16_IND  (4 << 4)
+#define INS_ULA             (5 << 4)
+#define INS_ULA_IND         (6 << 4)
+#define INS_ULA_SINGLE      (7 << 4)
+#define INS_IN_OUT          (8 << 4)
 
 #define REG_ZERO            0
 #define REG_A               1 
@@ -37,24 +38,146 @@
 #define REG_BC              1
 #define REG_DE              2
 #define REG_HL              3
-#define REG_PC              8
-#define REG_SP              9
-#define REG_MAR             10
+#define REG_PC              12
+#define REG_SP              13
+#define REG_MAR             14
 
 #define INS_P1  0
 #define INS_P2  4
-#define INS_P3  8
+#define INS_P3  0
 
 #define CONTROL_FINISH  1
 #define CONTROL_HASH    2
 
-static void Opcode_Nop(unsigned char *opcode, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
-static void Opcode_Halt(unsigned char *opcode, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
-static void Opcode_Load8(unsigned char *opcode, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen);
-static void Opcode_Load16(unsigned char *opcode, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen);
-static void Opcode_Load8_Indirect_Reg(unsigned char *opcode, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen);
-static void Opcode_Load8_Indirect(unsigned char *opcode, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen);
+static void copy_immediate8(unsigned char *opcode, int start, char *str, char **symbolName, char *symbolStart, char *symbolLen)
+{
+    if (isNumber(str))
+    {
+        opcode[start] = strtol(str, NULL, 0);
+    }
+    else
+    {
+        *symbolName = str;
+        *symbolStart = start;
+        *symbolLen = 1;
+    }
+}
 
+static void copy_immediate16(unsigned char *opcode, int start, char *str, char **symbolName, char *symbolStart, char *symbolLen)
+{
+    if (isNumber(str))
+    {
+        unsigned short value = strtol(str, NULL, 0);
+        opcode[start] = value & 0xFF;
+        opcode[start + 1] = (value >> 8) & 0xFF;
+    }
+    else
+    {
+        *symbolName = str;
+        *symbolStart = start;
+        *symbolLen = 2;
+    }
+}
+
+static int Opcode_Control(unsigned char *opcode, int options, 
+    std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
+{
+    opcode[0] = (unsigned char)(INS_CONTROL | (options << INS_P3));
+    return 2;
+}
+
+static int Opcode_Move(unsigned char *opcode, int options, 
+    std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
+{
+    opcode[0] = INS_TRANSFER8;
+    opcode[1] = (unsigned char)((getRegisterIndex(args->at(1)) << INS_P2) | (getRegisterIndex(args->at(0)) << INS_P1));
+    return 2;
+}
+
+static int Opcode_Load8(unsigned char *opcode, int options, 
+    std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
+{
+    opcode[0] = INS_TRANSFER8;
+    opcode[1] = (unsigned char)((REG_MEMD_FROM_PC << INS_P2) | (getRegisterIndex(args->at(0)) << INS_P1));
+    copy_immediate8(opcode, 2, args->at(1), symbolName, symbolStart, symbolLen);
+    return 3;
+}
+
+static int Opcode_Load16(unsigned char *opcode, int options, 
+    std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
+{
+    opcode[0] = INS_TRANSFER8;
+    opcode[1] = (unsigned char)((REG_MEMD_FROM_PC << INS_P2) | (getRegisterIndex(args->at(0)) << INS_P1));
+    copy_immediate16(opcode, 2, args->at(1), symbolName, symbolStart, symbolLen);
+    return 4;
+}
+
+static int Opcode_Load8_Indirect_Reg(unsigned char *opcode, int options, 
+    std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
+{
+    opcode[0] = (unsigned char)(INS_TRANSFER8_IND | (REG_MEMD_FROM_MAR << INS_P3));
+    opcode[1] = (unsigned char)((getRegisterIndex(args->at(1)) << INS_P2) | (getRegisterIndex(args->at(0)) << INS_P1));
+    return 2;
+}
+
+static int Opcode_Load8_Indirect(unsigned char *opcode, int options, 
+    std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
+{
+    opcode[0] = (unsigned char)(INS_TRANSFER8_IND | (REG_MEMD_FROM_MAR << INS_P3));
+    opcode[1] = (unsigned char)((getRegisterIndex(args->at(1)) << INS_P2) | (getRegisterIndex(args->at(0)) << INS_P1));
+    copy_immediate16(opcode, 2, args->at(1), symbolName, symbolStart, symbolLen);
+    return 4;
+}
+
+static int Opcode_Load16_Indirect_Reg(unsigned char *opcode, int options, 
+    std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
+{
+    opcode[0] = (unsigned char)(INS_TRANSFER16_IND | (REG_MEMD_FROM_MAR << INS_P3));
+    opcode[1] = (unsigned char)((getRegisterIndex(args->at(1)) << INS_P2) | (getRegisterIndex(args->at(0)) << INS_P1));
+    return 2;
+}
+
+static int Opcode_Load16_Indirect(unsigned char *opcode, int options, 
+    std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
+{
+    opcode[0] = (unsigned char)(INS_TRANSFER16_IND | (REG_MEMD_FROM_MAR << INS_P3));
+    opcode[1] = (unsigned char)((getRegisterIndex(args->at(1)) << INS_P2) | (getRegisterIndex(args->at(0)) << INS_P1));
+    copy_immediate16(opcode, 2, args->at(1), symbolName, symbolStart, symbolLen);
+    return 4;
+}
+
+static int Opcode_In_Out(unsigned char *opcode, int options, 
+    std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
+{
+    opcode[0] = (unsigned char)(INS_IN_OUT | (REG_IOD_FROM_MAR << INS_P3));
+    opcode[1] = (unsigned char)((getRegisterIndex(args->at(1)) << INS_P2) | (getRegisterIndex(args->at(0)) << INS_P1));
+    return 2;
+}
+
+static int Opcode_Ula_No_Parms(unsigned char *opcode, int options, 
+    std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
+{
+    opcode[0] = (unsigned char)(INS_ULA_SINGLE | (options << INS_P3));
+    opcode[1] = (unsigned char)(REG_ZERO << INS_P1);
+    return 2;
+}
+
+static int Opcode_Ula(unsigned char *opcode, int options, 
+    std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
+{
+    opcode[0] = (unsigned char)(INS_ULA | (options << INS_P3));
+    opcode[1] = (unsigned char)((getRegisterIndex(args->at(1)) << INS_P2) | (getRegisterIndex(args->at(0)) << INS_P1));
+    return 2;
+}
+
+static int Opcode_Jump(unsigned char *opcode, int options, 
+    std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
+{
+    opcode[0] = (unsigned char)(INS_TRANSFER16_IND | (REG_MAR << INS_P3));
+    opcode[1] = (unsigned char)((REG_MEMD_FROM_PC << INS_P2) | (REG_PC << INS_P1));
+    copy_immediate16(opcode, 2, args->at(0), symbolName, symbolStart, symbolLen);
+    return 4;
+}
 
 const static Register REGISTERS[] = {
     {0, "zero", "reg8", true},
@@ -81,39 +204,61 @@ const static Register REGISTERS[] = {
     {0, NULL, NULL, false}
 };
 
+#define ULA_ADD     0
+#define ULA_SUB     1
+#define ULA_CMP     2
+#define ULA_AND     3
+#define ULA_OR      4
+#define ULA_XOR     5
+#define ULA_NOT     6
+#define ULA_SHR     7
+#define ULA_SHL     8
+#define ULA_ROR     9
+#define ULA_ROL     10
+#define ULA_SX      11
+#define ULA_SETCF   12
+#define ULA_CLRCF   13
+#define ULA_SETIF   14
+#define ULA_CLRIF   15
+
 const static Instruction ISA[] =
 {
-    {"nop", "", 2, Opcode_Nop},
-    {"hlt", "", 2, Opcode_Halt},
+    {"nop", "", Opcode_Control, CONTROL_FINISH},
+    {"hlt", "", Opcode_Control, CONTROL_HASH},
 
-    {"mov", "reg8_reg8", 2, Opcode_Move},
-    {"mov", "reg16_reg16", 2, Opcode_Move},
+    {"mov", "reg8_reg8", Opcode_Move, 0},
+    {"mov", "reg16_reg16", Opcode_Move, 0},
 
-    {"ld", "reg8_m4", 3, Opcode_Load8},
-    {"ld", "reg8_m8", 3, Opcode_Load8},
-    {"ld", "reg16_m4", 4, Opcode_Load16},
-    {"ld", "reg16_m8", 4, Opcode_Load16},
-    {"ld", "reg16_m16", 4, Opcode_Load16},
+    {"ld", "reg8_m4", Opcode_Load8, 0},
+    {"ld", "reg8_m8", Opcode_Load8, 0},
+    {"ld", "reg16_m4", Opcode_Load16, 0},
+    {"ld", "reg16_m8", Opcode_Load16, 0},
+    {"ld", "reg16_m16", Opcode_Load16, 0},
 
-    {"ld", "reg8_[reg16", 2, Opcode_Load8_Indirect_Reg},
-    {"ld", "reg8_[m4", 4, Opcode_Load8_Indirect},
-    {"ld", "reg8_[m8", 4, Opcode_Load8_Indirect},
-    {"ld", "reg8_[m16", 4, Opcode_Load8_Indirect},
+    {"ld", "reg8_[reg16", Opcode_Load8_Indirect_Reg, 0},
+    {"ld", "reg8_[m4", Opcode_Load8_Indirect, 0},
+    {"ld", "reg8_[m8", Opcode_Load8_Indirect, 0},
+    {"ld", "reg8_[m16", Opcode_Load8_Indirect, 0},
 
-    {"ld", "reg16_[reg16", 2, Opcode_Load16_Indirect_Reg},
-    {"ld", "reg16_[m4", 4, Opcode_Load16_Indirect},
-    {"ld", "reg16_[m8", 4, Opcode_Load16_Indirect},
-    {"ld", "reg16_[m16", 4, Opcode_Load16_Indirect},
+    {"ld", "reg16_[reg16", Opcode_Load16_Indirect_Reg, 0},
+    {"ld", "reg16_[m4", Opcode_Load16_Indirect, 0},
+    {"ld", "reg16_[m8", Opcode_Load16_Indirect, 0},
+    {"ld", "reg16_[m16", Opcode_Load16_Indirect, 0},
 
-    {"out", "reg8_reg8", 2, Opcode_Move},
+    {"out", "reg8_reg8", Opcode_In_Out, 0},
 
-//    {"ei", "", {1, INS_CONTROL | (CONTROL_HASH << INS_P3)}, {-1, 0, 0}},
-//    {"di", "", {1, INS_CONTROL | (CONTROL_HASH << INS_P3)}, {-1, 0, 0}},
-//    {"clc", "", {1, INS_CONTROL | (CONTROL_HASH << INS_P3)}, {-1, 0, 0}},
-//    {"stc", "", {1, INS_CONTROL | (CONTROL_HASH << INS_P3)}, {-1, 0, 0}},
+    {"ei", "", Opcode_Ula_No_Parms, ULA_SETIF},
+    {"di", "", Opcode_Ula_No_Parms, ULA_CLRIF},
+    {"clc", "", Opcode_Ula_No_Parms, ULA_CLRCF},
+    {"stc", "", Opcode_Ula_No_Parms, ULA_SETCF},
 
+    {"adc", "reg8_reg8", Opcode_Ula, ULA_ADD},
 
-    {NULL, NULL, 0, 0}
+    {"jmp", "m4", Opcode_Jump, 0},
+    {"jmp", "m8", Opcode_Jump, 0},
+    {"jmp", "m16", Opcode_Jump, 0},
+
+    {NULL, NULL, NULL, 0}
 };
 
 
@@ -143,79 +288,6 @@ const char getRegisterIndex(const char *name)
         if (strcmp(REGISTERS[i].name, name) == 0)
             return REGISTERS[i].index;
     return -1;
-}
-
-static void copy_immediate8(unsigned char *opcode, char start, char *str, char **symbolName, char *symbolStart, char *symbolLen)
-{
-    if (isNumber(str))
-    {
-        opcode[start] = strtol(str, NULL, 0);
-    }
-    else
-    {
-        *symbolName = str;
-        *symbolStart = start;
-        *symbolLen = 1;
-    }
-}
-
-static void copy_immediate16(unsigned char *opcode, char start, char *str, char **symbolName, char *symbolStart, char *symbolLen)
-{
-    if (isNumber(str))
-    {
-        unsigned short value = strtol(str, NULL, 0);
-        opcode[start] = value & 0xFF;
-        opcode[start + 1] = (value >> 8) & 0xFF;
-    }
-    else
-    {
-        *symbolName = str;
-        *symbolStart = start;
-        *symbolLen = 2;
-    }
-}
-
-static void Opcode_Nop(unsigned char *opcode, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
-{
-    opcode[0] = INS_CONTROL | (CONTROL_FINISH << INS_P3);
-}
-
-static void Opcode_Halt(unsigned char *opcode, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
-{
-    opcode[0] = INS_CONTROL | (CONTROL_HASH << INS_P3);
-}
-
-static void Opcode_Move(unsigned char *opcode, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
-{
-    opcode[0] = INS_TRANSFER8;
-    opcode[1] = (getRegisterIndex(args->at(1)) << INS_P2) | (getRegisterIndex(args->at(0)) << INS_P1);
-}
-
-static void Opcode_Load8(unsigned char *opcode, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
-{
-    opcode[0] = INS_TRANSFER8;
-    opcode[1] = (REG_MEMD_FROM_PC << INS_P2) | (getRegisterIndex(args->at(0)) << INS_P1);
-    copy_immediate8(opcode, 2, args->at(1), symbolName, symbolStart, symbolLen);
-}
-
-static void Opcode_Load16(unsigned char *opcode, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
-{
-    opcode[0] = INS_TRANSFER8;
-    opcode[1] = (REG_MEMD_FROM_PC << INS_P2) | (getRegisterIndex(args->at(0)) << INS_P1);
-    copy_immediate16(opcode, 2, args->at(1), symbolName, symbolStart, symbolLen);
-}
-
-static void Opcode_Load8_Indirect_Reg(unsigned char *opcode, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
-{
-    opcode[0] = INS_TRANSFER8_IND | (REG_MEMD_FROM_MAR << INS_P3);
-    opcode[1] = (getRegisterIndex(args->at(1)) << INS_P2) | (getRegisterIndex(args->at(0)) << INS_P1);
-}
-
-static void Opcode_Load8_Indirect(unsigned char *opcode, std::vector<char *> *args, char **symbolName, char *symbolStart, char *symbolLen)
-{
-    opcode[0] = INS_TRANSFER8_IND | (REG_MEMD_FROM_MAR << INS_P3);
-    opcode[1] = (getRegisterIndex(args->at(1)) << INS_P2) | (getRegisterIndex(args->at(0)) << INS_P1);
-    copy_immediate16(opcode, 2, args->at(1), symbolName, symbolStart, symbolLen);
 }
 
 const Instruction *findInstructionByName(char *instruction, char *types)

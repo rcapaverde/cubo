@@ -301,27 +301,25 @@ int decodeInstruction(char *instruction, std::vector<char *> *args, ObjectFile *
     ObjectNode *node = (ObjectNode *)malloc(sizeof(ObjectNode));
     memset(node, 0, sizeof(ObjectNode));
 
-    node->type = OBJECT_NODE_OPCODE;
-    node->d.opcode.size = ins->size;
+    unsigned char opcode[16];
+    memset(opcode, 0, sizeof(opcode));
+
+    node->type = OBJECT_NODE_OPCODE;    
+
+    char *symbolName = NULL;
+    char symbolStart;
+    char symbolLen;
+
+    node->d.opcode.size = ins->builder(opcode, ins->options, args, &symbolName, &symbolStart, &symbolLen);
+
     node->d.opcode.bytes = (unsigned char *)malloc(node->d.opcode.size);
-    memset(node->d.opcode.bytes, 0, node->d.opcode.size);
-    node->d.opcode.bytes[0] = (ins->opcode >> 8) & 0xFF;
-    node->d.opcode.bytes[1] = ins->opcode & 0xFF;
+    memcpy(node->d.opcode.bytes, opcode, node->d.opcode.size);
 
-    if (ins->builder)
+    if (symbolName)
     {
-        char *symbolName = NULL;
-        char symbolStart;
-        char symbolLen;
-
-        ins->builder(node->d.opcode.bytes, args, &symbolName, &symbolStart, &symbolLen);
-
-        if (symbolName)
-        {
-            node->d.opcode.value = strdup(symbolName);
-            node->d.opcode.byte = symbolStart;
-            node->d.opcode.len = symbolLen;
-        }
+        node->d.opcode.value = strdup(symbolName);
+        node->d.opcode.byte = symbolStart;
+        node->d.opcode.len = symbolLen;
     }
 
     if (objectFile->active_segment == NULL)

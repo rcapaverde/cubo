@@ -1,4 +1,5 @@
-.ORG 0x2000
+.segment text
+.org 0x2000
 
 start:
     LD A, 22

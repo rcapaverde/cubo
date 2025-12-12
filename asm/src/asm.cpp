@@ -11,7 +11,7 @@
 #include "exefile.h"
 
 
-#define ASM_VERSION "5.00.00"
+#define ASM_VERSION "1.00.00"
 
 #define MAX_PATH    260
 
@@ -125,7 +125,7 @@ int main(int argc, char *argv[])
         memset(merged_object_file, 0, sizeof(ObjectFile));
         merged_object_file->source_name = objects.at(0)->source_name;
 
-        // junta todos os objetos para salvar em ï¿½nico arquivo
+        // junta todos os objetos para salvar em único arquivo
         for (ObjectFile *object_file : objects)
             if (!mergeObjFile(merged_object_file, object_file))
                 goto handle_error;
