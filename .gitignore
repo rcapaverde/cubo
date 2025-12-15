@@ -2,3 +2,7 @@ asm/.vscode
 asm/bin/*
 pcb_v2/*/*-backups
 pcb_v2/*/*.kicad_prl
+pcb_v2/*/fp-info-cache
+pcb_v2/*/fp-lib-table
+pcb_v2/*/*.brep
+pcb_v2/*/plot
