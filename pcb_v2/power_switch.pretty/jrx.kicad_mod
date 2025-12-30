@@ -134,6 +134,17 @@
 		(layer "F.SilkS")
 		(uuid "79d3bfd2-0ffb-4fc7-bd5d-a7e18ad123ac")
 	)
+	(fp_rect
+		(start -10.7 -7.6)
+		(end 10.7 7.6)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "a7f97837-f005-4bc0-b3b1-0e0650de8676")
+	)
 	(fp_text user "${REFERENCE}"
 		(at 5 -8.5 0)
 		(unlocked yes)
@@ -165,4 +176,15 @@
 		(uuid "31d13b53-417f-4bb6-8368-8a5637f3748e")
 	)
 	(embedded_fonts no)
+	(model "/home/capaverde/projetos/cubo/pcb_v2/power_switch.pretty/interruptor.step"
+		(offset
+			(xyz 8.65 -6 1.8)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -90)
+		)
+	)
 )
