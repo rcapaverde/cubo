@@ -436,10 +436,10 @@ void testbench_autotest(void)
         return;
     }
 
-    float shunt = 0.1;                      /* shunt (Shunt Resistance in Ohms). Lower shunt gives higher accuracy but lower current measurement range. Recommended value 0.020 Ohm. Min 0.001 Ohm */
-    float current_LSB_mA = 0.1;              /* current_LSB_mA (Current Least Significant Bit in milli Amperes). Recommended values: 0.050, 0.100, 0.250, 0.500, 1, 2, 2.5 (in milli Ampere units) */
-    float current_zero_offset_mA = 0;         /* current_zero_offset_mA (Current Zero Offset in milli Amperes, default = 0) */
-    uint16_t bus_V_scaling_e4 = 9433;        /* bus_V_scaling_e4 (Bus Voltage Scaling Factor, default = 10000) */
+    float shunt = 0.1;
+    float current_LSB_mA = 0.1;
+    float current_zero_offset_mA = 0;
+    uint16_t bus_V_scaling_e4 = 9433;
 
     INA.configure(shunt, current_LSB_mA, current_zero_offset_mA, bus_V_scaling_e4);
 
@@ -447,7 +447,6 @@ void testbench_autotest(void)
     {
         float current = INA.getCurrent();
         float busVoltage = INA.getBusVoltage();
-        float shuntVoltage_mV = INA.getShuntVoltage_mV();
 
         char temp[16];
 
@@ -457,15 +456,9 @@ void testbench_autotest(void)
         LCD_print(temp);
         LCD_print("mA ");
 
-        LCD_setpos(1, 0);
-
         dtostrf(busVoltage, 1, 1, temp);
         LCD_print(temp);
         LCD_print("V ");
-
-        dtostrf(shuntVoltage_mV, 1, 1, temp);
-        LCD_print(temp);
-        LCD_print("mV");
 
         delay(500);
     }
