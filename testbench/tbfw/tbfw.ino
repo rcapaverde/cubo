@@ -1,4 +1,5 @@
-#include <LiquidCrystal.h>
+#include "Arduino.h"
+#include "INA226.h"
 
 const int CONSOLE_LEFT = 1;
 const int CONSOLE_RIGHT = 2;
@@ -26,14 +27,132 @@ const int lcd_d5 = 10;
 const int lcd_d6 = 11;
 const int lcd_d7 = 12;
 
-const int bt_left = A4;
-const int bt_cancel = A3;
-const int bt_ok = A2;
-const int bt_right = A1;
+const int bt_left = A3;
+const int bt_cancel = A2;
+const int bt_ok = A1;
+const int bt_right = A0;
 
 Menu *current_menu = NULL;
 
-LiquidCrystal lcd(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7);
+INA226 INA(0x40);
+
+void LCD_write_nibble(uint8_t rs, uint8_t byte)
+{
+    digitalWrite(lcd_rs, rs);
+    digitalWrite(lcd_d4, byte & 0x01);
+    digitalWrite(lcd_d5, (byte >> 1) & 0x01);
+    digitalWrite(lcd_d6, (byte >> 2) & 0x01);
+    digitalWrite(lcd_d7, (byte >> 3) & 0x01);
+
+    digitalWrite(lcd_en, LOW);
+    delayMicroseconds(1);    
+    digitalWrite(lcd_en, HIGH);
+    delayMicroseconds(1);    // enable pulse must be >450 ns
+    digitalWrite(lcd_en, LOW);
+    delayMicroseconds(100);
+}
+
+void LCD_write(uint8_t rs, uint8_t byte)
+{
+    LCD_write_nibble(rs, byte >> 4);
+    LCD_write_nibble(rs, byte & 0x0F);
+}
+
+void LCD_write_register(uint8_t byte)
+{
+    LCD_write(0, byte);
+    delay(1);
+}
+
+void LCD_write_char(uint8_t byte)
+{
+    LCD_write(1, byte);
+    delayMicroseconds(100);
+}
+
+void LCD_clear()
+{
+    LCD_write_register(0x01);  
+    delay(2);
+}
+
+void LCD_blink()
+{
+    LCD_write_register(0x0D);   
+}
+
+void LCD_noblink()
+{
+    LCD_write_register(0x0C);   
+}
+
+void LCD_setpos(uint8_t row, uint8_t col)
+{
+    LCD_write_register(0x80 | (col + row * 0x40));   
+}
+
+void LCD_print(char *str)
+{
+    while (*str)
+    {
+        LCD_write_char(*str);
+        str++;
+    }
+}
+
+void LCD_init()
+{
+    pinMode(lcd_rs, OUTPUT);
+    pinMode(lcd_en, OUTPUT);
+    pinMode(lcd_d4, OUTPUT);
+    pinMode(lcd_d5, OUTPUT);
+    pinMode(lcd_d6, OUTPUT);
+    pinMode(lcd_d7, OUTPUT);
+
+    int increment_decrement = 1;    // 1 = increment, 0 = decrement
+    int display_on_off = 1;        // 1 = display on, 0 = display off
+    int shift_display = 0;          // 1 = shift, 0 = no shift
+    int cursor = 0;
+    int blink = 0;
+    int data_length = 0; // 0 = 4 bits, 1 = 8 bits
+    int number_of_lines = 1; // 0 = 1 line, 1 = 2 lines
+    int font = 0; // 0 = 5x8 dots, 1 = 5x10 dots
+
+    // Wait for more than 15 ms after VCC rises to 4.5 V
+    delay(50);
+
+    // Function set (Interface is 8 bits long.)
+    // Wait for more than 4.1 ms
+    LCD_write_nibble(0, 0x03);
+    delayMicroseconds(4500);
+
+    // Function set (Interface is 8 bits long.)
+    LCD_write_nibble(0, 0x03);
+    delayMicroseconds(4500);
+
+    // Function set (Interface is 4 bits long.)
+    LCD_write_nibble(0, 0x03);
+    delayMicroseconds(150);
+
+    LCD_write_nibble(0, 0x02);
+
+    // Function set
+    // Sets interface data length (DL), number of display lines (N), and character font (F).
+    LCD_write_register(0x20 | (data_length << 4) | (number_of_lines << 3) | (font << 2));
+
+    // Display on/off control
+    // Sets entire display (D) on/off, cursor on/off (C), and blinking of cursor position character (B).
+    LCD_write_register(0x08 | (display_on_off << 2) | (cursor << 1) | blink);
+
+    // Entry mode set
+    // Sets cursor move direction (I/D) and specifies to shift the display (S).
+    LCD_write_register(0x04 | (increment_decrement << 1) | shift_display);
+
+    // Clear display
+    // Clears entire display and sets DDRAM address 0 in address counter
+    LCD_write_register(0x01);
+    delay(2);
+}
 
 void open_menu_opts(void);
 void menu_opts_back(void);
@@ -113,22 +232,22 @@ void menu_mark_selected(Menu *menu)
     int col = 0;
     for (int i = 0; i < menu->selected_index; i++)
         col += strlen(menu->items[i].name) + 1;
-    lcd.setCursor(col, 1);
+    LCD_setpos(1, col);
 }
 
 void menu_show(Menu* menu)
 {
-    lcd.noBlink();
-    lcd.clear();
-    lcd.setCursor(0, 0);
-    lcd.print(menu->title);
-    lcd.setCursor(0, 1);
+    LCD_noblink();
+    LCD_clear();
+    LCD_setpos(0, 0);
+    LCD_print(menu->title);
+    LCD_setpos(1, 0);
 
     int menu_index = 0;
     while (menu->items[menu_index].name != NULL)
     {
-        lcd.print(menu->items[menu_index].name);
-        lcd.print(" ");
+        LCD_print(menu->items[menu_index].name);
+        LCD_print(" ");
         menu_index++;
     }
 
@@ -136,7 +255,7 @@ void menu_show(Menu* menu)
 
     menu_mark_selected(menu);
 
-    lcd.blink();
+    LCD_blink();
 }
 
 void menu_move_left()
@@ -204,11 +323,11 @@ int console_read()
 
 void option_about(void)
 {
-    lcd.noBlink();
-    lcd.clear();
-    lcd.print("Testbench v1.0.0");
-    lcd.setCursor(0, 1);
-    lcd.print("Capaverde 2025");
+    LCD_noblink();
+    LCD_clear();
+    LCD_print("Testbench v1.0.0");
+    LCD_setpos(1, 0);
+    LCD_print("Capaverde 2025");
 
     while (console_read() == 0)
         delay(10);
@@ -220,9 +339,9 @@ void testbench_select_board(void)
 {
     static char *clear_line = "                ";
 
-    lcd.noBlink();
-    lcd.clear();
-    lcd.print("Select:");
+    LCD_noblink();
+    LCD_clear();
+    LCD_print("Select:");
 
     int selected_board = -1;
 
@@ -234,20 +353,20 @@ void testbench_select_board(void)
 
     while (selected_board == -1)
     {
-        lcd.setCursor(0, 1);
-        lcd.print(clear_line);
-        lcd.setCursor(0, 1);
-        lcd.print(test_boards[index].name);
+        LCD_setpos(1, 0);
+        LCD_print(clear_line);
+        LCD_setpos(1, 0);
+        LCD_print(test_boards[index].name);
 
         char str_count[6];
         itoa(count, str_count, 10);
         char str_index[6];
         itoa(index + 1, str_index, 10);
 
-        lcd.setCursor(15 - strlen(str_count) - strlen(str_index), 0);
-        lcd.print(str_index);
-        lcd.print("/");
-        lcd.print(str_count);
+        LCD_setpos(0, 15 - strlen(str_count) - strlen(str_index));
+        LCD_print(str_index);
+        LCD_print("/");
+        LCD_print(str_count);
 
         while (true)
         {
@@ -293,9 +412,9 @@ void testbench_select_board(void)
 
 void testbench_select_sim(void)
 {
-    lcd.noBlink();
-    lcd.clear();
-    lcd.print("not implemented");
+    LCD_noblink();
+    LCD_clear();
+    LCD_print("not implemented");
 
     while (console_read() == 0)
         delay(10);
@@ -305,28 +424,66 @@ void testbench_select_sim(void)
 
 void testbench_autotest(void)
 {
-    lcd.noBlink();
-    lcd.clear();
-    lcd.print("not implemented");
+    LCD_noblink();
+    LCD_clear();
+
+    Wire.begin();
+    if (!INA.begin())
+    {
+        LCD_print("INA226 begin error");
+        while (console_read() == 0)
+            delay(10);
+        return;
+    }
+
+    float shunt = 0.1;                      /* shunt (Shunt Resistance in Ohms). Lower shunt gives higher accuracy but lower current measurement range. Recommended value 0.020 Ohm. Min 0.001 Ohm */
+    float current_LSB_mA = 0.1;              /* current_LSB_mA (Current Least Significant Bit in milli Amperes). Recommended values: 0.050, 0.100, 0.250, 0.500, 1, 2, 2.5 (in milli Ampere units) */
+    float current_zero_offset_mA = 0;         /* current_zero_offset_mA (Current Zero Offset in milli Amperes, default = 0) */
+    uint16_t bus_V_scaling_e4 = 9433;        /* bus_V_scaling_e4 (Bus Voltage Scaling Factor, default = 10000) */
+
+    INA.configure(shunt, current_LSB_mA, current_zero_offset_mA, bus_V_scaling_e4);
 
     while (console_read() == 0)
-        delay(10);
+    {
+        float current = INA.getCurrent();
+        float busVoltage = INA.getBusVoltage();
+        float shuntVoltage_mV = INA.getShuntVoltage_mV();
+
+        char temp[16];
+
+        LCD_setpos(0, 0);
+
+        dtostrf(current * 1000.0, 1, 1, temp);
+        LCD_print(temp);
+        LCD_print("mA ");
+
+        LCD_setpos(1, 0);
+
+        dtostrf(busVoltage, 1, 1, temp);
+        LCD_print(temp);
+        LCD_print("V ");
+
+        dtostrf(shuntVoltage_mV, 1, 1, temp);
+        LCD_print(temp);
+        LCD_print("mV");
+
+        delay(500);
+    }
 
     menu_show(current_menu);
 }
 
 void setup() 
 {
-    // set up the LCD's number of columns and rows:
-    lcd.begin(16, 2);
-    lcd.noBlink();
-    lcd.clear();
+    LCD_init();
+    LCD_blink();
+    LCD_clear();
 
     pinMode(bt_left, INPUT);
     pinMode(bt_cancel, INPUT);
     pinMode(bt_ok, INPUT);
     pinMode(bt_right, INPUT);
-
+   
     menu_show(&menu_main);
 }
 
