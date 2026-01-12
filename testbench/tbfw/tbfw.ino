@@ -20,35 +20,72 @@ typedef struct
     int selected_index;
 } Menu;
 
-const int lcd_rs = 7;
-const int lcd_en = 8;
-const int lcd_d4 = 9;
-const int lcd_d5 = 10;
-const int lcd_d6 = 11;
-const int lcd_d7 = 12;
+const int8_t MPU_DATA[] = {6, 7, A5, A4, A3, A2, A1, A0};
+const int8_t MPU_ADDR[] = {8, 9, 10, 11};
+const int8_t MPU_WRITE = 12;
+const int8_t MPU_READ = 13;
 
-const int bt_left = A3;
-const int bt_cancel = A2;
-const int bt_ok = A1;
-const int bt_right = A0;
+const int8_t MPU_ADDR_STATUS = 0x06;
+const int8_t MPU_ADDR_CONSOLE = 0x07;
+
+const int8_t MCU_STATE_ERROR = 0x40;
+const int8_t MCU_STATE_RUN = 0x80;
+const int8_t MCU_STATE_POWER_A = 0x01;
+const int8_t MCU_STATE_POWER_B = 0x02;
+const int8_t MCU_STATE_POWER_C = 0x04;
 
 Menu *current_menu = NULL;
 
 INA226 INA(0x40);
 
+uint8_t multiplex_read(uint8_t address)
+{
+    for (int iAddr = 0; iAddr < 4; iAddr++)
+        digitalWrite(MPU_ADDR[iAddr], (address >> iAddr) & 0x01);
+
+    for (int iData = 0; iData < 8; iData++)
+        pinMode(MPU_DATA[iData], INPUT);
+
+    digitalWrite(MPU_READ, LOW);
+    delayMicroseconds(1);
+
+    uint8_t data = 0;
+    for (int iData = 0; iData < 8; iData++)
+    {
+        if (digitalRead(MPU_DATA[iData]))
+            data |= (1 << iData);
+    }
+
+    digitalWrite(MPU_READ, HIGH);
+
+    return data;
+}
+
+void multiplex_write(uint8_t address, uint8_t data)
+{
+    for (int iAddr = 0; iAddr < 4; iAddr++)
+        digitalWrite(MPU_ADDR[iAddr], (address >> iAddr) & 0x01);
+
+    for (int iData = 0; iData < 8; iData++)
+    {
+        pinMode(MPU_DATA[iData], OUTPUT);
+        digitalWrite(MPU_DATA[iData], (data >> iData) & 0x01);
+    }
+
+    digitalWrite(MPU_WRITE, LOW);
+    delayMicroseconds(1);
+    digitalWrite(MPU_WRITE, HIGH);
+}
+
 void LCD_write_nibble(uint8_t rs, uint8_t byte)
 {
-    digitalWrite(lcd_rs, rs);
-    digitalWrite(lcd_d4, byte & 0x01);
-    digitalWrite(lcd_d5, (byte >> 1) & 0x01);
-    digitalWrite(lcd_d6, (byte >> 2) & 0x01);
-    digitalWrite(lcd_d7, (byte >> 3) & 0x01);
+    uint8_t lcd = byte & 0x0F | (rs ? 0x40 : 0x00);
 
-    digitalWrite(lcd_en, LOW);
+    multiplex_write(MPU_ADDR_CONSOLE, lcd);
     delayMicroseconds(1);    
-    digitalWrite(lcd_en, HIGH);
-    delayMicroseconds(1);    // enable pulse must be >450 ns
-    digitalWrite(lcd_en, LOW);
+    multiplex_write(MPU_ADDR_CONSOLE, lcd | 0x80);
+    delayMicroseconds(1);    
+    multiplex_write(MPU_ADDR_CONSOLE, lcd);
     delayMicroseconds(100);
 }
 
@@ -102,13 +139,6 @@ void LCD_print(char *str)
 
 void LCD_init()
 {
-    pinMode(lcd_rs, OUTPUT);
-    pinMode(lcd_en, OUTPUT);
-    pinMode(lcd_d4, OUTPUT);
-    pinMode(lcd_d5, OUTPUT);
-    pinMode(lcd_d6, OUTPUT);
-    pinMode(lcd_d7, OUTPUT);
-
     int increment_decrement = 1;    // 1 = increment, 0 = decrement
     int display_on_off = 1;        // 1 = display on, 0 = display off
     int shift_display = 0;          // 1 = shift, 0 = no shift
@@ -303,21 +333,9 @@ void menu_back()
 int console_read()
 {
     static int last_button = 0;
-    int button = 0;
-
-    if (!digitalRead(bt_left))
-        button |= CONSOLE_LEFT;
-    if (!digitalRead(bt_right))
-        button |= CONSOLE_RIGHT;
-    if (!digitalRead(bt_ok))
-        button |= CONSOLE_OK;
-    if (!digitalRead(bt_cancel))
-        button |= CONSOLE_CANCEL;
-
+    int button = (~multiplex_read(MPU_ADDR_CONSOLE)) & 0x0F;
     int pressed = button & (~last_button);
-
     last_button = button;
-
     return pressed;
 }
 
@@ -422,61 +440,90 @@ void testbench_select_sim(void)
     menu_show(current_menu);
 }
 
+// Wire.begin();
+// if (!INA.begin())
+// {
+//     LCD_print("INA226 begin error");
+//     while (console_read() == 0)
+//         delay(10);
+//     return;
+// }
+
+// float shunt = 0.1;
+// float current_LSB_mA = 0.1;
+// float current_zero_offset_mA = 0;
+// uint16_t bus_V_scaling_e4 = 9433;
+
+// INA.configure(shunt, current_LSB_mA, current_zero_offset_mA, bus_V_scaling_e4);
+
+// while (console_read() == 0)
+// {
+//     float current = INA.getCurrent();
+//     float busVoltage = INA.getBusVoltage();
+
+//     char temp[16];
+
+//     LCD_setpos(0, 0);
+
+//     dtostrf(current * 1000.0, 1, 1, temp);
+//     LCD_print(temp);
+//     LCD_print("mA ");
+
+//     dtostrf(busVoltage, 1, 1, temp);
+//     LCD_print(temp);
+//     LCD_print("V ");
+
+//     delay(500);
+// }
+
 void testbench_autotest(void)
 {
     LCD_noblink();
     LCD_clear();
 
-    Wire.begin();
-    if (!INA.begin())
-    {
-        LCD_print("INA226 begin error");
-        while (console_read() == 0)
-            delay(10);
-        return;
-    }
+    LCD_print("AUTOTEST");
+    LCD_setpos(1, 0);
 
-    float shunt = 0.1;
-    float current_LSB_mA = 0.1;
-    float current_zero_offset_mA = 0;
-    uint16_t bus_V_scaling_e4 = 9433;
+    multiplex_write(MPU_ADDR_STATUS, MCU_STATE_RUN | MCU_STATE_ERROR);
+    delay(1000);
 
-    INA.configure(shunt, current_LSB_mA, current_zero_offset_mA, bus_V_scaling_e4);
+    multiplex_write(MPU_ADDR_STATUS, MCU_STATE_RUN | MCU_STATE_POWER_B);
+    delay(1000);
+
+    multiplex_write(MPU_ADDR_STATUS, MCU_STATE_RUN | MCU_STATE_POWER_A);
+    delay(1000);
+
+    multiplex_write(MPU_ADDR_STATUS, MCU_STATE_RUN | MCU_STATE_POWER_C);
+    delay(1000);
+
+    multiplex_write(MPU_ADDR_STATUS, 0x00);
+
+    LCD_setpos(1, 0);
+    LCD_print("done           ");
 
     while (console_read() == 0)
-    {
-        float current = INA.getCurrent();
-        float busVoltage = INA.getBusVoltage();
-
-        char temp[16];
-
-        LCD_setpos(0, 0);
-
-        dtostrf(current * 1000.0, 1, 1, temp);
-        LCD_print(temp);
-        LCD_print("mA ");
-
-        dtostrf(busVoltage, 1, 1, temp);
-        LCD_print(temp);
-        LCD_print("V ");
-
-        delay(500);
-    }
+        delay(10);
 
     menu_show(current_menu);
 }
 
 void setup() 
 {
+    for (int iAddr = 0; iAddr < 4; iAddr++)
+        pinMode(MPU_ADDR[iAddr], OUTPUT);
+
+    pinMode(MPU_WRITE, OUTPUT);
+    pinMode(MPU_READ, OUTPUT);
+
+    digitalWrite(MPU_WRITE, HIGH);
+    digitalWrite(MPU_READ, HIGH);
+
+    multiplex_write(MPU_ADDR_STATUS, 0x00);
+
     LCD_init();
     LCD_blink();
     LCD_clear();
-
-    pinMode(bt_left, INPUT);
-    pinMode(bt_cancel, INPUT);
-    pinMode(bt_ok, INPUT);
-    pinMode(bt_right, INPUT);
-   
+    
     menu_show(&menu_main);
 }
 
