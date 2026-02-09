@@ -8119,7 +8119,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "1K"
 			(at 186.69 199.39 90)
 			(effects
 				(font
