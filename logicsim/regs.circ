@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.9.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.9.0(https://github.com/logisim-evolution/).
+<project source="4.0.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v4.0.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
@@ -41,7 +41,7 @@
     </tool>
     <tool lib="0" name="Pin">
       <a name="facing" val="west"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </tool>
     <tool lib="1" name="NOT Gate"/>
     <tool lib="1" name="AND Gate"/>
@@ -280,7 +280,9 @@
       <a name="label" val="PORT_D"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="0" loc="(70,310)" name="Clock"/>
+    <comp lib="0" loc="(70,310)" name="Clock">
+      <a name="appearance" val="classic"/>
+    </comp>
     <comp lib="0" loc="(70,450)" name="Probe">
       <a name="appearance" val="classic"/>
       <a name="radix" val="10unsigned"/>
@@ -421,25 +423,25 @@
     <comp lib="6" loc="(115,895)" name="Text">
       <a name="text" val="int_request"/>
     </comp>
-    <comp lib="6" loc="(1173,44)" name="Text">
-      <a name="text" val="A"/>
-    </comp>
-    <comp lib="6" loc="(1174,166)" name="Text">
+    <comp lib="6" loc="(1170,165)" name="Text">
       <a name="text" val="B"/>
     </comp>
-    <comp lib="6" loc="(1174,286)" name="Text">
+    <comp lib="6" loc="(1170,285)" name="Text">
       <a name="text" val="C"/>
     </comp>
-    <comp lib="6" loc="(1174,406)" name="Text">
+    <comp lib="6" loc="(1170,40)" name="Text">
+      <a name="text" val="A"/>
+    </comp>
+    <comp lib="6" loc="(1170,405)" name="Text">
       <a name="text" val="D"/>
     </comp>
-    <comp lib="6" loc="(1174,526)" name="Text">
+    <comp lib="6" loc="(1170,525)" name="Text">
       <a name="text" val="E"/>
     </comp>
-    <comp lib="6" loc="(1174,646)" name="Text">
+    <comp lib="6" loc="(1170,645)" name="Text">
       <a name="text" val="H"/>
     </comp>
-    <comp lib="6" loc="(1174,766)" name="Text">
+    <comp lib="6" loc="(1170,765)" name="Text">
       <a name="text" val="L"/>
     </comp>
     <comp lib="6" loc="(1210,1080)" name="Text">
@@ -491,7 +493,7 @@
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="PC/LR/IA"/>
     </comp>
-    <comp lib="6" loc="(955,41)" name="Text">
+    <comp lib="6" loc="(955,40)" name="Text">
       <a name="text" val="ACC"/>
     </comp>
     <comp loc="(1000,940)" name="reg16_file">
@@ -1035,7 +1037,7 @@
     <comp lib="0" loc="(1530,970)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="DATA_READ"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(1540,970)" name="Splitter">
@@ -1141,7 +1143,7 @@
     <comp lib="0" loc="(1890,940)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="DEBUG"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="56"/>
     </comp>
     <comp lib="0" loc="(190,840)" name="Pin">
@@ -2539,7 +2541,7 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="south"/>
       <a name="label" val="DATA_OUT"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(1210,1640)" name="Tunnel">
@@ -2674,31 +2676,31 @@
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="ZERO_FLAG"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1660,2030)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="CARRY_FLAG"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1660,2060)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="OVERFLOW_FLAG"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1660,2090)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="NEGATIVE_FLAG"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1660,2120)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="INTMASK_FLAG"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(170,3030)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -5070,8 +5072,7 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="DATA_OUT"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(320,250)" name="Splitter">
@@ -5288,7 +5289,7 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(750,120)" name="Tunnel">
@@ -5389,9 +5390,9 @@
     </comp>
     <comp lib="0" loc="(90,260)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="behavior" val="tristate"/>
       <a name="facing" val="north"/>
       <a name="label" val="DATA_IN"/>
-      <a name="tristate" val="true"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="1" loc="(1020,770)" name="OR Gate">
@@ -5893,7 +5894,7 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="OUT"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(160,470)" name="Tunnel">
@@ -6317,19 +6318,19 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nADDR_SEL_SP"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1190,140)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nADDR_SEL_MAR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1190,160)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nADDR_SEL_PC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1190,60)" name="Tunnel">
       <a name="label" val="nclear_interrupt"/>
@@ -6521,7 +6522,7 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(1740,610)" name="Tunnel">
@@ -6610,7 +6611,7 @@
     <comp lib="0" loc="(240,570)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="DEBUG_EXTEND"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(250,530)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -6694,7 +6695,7 @@
     <comp lib="0" loc="(450,1770)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="DEBUG_INS"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(470,490)" name="Splitter">
@@ -6763,13 +6764,13 @@
     <comp lib="0" loc="(680,410)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="RD_ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(680,430)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="WR_ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(680,460)" name="Tunnel">
@@ -6792,42 +6793,42 @@
     <comp lib="0" loc="(760,110)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="nSP_DEC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(760,130)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="nSP_INC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(760,150)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="nMAR_DEC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(760,170)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="nMAR_INC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(760,190)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="nPC_INC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(760,40)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="WR_ENABLE"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(760,60)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="RD_ENABLE"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(760,80)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="ULA_ENABLE"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(770,460)" name="Tunnel">
       <a name="label" val="conditions"/>
@@ -8205,7 +8206,7 @@ a3 3 4
     <comp lib="0" loc="(1090,1190)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="PORT_OUTPUT_B"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(1090,1270)" name="Constant">
@@ -8221,7 +8222,7 @@ a3 3 4
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="DATA_OUT"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(1090,960)" name="Tunnel">
@@ -8231,7 +8232,7 @@ a3 3 4
     <comp lib="0" loc="(1100,1670)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="PORT_OUTPUT_D"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(1100,1750)" name="Constant">
@@ -8292,7 +8293,7 @@ a3 3 4
     <comp lib="0" loc="(160,270)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="PORT_WRITE"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1600,1300)" name="Splitter">
       <a name="facing" val="west"/>
@@ -8363,7 +8364,7 @@ a3 3 4
     <comp lib="0" loc="(290,130)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="PORT_READ"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(290,1520)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -8390,7 +8391,7 @@ a3 3 4
     <comp lib="0" loc="(320,1190)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="PORT_OUTPUT_A"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(320,1270)" name="Constant">
@@ -8405,7 +8406,7 @@ a3 3 4
     <comp lib="0" loc="(330,1670)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="PORT_OUTPUT_C"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(330,1750)" name="Constant">
@@ -8590,7 +8591,7 @@ a3 3 4
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="PORT_ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(820,150)" name="Tunnel">
@@ -8599,16 +8600,16 @@ a3 3 4
     </comp>
     <comp lib="0" loc="(820,200)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="behavior" val="tristate"/>
       <a name="facing" val="west"/>
       <a name="label" val="PORT_INPUT"/>
-      <a name="tristate" val="true"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(820,240)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="PORT_OUTPUT"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(830,1300)" name="Splitter">
@@ -9730,8 +9731,7 @@ a3 3 4
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="DATA_OUT"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(320,250)" name="Splitter">
@@ -9948,7 +9948,7 @@ a3 3 4
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(750,120)" name="Tunnel">
@@ -10049,9 +10049,9 @@ a3 3 4
     </comp>
     <comp lib="0" loc="(90,260)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="behavior" val="tristate"/>
       <a name="facing" val="north"/>
       <a name="label" val="DATA_IN"/>
-      <a name="tristate" val="true"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(980,590)" name="Constant">
@@ -10594,7 +10594,7 @@ a3 3 4
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="DEBUG_PC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(1120,120)" name="Tunnel">
@@ -10799,8 +10799,7 @@ a3 3 4
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="DATA_OUT"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(320,250)" name="Splitter">
@@ -11017,7 +11016,7 @@ a3 3 4
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(750,120)" name="Tunnel">
@@ -11118,9 +11117,9 @@ a3 3 4
     </comp>
     <comp lib="0" loc="(90,260)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="behavior" val="tristate"/>
       <a name="facing" val="north"/>
       <a name="label" val="DATA_IN"/>
-      <a name="tristate" val="true"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(930,120)" name="Tunnel">
@@ -11811,7 +11810,7 @@ a3 3 4
     <comp lib="0" loc="(1200,410)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="DATA_OUT"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(1200,900)" name="Tunnel">
@@ -11890,25 +11889,25 @@ a3 3 4
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="ZERO_FLAG"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1260,1220)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="CARRY_FLAG"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1260,1250)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="OVERFLOW_FLAG"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1260,1280)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
       <a name="label" val="NEGATIVE_FLAG"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1260,1310)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -12271,7 +12270,7 @@ a3 3 4
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="DEBUG_ACC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(640,350)" name="Splitter">
@@ -12576,14 +12575,18 @@ a3 3 4
     </comp>
     <comp lib="7" loc="(1180,2830)" name="7486"/>
     <comp lib="7" loc="(1180,2990)" name="7486"/>
-    <comp lib="7" loc="(1230,1070)" name="7400"/>
+    <comp lib="7" loc="(1230,1070)" name="7400">
+      <a name="ShowInternalStructure" val="true"/>
+    </comp>
     <comp lib="7" loc="(1230,3570)" name="74157">
       <a name="facing" val="west"/>
     </comp>
     <comp lib="7" loc="(1260,500)" name="74244">
+      <a name="ShowInternalStructure" val="true"/>
       <a name="facing" val="south"/>
     </comp>
     <comp lib="7" loc="(1330,870)" name="7486">
+      <a name="ShowInternalStructure" val="true"/>
       <a name="facing" val="south"/>
     </comp>
     <comp lib="7" loc="(1500,2770)" name="74244">
@@ -14313,13 +14316,13 @@ a3 3 4
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="WR_ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(1210,150)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="nADDR_SEL_PC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1240,670)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -14337,7 +14340,7 @@ a3 3 4
     <comp lib="0" loc="(1290,380)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="RD_ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(130,1180)" name="Tunnel">
@@ -14382,19 +14385,19 @@ a3 3 4
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="RD_ENABLE"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1530,260)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="WR_ENABLE"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1530,280)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="ULA_ENABLE"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(160,650)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -14416,31 +14419,31 @@ a3 3 4
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nPC_INC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1770,330)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nMAR_INC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1770,350)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nMAR_DEC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1770,370)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSP_INC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1770,390)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSP_DEC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1770,420)" name="Tunnel">
       <a name="label" val="nclear_interrupt"/>
@@ -14500,7 +14503,7 @@ a3 3 4
     <comp lib="0" loc="(240,570)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="DEBUG_EXTEND"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(250,530)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -14634,7 +14637,7 @@ a3 3 4
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(2760,620)" name="Tunnel">
@@ -14730,7 +14733,7 @@ a3 3 4
     <comp lib="0" loc="(440,1970)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="DEBUG_INS"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(470,490)" name="Splitter">
@@ -14811,7 +14814,7 @@ a3 3 4
     <comp lib="0" loc="(640,320)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="M1"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(650,370)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -14832,7 +14835,7 @@ a3 3 4
     <comp lib="0" loc="(710,250)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="nADDR_SEL_MAR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(730,380)" name="Tunnel">
       <a name="label" val="nclock"/>
@@ -14840,7 +14843,7 @@ a3 3 4
     <comp lib="0" loc="(750,180)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="nADDR_SEL_SP"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(750,570)" name="Splitter">
       <a name="appear" val="right"/>
@@ -16031,7 +16034,7 @@ a 4d 98 5*0 4f 86 9 44
     <comp lib="0" loc="(100,130)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="M1"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(100,230)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -16156,14 +16159,14 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="RD_ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="5"/>
     </comp>
     <comp lib="0" loc="(1290,830)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="WR_ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="5"/>
     </comp>
     <comp lib="0" loc="(1290,930)" name="Pull Resistor">
@@ -16184,7 +16187,7 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="WR_ENABLE"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1360,130)" name="Tunnel">
       <a name="label" val="n_8bit"/>
@@ -16981,13 +16984,13 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="MEMORY_WRITE"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(3350,310)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="MEMORY_READ"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(3360,560)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -17013,43 +17016,43 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSP_DEC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(3480,120)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nMAR_INC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(3480,140)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSP_INC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(3480,160)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nPC_INC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(3480,200)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nADDR_SEL_MAR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(3480,220)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nADDR_SEL_PC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(3480,240)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nADDR_SEL_SP"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(3480,270)" name="Tunnel">
       <a name="label" val="n_select_addr_constant"/>
@@ -17095,7 +17098,7 @@ a 4d 98 5*0 4f 86 9 44
     <comp lib="0" loc="(370,1560)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="DEBUG_INS"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(370,500)" name="Tunnel">
@@ -17333,7 +17336,7 @@ a 4d 98 5*0 4f 86 9 44
     <comp lib="0" loc="(670,1560)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(670,3350)" name="Tunnel">
@@ -19753,7 +19756,7 @@ a 4d 98 5*0 4f 86 9 44
     <comp lib="0" loc="(110,60)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="M1"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1160,1580)" name="Tunnel">
       <a name="label" val="n_ins_write"/>
@@ -19822,7 +19825,7 @@ a 4d 98 5*0 4f 86 9 44
     <comp lib="0" loc="(160,400)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="PC_LR_SWAP"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(170,1320)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -19866,7 +19869,7 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="RD_ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="5"/>
     </comp>
     <comp lib="0" loc="(190,770)" name="Tunnel">
@@ -20037,7 +20040,7 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="DEBUG_INS"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(500,360)" name="Constant">
@@ -20154,7 +20157,7 @@ a 4d 98 5*0 4f 86 9 44
     <comp lib="0" loc="(670,1560)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(690,410)" name="Tunnel">
@@ -21471,8 +21474,7 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="DATA_OUT"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(320,1820)" name="Tunnel">
@@ -21757,7 +21759,7 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(750,120)" name="Tunnel">
@@ -21842,9 +21844,9 @@ a 4d 98 5*0 4f 86 9 44
     </comp>
     <comp lib="0" loc="(90,260)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="behavior" val="tristate"/>
       <a name="facing" val="north"/>
       <a name="label" val="DATA_IN"/>
-      <a name="tristate" val="true"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(910,1800)" name="Tunnel">
@@ -23086,7 +23088,7 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="PCLR_SWAP"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(150,400)" name="Pull Resistor"/>
     <comp lib="0" loc="(1500,3020)" name="Tunnel">
@@ -23131,7 +23133,7 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="ADDR_OUT"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(1680,3270)" name="Tunnel">
@@ -23222,7 +23224,7 @@ a 4d 98 5*0 4f 86 9 44
     <comp lib="0" loc="(210,2500)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="READ_ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="5"/>
     </comp>
     <comp lib="0" loc="(210,2580)" name="Tunnel">
@@ -23283,7 +23285,7 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="FLAG_INTMASK"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(240,530)" name="Pull Resistor">
       <a name="facing" val="north"/>
@@ -23291,7 +23293,7 @@ a 4d 98 5*0 4f 86 9 44
     <comp lib="0" loc="(250,3190)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="WRITE_ADDRESS"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="5"/>
     </comp>
     <comp lib="0" loc="(260,1570)" name="Tunnel">
@@ -23351,13 +23353,13 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="WRITE_ENABLE"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(340,510)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="ULA_ENABLE"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(400,710)" name="Constant">
       <a name="facing" val="west"/>
@@ -23389,8 +23391,8 @@ a 4d 98 5*0 4f 86 9 44
     <comp lib="0" loc="(470,300)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="DEBUG_INS"/>
-      <a name="output" val="true"/>
       <a name="radix" val="16"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(500,300)" name="Splitter">
@@ -23483,7 +23485,7 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="DEBUG_FETCH"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(730,160)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -23687,7 +23689,7 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="PCIA_SWAP"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(980,420)" name="Constant">
       <a name="facing" val="north"/>
@@ -24817,37 +24819,37 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelWrite0L"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1390,1070)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelWrite0H"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1390,1120)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelRead0L"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1390,1170)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelRead0H"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1390,1220)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nADDR_0"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1390,1270)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="INC_0"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1440,440)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -24996,37 +24998,37 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelWrite1L"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1690,1070)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelWrite1H"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1690,1120)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelRead1L"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1690,1170)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelRead1H"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1690,1220)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nADDR_1"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1690,1270)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="INC_1"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(170,720)" name="Splitter">
       <a name="fanout" val="5"/>
@@ -25177,37 +25179,37 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelWrite2L"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1990,1070)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelWrite2H"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1990,1120)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelRead2L"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1990,1170)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelRead2H"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1990,1220)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nADDR_2"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(1990,1270)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="INC_2"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(200,960)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -25359,13 +25361,13 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="SP_DEC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(300,1540)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="SP_INC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(300,970)" name="Tunnel">
       <a name="label" val="naddr_pc"/>
@@ -25374,7 +25376,7 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nADDR_SP"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(350,1030)" name="Tunnel">
       <a name="label" val="pc_inc"/>
@@ -25383,19 +25385,19 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="MAR_INC"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(370,1270)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nADDR_MAR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(370,620)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="MEMORY_WRITE"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(410,310)" name="Tunnel">
       <a name="label" val="nSelWritePCL"/>
@@ -25407,25 +25409,25 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelWriteSPL"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(410,400)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelWriteSPH"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(410,430)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelWriteMARL"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(410,460)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelWriteMARH"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(410,490)" name="Tunnel">
       <a name="label" val="nSelWriteLRL"/>
@@ -25500,7 +25502,7 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="MEMORY_READ"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(970,310)" name="Tunnel">
       <a name="label" val="nSelReadPCL"/>
@@ -25512,25 +25514,25 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelReadSPL"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(970,400)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelReadSPH"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(970,430)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelReadMARL"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(970,460)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="nSelReadMARH"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
     </comp>
     <comp lib="0" loc="(970,490)" name="Tunnel">
       <a name="label" val="nSelReadLRL"/>
@@ -26432,8 +26434,7 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="DATA_OUT"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="0" loc="(320,250)" name="Splitter">
@@ -26652,7 +26653,7 @@ a 4d 98 5*0 4f 86 9 44
       <a name="appearance" val="classic"/>
       <a name="facing" val="north"/>
       <a name="label" val="ADDR"/>
-      <a name="output" val="true"/>
+      <a name="type" val="output"/>
       <a name="width" val="16"/>
     </comp>
     <comp lib="0" loc="(750,120)" name="Tunnel">
@@ -26753,9 +26754,9 @@ a 4d 98 5*0 4f 86 9 44
     </comp>
     <comp lib="0" loc="(90,260)" name="Pin">
       <a name="appearance" val="classic"/>
+      <a name="behavior" val="tristate"/>
       <a name="facing" val="north"/>
       <a name="label" val="DATA_IN"/>
-      <a name="tristate" val="true"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="7" loc="(1470,790)" name="74244"/>
