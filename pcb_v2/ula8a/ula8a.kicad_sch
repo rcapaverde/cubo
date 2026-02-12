@@ -25732,7 +25732,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Display_7Segment:Sx39-1xxxxx"
+		(property "Footprint" "7segdisplay:1-digit-13mm"
 			(at 123.19 262.89 0)
 			(effects
 				(font
