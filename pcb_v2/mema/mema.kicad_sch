@@ -10219,7 +10219,7 @@
 			)
 		)
 	)
-	(global_label "~{rom_select}"
+	(global_label "rom_select"
 		(shape input)
 		(at 30.48 87.63 180)
 		(fields_autoplaced yes)
