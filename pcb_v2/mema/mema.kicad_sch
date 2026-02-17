@@ -10834,7 +10834,7 @@
 				)
 			)
 		)
-		(property "Value" "bus_mem_1"
+		(property "Value" "bus mem 1"
 			(at 35.56 29.21 0)
 			(effects
 				(font
@@ -15636,7 +15636,7 @@
 				)
 			)
 		)
-		(property "Value" "bus_mem_2"
+		(property "Value" "bus mem 2"
 			(at 77.47 29.21 0)
 			(effects
 				(font
