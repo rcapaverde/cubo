@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="4.0.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v4.0.0(https://github.com/logisim-evolution/).
+<project source="4.1.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v4.1.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Pin">
@@ -10,14 +10,15 @@
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
-  <lib desc="#I/O" name="5"/>
-  <lib desc="#Base" name="6">
+  <lib desc="#FPArithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#Base" name="7">
     <tool name="Text Tool">
       <a name="font" val="SansSerif plain 12"/>
     </tool>
   </lib>
-  <lib desc="#TTL" name="7"/>
+  <lib desc="#TTL" name="8"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -25,14 +26,14 @@
     <a name="simrand" val="0"/>
   </options>
   <mappings>
-    <tool lib="6" map="Button2" name="Menu Tool"/>
-    <tool lib="6" map="Button3" name="Menu Tool"/>
-    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="7" map="Button2" name="Menu Tool"/>
+    <tool lib="7" map="Button3" name="Menu Tool"/>
+    <tool lib="7" map="Ctrl Button1" name="Menu Tool"/>
   </mappings>
   <toolbar>
-    <tool lib="6" name="Poke Tool"/>
-    <tool lib="6" name="Edit Tool"/>
-    <tool lib="6" name="Text Tool">
+    <tool lib="7" name="Poke Tool"/>
+    <tool lib="7" name="Edit Tool"/>
+    <tool lib="7" name="Text Tool">
       <a name="font" val="SansSerif plain 12"/>
     </tool>
     <sep/>
@@ -313,187 +314,187 @@
       <a name="facing" val="north"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp lib="5" loc="(1150,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(1150,230)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(1150,350)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(1150,470)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(1150,590)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(1150,710)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(1150,830)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(1190,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(1190,230)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(1190,350)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(1190,470)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(1190,590)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(1190,710)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(1190,830)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(150,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(190,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(230,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(270,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(330,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(370,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(430,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(470,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(50,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(520,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(560,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(70,340)" name="Button">
+    <comp lib="6" loc="(1150,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1150,230)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1150,350)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1150,470)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1150,590)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1150,710)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1150,830)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1190,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1190,230)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1190,350)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1190,470)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1190,590)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1190,710)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(1190,830)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(150,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(190,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(230,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(270,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(330,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(370,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(430,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(470,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(50,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(520,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(560,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(70,340)" name="Button">
       <a name="color" val="#ff0000"/>
       <a name="labelvisible" val="false"/>
     </comp>
-    <comp lib="5" loc="(70,380)" name="LED">
+    <comp lib="6" loc="(70,380)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(70,410)" name="LED">
+    <comp lib="6" loc="(70,410)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(70,550)" name="LED">
+    <comp lib="6" loc="(70,550)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(70,590)" name="LED">
+    <comp lib="6" loc="(70,590)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(70,620)" name="LED">
+    <comp lib="6" loc="(70,620)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(70,670)" name="LED">
+    <comp lib="6" loc="(70,670)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(70,700)" name="LED">
+    <comp lib="6" loc="(70,700)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(70,750)" name="LED">
+    <comp lib="6" loc="(70,750)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(70,780)" name="LED">
+    <comp lib="6" loc="(70,780)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(70,810)" name="LED">
+    <comp lib="6" loc="(70,810)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(70,840)" name="LED">
+    <comp lib="6" loc="(70,840)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(70,870)" name="LED">
+    <comp lib="6" loc="(70,870)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(90,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(930,110)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(970,110)" name="Hex Digit Display"/>
-    <comp lib="6" loc="(100,335)" name="Text">
+    <comp lib="6" loc="(90,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(930,110)" name="Hex Digit Display"/>
+    <comp lib="6" loc="(970,110)" name="Hex Digit Display"/>
+    <comp lib="7" loc="(100,335)" name="Text">
       <a name="text" val="RESET"/>
     </comp>
-    <comp lib="6" loc="(100,440)" name="Text">
+    <comp lib="7" loc="(100,440)" name="Text">
       <a name="text" val="wr_addr"/>
     </comp>
-    <comp lib="6" loc="(100,470)" name="Text">
+    <comp lib="7" loc="(100,470)" name="Text">
       <a name="text" val="rd_addr"/>
     </comp>
-    <comp lib="6" loc="(100,580)" name="Text">
+    <comp lib="7" loc="(100,580)" name="Text">
       <a name="text" val="wr_mem"/>
     </comp>
-    <comp lib="6" loc="(100,610)" name="Text">
+    <comp lib="7" loc="(100,610)" name="Text">
       <a name="text" val="rd_mem"/>
     </comp>
-    <comp lib="6" loc="(105,775)" name="Text">
+    <comp lib="7" loc="(105,775)" name="Text">
       <a name="text" val="negative"/>
     </comp>
-    <comp lib="6" loc="(105,835)" name="Text">
+    <comp lib="7" loc="(105,835)" name="Text">
       <a name="text" val="overflow"/>
     </comp>
-    <comp lib="6" loc="(1080,1080)" name="Text">
+    <comp lib="7" loc="(1080,1080)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="PC/LR/IA"/>
     </comp>
-    <comp lib="6" loc="(110,370)" name="Text">
+    <comp lib="7" loc="(110,370)" name="Text">
       <a name="text" val="ula_enable"/>
     </comp>
-    <comp lib="6" loc="(110,400)" name="Text">
+    <comp lib="7" loc="(110,400)" name="Text">
       <a name="text" val="wr_enable"/>
     </comp>
-    <comp lib="6" loc="(110,660)" name="Text">
+    <comp lib="7" loc="(110,660)" name="Text">
       <a name="text" val="pc/lr swap"/>
     </comp>
-    <comp lib="6" loc="(110,690)" name="Text">
+    <comp lib="7" loc="(110,690)" name="Text">
       <a name="text" val="pc/ia swap"/>
     </comp>
-    <comp lib="6" loc="(115,895)" name="Text">
+    <comp lib="7" loc="(115,895)" name="Text">
       <a name="text" val="int_request"/>
     </comp>
-    <comp lib="6" loc="(1170,165)" name="Text">
+    <comp lib="7" loc="(1170,165)" name="Text">
       <a name="text" val="B"/>
     </comp>
-    <comp lib="6" loc="(1170,285)" name="Text">
+    <comp lib="7" loc="(1170,285)" name="Text">
       <a name="text" val="C"/>
     </comp>
-    <comp lib="6" loc="(1170,40)" name="Text">
+    <comp lib="7" loc="(1170,40)" name="Text">
       <a name="text" val="A"/>
     </comp>
-    <comp lib="6" loc="(1170,405)" name="Text">
+    <comp lib="7" loc="(1170,405)" name="Text">
       <a name="text" val="D"/>
     </comp>
-    <comp lib="6" loc="(1170,525)" name="Text">
+    <comp lib="7" loc="(1170,525)" name="Text">
       <a name="text" val="E"/>
     </comp>
-    <comp lib="6" loc="(1170,645)" name="Text">
+    <comp lib="7" loc="(1170,645)" name="Text">
       <a name="text" val="H"/>
     </comp>
-    <comp lib="6" loc="(1170,765)" name="Text">
+    <comp lib="7" loc="(1170,765)" name="Text">
       <a name="text" val="L"/>
     </comp>
-    <comp lib="6" loc="(1210,1080)" name="Text">
+    <comp lib="7" loc="(1210,1080)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="PC/LR/IA"/>
     </comp>
-    <comp lib="6" loc="(210,40)" name="Text">
+    <comp lib="7" loc="(210,40)" name="Text">
       <a name="text" val="ADDRESS"/>
     </comp>
-    <comp lib="6" loc="(350,40)" name="Text">
+    <comp lib="7" loc="(350,40)" name="Text">
       <a name="text" val="INS"/>
     </comp>
-    <comp lib="6" loc="(455,40)" name="Text">
+    <comp lib="7" loc="(455,40)" name="Text">
       <a name="text" val="PORT A"/>
     </comp>
-    <comp lib="6" loc="(545,40)" name="Text">
+    <comp lib="7" loc="(545,40)" name="Text">
       <a name="text" val="PORT B"/>
     </comp>
-    <comp lib="6" loc="(685,1080)" name="Text">
+    <comp lib="7" loc="(685,1080)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="SP"/>
     </comp>
-    <comp lib="6" loc="(70,40)" name="Text">
+    <comp lib="7" loc="(70,40)" name="Text">
       <a name="text" val="DATA"/>
     </comp>
-    <comp lib="6" loc="(820,1075)" name="Text">
+    <comp lib="7" loc="(820,1075)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="MAR"/>
     </comp>
-    <comp lib="6" loc="(85,745)" name="Text">
+    <comp lib="7" loc="(85,745)" name="Text">
       <a name="text" val="zero"/>
     </comp>
-    <comp lib="6" loc="(90,515)" name="Text">
+    <comp lib="7" loc="(90,515)" name="Text">
       <a name="text" val="addr"/>
     </comp>
-    <comp lib="6" loc="(90,545)" name="Text">
+    <comp lib="7" loc="(90,545)" name="Text">
       <a name="text" val="fetch"/>
     </comp>
-    <comp lib="6" loc="(90,805)" name="Text">
+    <comp lib="7" loc="(90,805)" name="Text">
       <a name="text" val="carry"/>
     </comp>
-    <comp lib="6" loc="(90,865)" name="Text">
+    <comp lib="7" loc="(90,865)" name="Text">
       <a name="text" val="intm"/>
     </comp>
-    <comp lib="6" loc="(95,300)" name="Text">
+    <comp lib="7" loc="(95,300)" name="Text">
       <a name="text" val="clock"/>
     </comp>
-    <comp lib="6" loc="(950,1080)" name="Text">
+    <comp lib="7" loc="(950,1080)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="PC/LR/IA"/>
     </comp>
-    <comp lib="6" loc="(955,40)" name="Text">
+    <comp lib="7" loc="(955,40)" name="Text">
       <a name="text" val="ACC"/>
     </comp>
     <comp loc="(1000,940)" name="reg16_file">
@@ -1679,80 +1680,80 @@
       <a name="facing" val="east"/>
       <a name="label" val="data_out_4"/>
     </comp>
-    <comp lib="6" loc="(1065,185)" name="Text">
+    <comp lib="7" loc="(1065,185)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="REG C"/>
     </comp>
-    <comp lib="6" loc="(1485,185)" name="Text">
+    <comp lib="7" loc="(1485,185)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="REG D"/>
     </comp>
-    <comp lib="6" loc="(1905,185)" name="Text">
+    <comp lib="7" loc="(1905,185)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="REG E"/>
     </comp>
-    <comp lib="6" loc="(225,185)" name="Text">
+    <comp lib="7" loc="(225,185)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="REG A"/>
     </comp>
-    <comp lib="6" loc="(2325,185)" name="Text">
+    <comp lib="7" loc="(2325,185)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="REG H"/>
     </comp>
-    <comp lib="6" loc="(2745,185)" name="Text">
+    <comp lib="7" loc="(2745,185)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="REG L"/>
     </comp>
-    <comp lib="6" loc="(645,185)" name="Text">
+    <comp lib="7" loc="(645,185)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="REG B"/>
     </comp>
-    <comp lib="7" loc="(1070,420)" name="74244">
+    <comp lib="8" loc="(1070,420)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1080,190)" name="74377">
+    <comp lib="8" loc="(1080,190)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1490,420)" name="74244">
+    <comp lib="8" loc="(1490,420)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1500,190)" name="74377">
+    <comp lib="8" loc="(1500,190)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1910,420)" name="74244">
+    <comp lib="8" loc="(1910,420)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1920,190)" name="74377">
+    <comp lib="8" loc="(1920,190)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(230,420)" name="74244">
+    <comp lib="8" loc="(230,420)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2330,420)" name="74244">
+    <comp lib="8" loc="(2330,420)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2340,190)" name="74377">
+    <comp lib="8" loc="(2340,190)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(240,190)" name="74377">
+    <comp lib="8" loc="(240,190)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2750,420)" name="74244">
+    <comp lib="8" loc="(2750,420)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2760,190)" name="74377">
+    <comp lib="8" loc="(2760,190)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(300,780)" name="74138">
+    <comp lib="8" loc="(300,780)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(650,420)" name="74244">
+    <comp lib="8" loc="(650,420)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(660,190)" name="74377">
+    <comp lib="8" loc="(660,190)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(780,780)" name="74138">
+    <comp lib="8" loc="(780,780)" name="74138">
       <a name="facing" val="south"/>
     </comp>
     <wire from="(100,960)" to="(130,960)"/>
@@ -3263,232 +3264,232 @@
       <a name="facing" val="south"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="5" loc="(100,120)" name="LED">
+    <comp lib="6" loc="(100,120)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(100,150)" name="LED">
+    <comp lib="6" loc="(100,150)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(100,180)" name="LED">
+    <comp lib="6" loc="(100,180)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(100,210)" name="LED">
+    <comp lib="6" loc="(100,210)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(100,240)" name="LED">
+    <comp lib="6" loc="(100,240)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(100,30)" name="LED">
+    <comp lib="6" loc="(100,30)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(100,60)" name="LED">
+    <comp lib="6" loc="(100,60)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(100,90)" name="LED">
+    <comp lib="6" loc="(100,90)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(330,120)" name="LED">
+    <comp lib="6" loc="(330,120)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(330,150)" name="LED">
+    <comp lib="6" loc="(330,150)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(330,180)" name="LED">
+    <comp lib="6" loc="(330,180)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(330,210)" name="LED">
+    <comp lib="6" loc="(330,210)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(330,240)" name="LED">
+    <comp lib="6" loc="(330,240)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(330,30)" name="LED">
+    <comp lib="6" loc="(330,30)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(330,60)" name="LED">
+    <comp lib="6" loc="(330,60)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(330,90)" name="LED">
+    <comp lib="6" loc="(330,90)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="6" loc="(1895,185)" name="Text">
+    <comp lib="7" loc="(1895,185)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="or"/>
     </comp>
-    <comp lib="6" loc="(1895,415)" name="Text">
+    <comp lib="7" loc="(1895,415)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="sx"/>
     </comp>
-    <comp lib="6" loc="(1900,105)" name="Text">
+    <comp lib="7" loc="(1900,105)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="add"/>
     </comp>
-    <comp lib="6" loc="(1900,125)" name="Text">
+    <comp lib="7" loc="(1900,125)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="sub"/>
     </comp>
-    <comp lib="6" loc="(1900,145)" name="Text">
+    <comp lib="7" loc="(1900,145)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="cmp"/>
     </comp>
-    <comp lib="6" loc="(1900,165)" name="Text">
+    <comp lib="7" loc="(1900,165)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="and"/>
     </comp>
-    <comp lib="6" loc="(1900,205)" name="Text">
+    <comp lib="7" loc="(1900,205)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="xor"/>
     </comp>
-    <comp lib="6" loc="(1900,225)" name="Text">
+    <comp lib="7" loc="(1900,225)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="not"/>
     </comp>
-    <comp lib="6" loc="(1900,245)" name="Text">
+    <comp lib="7" loc="(1900,245)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="shr"/>
     </comp>
-    <comp lib="6" loc="(1900,350)" name="Text">
+    <comp lib="7" loc="(1900,350)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="shl"/>
     </comp>
-    <comp lib="6" loc="(1900,375)" name="Text">
+    <comp lib="7" loc="(1900,375)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="ror"/>
     </comp>
-    <comp lib="6" loc="(1900,395)" name="Text">
+    <comp lib="7" loc="(1900,395)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="rol"/>
     </comp>
-    <comp lib="6" loc="(1900,435)" name="Text">
+    <comp lib="7" loc="(1900,435)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="setcf"/>
     </comp>
-    <comp lib="6" loc="(1900,450)" name="Text">
+    <comp lib="7" loc="(1900,450)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="clrcf"/>
     </comp>
-    <comp lib="6" loc="(1900,475)" name="Text">
+    <comp lib="7" loc="(1900,475)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="setif"/>
     </comp>
-    <comp lib="6" loc="(1900,495)" name="Text">
+    <comp lib="7" loc="(1900,495)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="clrif"/>
     </comp>
-    <comp lib="6" loc="(360,2435)" name="Text">
+    <comp lib="7" loc="(360,2435)" name="Text">
       <a name="font" val="SansSerif bold 20"/>
       <a name="text" val="LOGIC"/>
     </comp>
-    <comp lib="6" loc="(390,2920)" name="Text">
+    <comp lib="7" loc="(390,2920)" name="Text">
       <a name="font" val="SansSerif bold 20"/>
       <a name="text" val="LEFT SHIFTER"/>
     </comp>
-    <comp lib="6" loc="(420,1910)" name="Text">
+    <comp lib="7" loc="(420,1910)" name="Text">
       <a name="font" val="SansSerif bold 20"/>
       <a name="text" val="ADDER"/>
     </comp>
-    <comp lib="7" loc="(1060,3000)" name="74125">
+    <comp lib="8" loc="(1060,3000)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1070,2600)" name="74125">
+    <comp lib="8" loc="(1070,2600)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1090,1130)" name="7486"/>
-    <comp lib="7" loc="(1140,1590)" name="7474">
+    <comp lib="8" loc="(1090,1130)" name="7486"/>
+    <comp lib="8" loc="(1140,1590)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1140,1770)" name="7474">
+    <comp lib="8" loc="(1140,1770)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1140,1940)" name="7474">
+    <comp lib="8" loc="(1140,1940)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1190,420)" name="74138">
+    <comp lib="8" loc="(1190,420)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1230,2980)" name="74125">
+    <comp lib="8" loc="(1230,2980)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1340,2780)" name="7474">
+    <comp lib="8" loc="(1340,2780)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1520,710)" name="74244">
+    <comp lib="8" loc="(1520,710)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1670,1740)" name="74125">
+    <comp lib="8" loc="(1670,1740)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1860,1840)" name="7400"/>
-    <comp lib="7" loc="(1860,330)" name="74138">
+    <comp lib="8" loc="(1860,1840)" name="7400"/>
+    <comp lib="8" loc="(1860,330)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1860,80)" name="74138">
+    <comp lib="8" loc="(1860,80)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1960,1640)" name="7486">
+    <comp lib="8" loc="(1960,1640)" name="7486">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2060,270)" name="7404">
+    <comp lib="8" loc="(2060,270)" name="7404">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2060,40)" name="7404">
+    <comp lib="8" loc="(2060,40)" name="7404">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2340,50)" name="7404">
+    <comp lib="8" loc="(2340,50)" name="7404">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(260,390)" name="74138">
+    <comp lib="8" loc="(260,390)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(290,2030)" name="74283"/>
-    <comp lib="7" loc="(290,2540)" name="74125">
+    <comp lib="8" loc="(290,2030)" name="74283"/>
+    <comp lib="8" loc="(290,2540)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(290,870)" name="7486">
+    <comp lib="8" loc="(290,870)" name="7486">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(300,3000)" name="74125">
+    <comp lib="8" loc="(300,3000)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(370,1240)" name="74157"/>
-    <comp lib="7" loc="(420,2630)" name="7432"/>
-    <comp lib="7" loc="(430,1480)" name="74244">
+    <comp lib="8" loc="(370,1240)" name="74157"/>
+    <comp lib="8" loc="(420,2630)" name="7432"/>
+    <comp lib="8" loc="(430,1480)" name="74244">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(430,2980)" name="74125">
+    <comp lib="8" loc="(430,2980)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(460,750)" name="74157">
+    <comp lib="8" loc="(460,750)" name="74157">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(460,990)" name="74157">
+    <comp lib="8" loc="(460,990)" name="74157">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(500,390)" name="7474"/>
-    <comp lib="7" loc="(500,570)" name="7408"/>
-    <comp lib="7" loc="(530,1370)" name="7486"/>
-    <comp lib="7" loc="(540,1970)" name="74244">
+    <comp lib="8" loc="(500,390)" name="7474"/>
+    <comp lib="8" loc="(500,570)" name="7408"/>
+    <comp lib="8" loc="(530,1370)" name="7486"/>
+    <comp lib="8" loc="(540,1970)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(650,1130)" name="74125"/>
-    <comp lib="7" loc="(650,780)" name="74175"/>
-    <comp lib="7" loc="(650,930)" name="74175"/>
-    <comp lib="7" loc="(710,570)" name="7432"/>
-    <comp lib="7" loc="(910,1130)" name="74125"/>
-    <comp lib="7" loc="(960,750)" name="74244">
+    <comp lib="8" loc="(650,1130)" name="74125"/>
+    <comp lib="8" loc="(650,780)" name="74175"/>
+    <comp lib="8" loc="(650,930)" name="74175"/>
+    <comp lib="8" loc="(710,570)" name="7432"/>
+    <comp lib="8" loc="(910,1130)" name="74125"/>
+    <comp lib="8" loc="(960,750)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(970,2470)" name="7486"/>
+    <comp lib="8" loc="(970,2470)" name="7486"/>
     <wire from="(100,120)" to="(120,120)"/>
     <wire from="(100,150)" to="(120,150)"/>
     <wire from="(100,180)" to="(120,180)"/>
@@ -5407,29 +5408,29 @@
       <a name="facing" val="west"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="7" loc="(1200,1110)" name="74138">
+    <comp lib="8" loc="(1200,1110)" name="74138">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(1200,1460)" name="74138">
+    <comp lib="8" loc="(1200,1460)" name="74138">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(1280,1190)" name="7404"/>
-    <comp lib="7" loc="(320,1120)" name="74244">
+    <comp lib="8" loc="(1280,1190)" name="7404"/>
+    <comp lib="8" loc="(320,1120)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(330,540)" name="74193"/>
-    <comp lib="7" loc="(360,800)" name="74244">
+    <comp lib="8" loc="(330,540)" name="74193"/>
+    <comp lib="8" loc="(360,800)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(40,540)" name="74193"/>
-    <comp lib="7" loc="(620,540)" name="74193"/>
-    <comp lib="7" loc="(690,800)" name="74244">
+    <comp lib="8" loc="(40,540)" name="74193"/>
+    <comp lib="8" loc="(620,540)" name="74193"/>
+    <comp lib="8" loc="(690,800)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(720,1120)" name="74244">
+    <comp lib="8" loc="(720,1120)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(910,540)" name="74193"/>
+    <comp lib="8" loc="(910,540)" name="74193"/>
     <wire from="(1000,480)" to="(1000,510)"/>
     <wire from="(1000,570)" to="(1000,770)"/>
     <wire from="(1000,770)" to="(1020,770)"/>
@@ -6003,7 +6004,7 @@
       <a name="inputs" val="7"/>
       <a name="size" val="70"/>
     </comp>
-    <comp lib="4" loc="(500,550)" name="ROM">
+    <comp lib="5" loc="(500,550)" name="ROM">
       <a name="addrWidth" val="16"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 16 8
@@ -6015,18 +6016,18 @@
 26 d8 57302*0 20
 </a>
     </comp>
-    <comp lib="4" loc="(530,150)" name="RAM">
+    <comp lib="5" loc="(530,150)" name="RAM">
       <a name="addrWidth" val="16"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="enables" val="line"/>
     </comp>
-    <comp lib="7" loc="(320,220)" name="74138">
+    <comp lib="8" loc="(320,220)" name="74138">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(920,220)" name="74244">
+    <comp lib="8" loc="(920,220)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(920,590)" name="74244">
+    <comp lib="8" loc="(920,590)" name="74244">
       <a name="facing" val="south"/>
     </comp>
     <wire from="(1000,270)" to="(1000,480)"/>
@@ -6940,7 +6941,7 @@
       <a name="facing" val="west"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="4" loc="(1070,510)" name="ROM">
+    <comp lib="5" loc="(1070,510)" name="ROM">
       <a name="addrWidth" val="13"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 13 8
@@ -7211,7 +7212,7 @@
 </a>
       <a name="labelvisible" val="true"/>
     </comp>
-    <comp lib="4" loc="(500,510)" name="ROM">
+    <comp lib="5" loc="(500,510)" name="ROM">
       <a name="addrWidth" val="13"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 13 8
@@ -7420,7 +7421,7 @@ c2 13*0 54 2b b2 13*0 54 15*0
 </a>
       <a name="labelvisible" val="true"/>
     </comp>
-    <comp lib="4" loc="(780,510)" name="ROM">
+    <comp lib="5" loc="(780,510)" name="ROM">
       <a name="addrWidth" val="13"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 13 8
@@ -7630,35 +7631,35 @@ a3 3 4
 </a>
       <a name="labelvisible" val="true"/>
     </comp>
-    <comp lib="7" loc="(1040,290)" name="74138"/>
-    <comp lib="7" loc="(1210,1290)" name="7474">
+    <comp lib="8" loc="(1040,290)" name="74138"/>
+    <comp lib="8" loc="(1210,1290)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1660,110)" name="74244">
+    <comp lib="8" loc="(1660,110)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1660,340)" name="74244">
+    <comp lib="8" loc="(1660,340)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(170,790)" name="7474"/>
-    <comp lib="7" loc="(250,1290)" name="7474">
+    <comp lib="8" loc="(170,790)" name="7474"/>
+    <comp lib="8" loc="(250,1290)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(340,1140)" name="7474">
+    <comp lib="8" loc="(340,1140)" name="7474">
       <a name="ShowInternalStructure" val="true"/>
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(500,670)" name="74193">
+    <comp lib="8" loc="(500,670)" name="74193">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(570,1290)" name="7474">
+    <comp lib="8" loc="(570,1290)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(750,250)" name="74138"/>
-    <comp lib="7" loc="(890,1290)" name="7474">
+    <comp lib="8" loc="(750,250)" name="74138"/>
+    <comp lib="8" loc="(890,1290)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(910,1660)" name="74138">
+    <comp lib="8" loc="(910,1660)" name="74138">
       <a name="facing" val="north"/>
     </comp>
     <wire from="(100,1060)" to="(130,1060)"/>
@@ -8665,46 +8666,46 @@ a3 3 4
       <a name="negate2" val="true"/>
       <a name="negate3" val="true"/>
     </comp>
-    <comp lib="7" loc="(1210,1260)" name="74377">
+    <comp lib="8" loc="(1210,1260)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1220,1740)" name="74377">
+    <comp lib="8" loc="(1220,1740)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1420,1260)" name="74244">
+    <comp lib="8" loc="(1420,1260)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1430,1740)" name="74244">
+    <comp lib="8" loc="(1430,1740)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(330,1020)" name="74138">
+    <comp lib="8" loc="(330,1020)" name="74138">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(360,200)" name="74138">
+    <comp lib="8" loc="(360,200)" name="74138">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(360,400)" name="74138">
+    <comp lib="8" loc="(360,400)" name="74138">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(360,460)" name="74244">
+    <comp lib="8" loc="(360,460)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(440,1260)" name="74377">
+    <comp lib="8" loc="(440,1260)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(450,1740)" name="74377">
+    <comp lib="8" loc="(450,1740)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(650,1260)" name="74244">
+    <comp lib="8" loc="(650,1260)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(660,1740)" name="74244">
+    <comp lib="8" loc="(660,1740)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(870,1020)" name="74138">
+    <comp lib="8" loc="(870,1020)" name="74138">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(900,470)" name="74244">
+    <comp lib="8" loc="(900,470)" name="74244">
       <a name="facing" val="south"/>
     </comp>
     <wire from="(1000,580)" to="(1000,640)"/>
@@ -10061,29 +10062,29 @@ a3 3 4
       <a name="facing" val="west"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="7" loc="(1200,1110)" name="74138">
+    <comp lib="8" loc="(1200,1110)" name="74138">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(1200,1460)" name="74138">
+    <comp lib="8" loc="(1200,1460)" name="74138">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(1280,1190)" name="7404"/>
-    <comp lib="7" loc="(300,820)" name="74244">
+    <comp lib="8" loc="(1280,1190)" name="7404"/>
+    <comp lib="8" loc="(300,820)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(330,540)" name="74193"/>
-    <comp lib="7" loc="(360,1160)" name="74244">
+    <comp lib="8" loc="(330,540)" name="74193"/>
+    <comp lib="8" loc="(360,1160)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(40,540)" name="74193"/>
-    <comp lib="7" loc="(620,540)" name="74193"/>
-    <comp lib="7" loc="(690,1160)" name="74244">
+    <comp lib="8" loc="(40,540)" name="74193"/>
+    <comp lib="8" loc="(620,540)" name="74193"/>
+    <comp lib="8" loc="(690,1160)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(700,820)" name="74244">
+    <comp lib="8" loc="(700,820)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(910,540)" name="74193"/>
+    <comp lib="8" loc="(910,540)" name="74193"/>
     <wire from="(1000,480)" to="(1000,510)"/>
     <wire from="(1000,570)" to="(1000,750)"/>
     <wire from="(1000,750)" to="(1050,750)"/>
@@ -11163,29 +11164,29 @@ a3 3 4
       <a name="facing" val="west"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="7" loc="(1130,1050)" name="74138">
+    <comp lib="8" loc="(1130,1050)" name="74138">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(1130,1430)" name="74138">
+    <comp lib="8" loc="(1130,1430)" name="74138">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(1210,1130)" name="7404"/>
-    <comp lib="7" loc="(290,810)" name="74244">
+    <comp lib="8" loc="(1210,1130)" name="7404"/>
+    <comp lib="8" loc="(290,810)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(330,540)" name="74193"/>
-    <comp lib="7" loc="(360,1160)" name="74244">
+    <comp lib="8" loc="(330,540)" name="74193"/>
+    <comp lib="8" loc="(360,1160)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(40,540)" name="74193"/>
-    <comp lib="7" loc="(620,540)" name="74193"/>
-    <comp lib="7" loc="(690,1160)" name="74244">
+    <comp lib="8" loc="(40,540)" name="74193"/>
+    <comp lib="8" loc="(620,540)" name="74193"/>
+    <comp lib="8" loc="(690,1160)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(690,810)" name="74244">
+    <comp lib="8" loc="(690,810)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(910,540)" name="74193"/>
+    <comp lib="8" loc="(910,540)" name="74193"/>
     <wire from="(1000,480)" to="(1000,510)"/>
     <wire from="(1000,570)" to="(1000,770)"/>
     <wire from="(1000,770)" to="(1020,770)"/>
@@ -12440,232 +12441,232 @@ a3 3 4
       <a name="size" val="30"/>
     </comp>
     <comp lib="1" loc="(890,60)" name="NOT Gate"/>
-    <comp lib="5" loc="(100,120)" name="LED">
+    <comp lib="6" loc="(100,120)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(100,150)" name="LED">
+    <comp lib="6" loc="(100,150)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(100,180)" name="LED">
+    <comp lib="6" loc="(100,180)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(100,210)" name="LED">
+    <comp lib="6" loc="(100,210)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(100,30)" name="LED">
+    <comp lib="6" loc="(100,30)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(100,60)" name="LED">
+    <comp lib="6" loc="(100,60)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(100,90)" name="LED">
+    <comp lib="6" loc="(100,90)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(330,120)" name="LED">
+    <comp lib="6" loc="(330,120)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(330,150)" name="LED">
+    <comp lib="6" loc="(330,150)" name="LED">
       <a name="active" val="false"/>
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(330,30)" name="LED">
+    <comp lib="6" loc="(330,30)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(330,60)" name="LED">
+    <comp lib="6" loc="(330,60)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="5" loc="(330,90)" name="LED">
+    <comp lib="6" loc="(330,90)" name="LED">
       <a name="facing" val="east"/>
     </comp>
-    <comp lib="6" loc="(1390,2705)" name="Text">
+    <comp lib="7" loc="(1390,2705)" name="Text">
       <a name="font" val="SansSerif bold 20"/>
       <a name="text" val="XORER"/>
     </comp>
-    <comp lib="6" loc="(1895,185)" name="Text">
+    <comp lib="7" loc="(1895,185)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="or"/>
     </comp>
-    <comp lib="6" loc="(1895,415)" name="Text">
+    <comp lib="7" loc="(1895,415)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="sx"/>
     </comp>
-    <comp lib="6" loc="(1900,105)" name="Text">
+    <comp lib="7" loc="(1900,105)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="add"/>
     </comp>
-    <comp lib="6" loc="(1900,125)" name="Text">
+    <comp lib="7" loc="(1900,125)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="sub"/>
     </comp>
-    <comp lib="6" loc="(1900,145)" name="Text">
+    <comp lib="7" loc="(1900,145)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="cmp"/>
     </comp>
-    <comp lib="6" loc="(1900,165)" name="Text">
+    <comp lib="7" loc="(1900,165)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="and"/>
     </comp>
-    <comp lib="6" loc="(1900,205)" name="Text">
+    <comp lib="7" loc="(1900,205)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="xor"/>
     </comp>
-    <comp lib="6" loc="(1900,225)" name="Text">
+    <comp lib="7" loc="(1900,225)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="not"/>
     </comp>
-    <comp lib="6" loc="(1900,245)" name="Text">
+    <comp lib="7" loc="(1900,245)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="shr"/>
     </comp>
-    <comp lib="6" loc="(1900,350)" name="Text">
+    <comp lib="7" loc="(1900,350)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="shl"/>
     </comp>
-    <comp lib="6" loc="(1900,375)" name="Text">
+    <comp lib="7" loc="(1900,375)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="ror"/>
     </comp>
-    <comp lib="6" loc="(1900,395)" name="Text">
+    <comp lib="7" loc="(1900,395)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="rol"/>
     </comp>
-    <comp lib="6" loc="(1900,435)" name="Text">
+    <comp lib="7" loc="(1900,435)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="setcf"/>
     </comp>
-    <comp lib="6" loc="(1900,450)" name="Text">
+    <comp lib="7" loc="(1900,450)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="clrcf"/>
     </comp>
-    <comp lib="6" loc="(245,3720)" name="Text">
+    <comp lib="7" loc="(245,3720)" name="Text">
       <a name="font" val="SansSerif bold 20"/>
       <a name="text" val="SIGN EXTENDER"/>
     </comp>
-    <comp lib="6" loc="(275,3220)" name="Text">
+    <comp lib="7" loc="(275,3220)" name="Text">
       <a name="font" val="SansSerif bold 20"/>
       <a name="text" val="LEFT SHIFTER"/>
     </comp>
-    <comp lib="6" loc="(480,2180)" name="Text">
+    <comp lib="7" loc="(480,2180)" name="Text">
       <a name="font" val="SansSerif bold 20"/>
       <a name="text" val="ADDER"/>
     </comp>
-    <comp lib="6" loc="(480,2705)" name="Text">
+    <comp lib="7" loc="(480,2705)" name="Text">
       <a name="font" val="SansSerif bold 20"/>
       <a name="text" val="LOGIC"/>
     </comp>
-    <comp lib="6" loc="(975,3220)" name="Text">
+    <comp lib="7" loc="(975,3220)" name="Text">
       <a name="font" val="SansSerif bold 20"/>
       <a name="text" val="RIGHT SHIFTER"/>
     </comp>
-    <comp lib="7" loc="(1120,3220)" name="74244">
+    <comp lib="8" loc="(1120,3220)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1140,1880)" name="7474">
+    <comp lib="8" loc="(1140,1880)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1140,2060)" name="7474">
+    <comp lib="8" loc="(1140,2060)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1180,2830)" name="7486"/>
-    <comp lib="7" loc="(1180,2990)" name="7486"/>
-    <comp lib="7" loc="(1230,1070)" name="7400">
+    <comp lib="8" loc="(1180,2830)" name="7486"/>
+    <comp lib="8" loc="(1180,2990)" name="7486"/>
+    <comp lib="8" loc="(1230,1070)" name="7400">
       <a name="ShowInternalStructure" val="true"/>
     </comp>
-    <comp lib="7" loc="(1230,3570)" name="74157">
+    <comp lib="8" loc="(1230,3570)" name="74157">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(1260,500)" name="74244">
-      <a name="ShowInternalStructure" val="true"/>
-      <a name="facing" val="south"/>
-    </comp>
-    <comp lib="7" loc="(1330,870)" name="7486">
+    <comp lib="8" loc="(1260,500)" name="74244">
       <a name="ShowInternalStructure" val="true"/>
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1500,2770)" name="74244">
+    <comp lib="8" loc="(1330,870)" name="7486">
+      <a name="ShowInternalStructure" val="true"/>
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1580,110)" name="74138">
+    <comp lib="8" loc="(1500,2770)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1800,880)" name="74125">
+    <comp lib="8" loc="(1580,110)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1860,330)" name="74138">
+    <comp lib="8" loc="(1800,880)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1860,80)" name="74138">
+    <comp lib="8" loc="(1860,330)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2060,270)" name="7404">
+    <comp lib="8" loc="(1860,80)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2060,40)" name="7404">
+    <comp lib="8" loc="(2060,270)" name="7404">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2340,50)" name="7404">
+    <comp lib="8" loc="(2060,40)" name="7404">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(270,2830)" name="7432"/>
-    <comp lib="7" loc="(270,2990)" name="7432"/>
-    <comp lib="7" loc="(290,2320)" name="74283"/>
-    <comp lib="7" loc="(290,2480)" name="74283"/>
-    <comp lib="7" loc="(350,480)" name="7486">
+    <comp lib="8" loc="(2340,50)" name="7404">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="8" loc="(270,2830)" name="7432"/>
+    <comp lib="8" loc="(270,2990)" name="7432"/>
+    <comp lib="8" loc="(290,2320)" name="74283"/>
+    <comp lib="8" loc="(290,2480)" name="74283"/>
+    <comp lib="8" loc="(350,480)" name="7486">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(350,640)" name="7486">
+    <comp lib="8" loc="(350,640)" name="7486">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(380,1610)" name="74244">
+    <comp lib="8" loc="(380,1610)" name="74244">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(390,3720)" name="74244">
+    <comp lib="8" loc="(390,3720)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(410,1870)" name="74125">
+    <comp lib="8" loc="(410,1870)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(420,3220)" name="74244">
+    <comp lib="8" loc="(420,3220)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(470,1270)" name="7486">
+    <comp lib="8" loc="(470,1270)" name="7486">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(470,1430)" name="7486">
+    <comp lib="8" loc="(470,1430)" name="7486">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(540,3570)" name="74157">
+    <comp lib="8" loc="(540,3570)" name="74157">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(550,450)" name="74377">
+    <comp lib="8" loc="(550,450)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(590,2770)" name="74244">
+    <comp lib="8" loc="(590,2770)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(610,2260)" name="74244">
+    <comp lib="8" loc="(610,2260)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(610,810)" name="7486">
+    <comp lib="8" loc="(610,810)" name="7486">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(660,1250)" name="74244">
+    <comp lib="8" loc="(660,1250)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(750,810)" name="7486">
+    <comp lib="8" loc="(750,810)" name="7486">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(790,450)" name="74244">
+    <comp lib="8" loc="(790,450)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(960,110)" name="74138">
+    <comp lib="8" loc="(960,110)" name="74138">
       <a name="facing" val="south"/>
     </comp>
     <wire from="(100,120)" to="(120,120)"/>
@@ -15024,7 +15025,7 @@ a3 3 4
       <a name="size" val="30"/>
     </comp>
     <comp lib="1" loc="(930,720)" name="NOT Gate"/>
-    <comp lib="4" loc="(500,510)" name="ROM">
+    <comp lib="5" loc="(500,510)" name="ROM">
       <a name="addrWidth" val="13"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 13 8
@@ -15334,42 +15335,42 @@ a 4d 98 5*0 4f 86 9 44
 98
 </a>
     </comp>
-    <comp lib="7" loc="(1060,500)" name="74175"/>
-    <comp lib="7" loc="(1200,1490)" name="7474">
+    <comp lib="8" loc="(1060,500)" name="74175"/>
+    <comp lib="8" loc="(1200,1490)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1360,350)" name="74138">
+    <comp lib="8" loc="(1360,350)" name="74138">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(1570,480)" name="74138"/>
-    <comp lib="7" loc="(170,790)" name="7474"/>
-    <comp lib="7" loc="(1940,480)" name="74138"/>
-    <comp lib="7" loc="(240,1490)" name="7474">
+    <comp lib="8" loc="(1570,480)" name="74138"/>
+    <comp lib="8" loc="(170,790)" name="7474"/>
+    <comp lib="8" loc="(1940,480)" name="74138"/>
+    <comp lib="8" loc="(240,1490)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2680,120)" name="74244">
+    <comp lib="8" loc="(2680,120)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2680,350)" name="74244">
+    <comp lib="8" loc="(2680,350)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(370,1260)" name="7474">
+    <comp lib="8" loc="(370,1260)" name="7474">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(500,670)" name="74193">
+    <comp lib="8" loc="(500,670)" name="74193">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(560,1490)" name="7474">
+    <comp lib="8" loc="(560,1490)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(840,500)" name="74175"/>
-    <comp lib="7" loc="(840,670)" name="74138">
+    <comp lib="8" loc="(840,500)" name="74175"/>
+    <comp lib="8" loc="(840,670)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(870,420)" name="74138">
+    <comp lib="8" loc="(870,420)" name="74138">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(880,1490)" name="7474">
+    <comp lib="8" loc="(880,1490)" name="7474">
       <a name="facing" val="south"/>
     </comp>
     <wire from="(100,620)" to="(160,620)"/>
@@ -17892,134 +17893,134 @@ a 4d 98 5*0 4f 86 9 44
     <comp lib="1" loc="(950,2310)" name="OR Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="7" loc="(1030,1820)" name="74125">
+    <comp lib="8" loc="(1030,1820)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1030,2240)" name="74125">
+    <comp lib="8" loc="(1030,2240)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1050,120)" name="7474"/>
-    <comp lib="7" loc="(1120,1110)" name="74138">
+    <comp lib="8" loc="(1050,120)" name="7474"/>
+    <comp lib="8" loc="(1120,1110)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1120,1370)" name="74138">
+    <comp lib="8" loc="(1120,1370)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1190,520)" name="74244">
+    <comp lib="8" loc="(1190,520)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1670,1820)" name="74125">
+    <comp lib="8" loc="(1670,1820)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1690,240)" name="74157"/>
-    <comp lib="7" loc="(1690,80)" name="74157"/>
-    <comp lib="7" loc="(1700,2240)" name="74125">
+    <comp lib="8" loc="(1690,240)" name="74157"/>
+    <comp lib="8" loc="(1690,80)" name="74157"/>
+    <comp lib="8" loc="(1700,2240)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1700,2820)" name="74125">
+    <comp lib="8" loc="(1700,2820)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1700,3170)" name="74125">
+    <comp lib="8" loc="(1700,3170)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1780,530)" name="74244">
+    <comp lib="8" loc="(1780,530)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1780,840)" name="74244">
+    <comp lib="8" loc="(1780,840)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1790,1110)" name="74244">
+    <comp lib="8" loc="(1790,1110)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1790,1330)" name="74244">
+    <comp lib="8" loc="(1790,1330)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2140,240)" name="74157"/>
-    <comp lib="7" loc="(2140,80)" name="74157"/>
-    <comp lib="7" loc="(230,3180)" name="7474">
+    <comp lib="8" loc="(2140,240)" name="74157"/>
+    <comp lib="8" loc="(2140,80)" name="74157"/>
+    <comp lib="8" loc="(230,3180)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2340,530)" name="74244">
+    <comp lib="8" loc="(2340,530)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2340,840)" name="74244">
+    <comp lib="8" loc="(2340,840)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2500,1820)" name="74125">
+    <comp lib="8" loc="(2500,1820)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2580,240)" name="74157"/>
-    <comp lib="7" loc="(2580,80)" name="74157"/>
-    <comp lib="7" loc="(2900,530)" name="74244">
+    <comp lib="8" loc="(2580,240)" name="74157"/>
+    <comp lib="8" loc="(2580,80)" name="74157"/>
+    <comp lib="8" loc="(2900,530)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2900,840)" name="74244">
+    <comp lib="8" loc="(2900,840)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(3090,260)" name="74138">
+    <comp lib="8" loc="(3090,260)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(3090,80)" name="74138">
+    <comp lib="8" loc="(3090,80)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(3280,160)" name="7432"/>
-    <comp lib="7" loc="(330,580)" name="7474">
+    <comp lib="8" loc="(3280,160)" name="7432"/>
+    <comp lib="8" loc="(330,580)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(330,860)" name="7474">
+    <comp lib="8" loc="(330,860)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(3470,530)" name="74244">
+    <comp lib="8" loc="(3470,530)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(3470,840)" name="74244">
+    <comp lib="8" loc="(3470,840)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(360,3180)" name="74193">
+    <comp lib="8" loc="(360,3180)" name="74193">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(370,2250)" name="74125">
+    <comp lib="8" loc="(370,2250)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(370,2760)" name="74125">
+    <comp lib="8" loc="(370,2760)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(380,1830)" name="74125">
+    <comp lib="8" loc="(380,1830)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(3940,530)" name="74244">
+    <comp lib="8" loc="(3940,530)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(3940,840)" name="74244">
+    <comp lib="8" loc="(3940,840)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(400,280)" name="74193"/>
-    <comp lib="7" loc="(4430,530)" name="74244">
+    <comp lib="8" loc="(400,280)" name="74193"/>
+    <comp lib="8" loc="(4430,530)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(520,3180)" name="74138">
+    <comp lib="8" loc="(520,3180)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(530,580)" name="7474">
+    <comp lib="8" loc="(530,580)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(530,860)" name="7474">
+    <comp lib="8" loc="(530,860)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(620,280)" name="74138"/>
-    <comp lib="7" loc="(670,3180)" name="74125">
+    <comp lib="8" loc="(620,280)" name="74138"/>
+    <comp lib="8" loc="(670,3180)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(730,580)" name="7474">
+    <comp lib="8" loc="(730,580)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(730,860)" name="7474">
+    <comp lib="8" loc="(730,860)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(930,580)" name="7474">
+    <comp lib="8" loc="(930,580)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(930,860)" name="7474">
+    <comp lib="8" loc="(930,860)" name="7474">
       <a name="facing" val="south"/>
     </comp>
     <wire from="(100,130)" to="(130,130)"/>
@@ -20347,43 +20348,43 @@ a 4d 98 5*0 4f 86 9 44
     <comp lib="1" loc="(680,1810)" name="OR Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="7" loc="(1020,1800)" name="74244">
+    <comp lib="8" loc="(1020,1800)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1020,2060)" name="74244">
+    <comp lib="8" loc="(1020,2060)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1120,1110)" name="74138">
+    <comp lib="8" loc="(1120,1110)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1120,1350)" name="74138">
+    <comp lib="8" loc="(1120,1350)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1780,1880)" name="7474">
+    <comp lib="8" loc="(1780,1880)" name="7474">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(200,2610)" name="7474"/>
-    <comp lib="7" loc="(350,1930)" name="7474">
+    <comp lib="8" loc="(200,2610)" name="7474"/>
+    <comp lib="8" loc="(350,1930)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(360,800)" name="7474">
+    <comp lib="8" loc="(360,800)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(430,290)" name="74193"/>
-    <comp lib="7" loc="(560,800)" name="7474">
+    <comp lib="8" loc="(430,290)" name="74193"/>
+    <comp lib="8" loc="(560,800)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(650,290)" name="74138"/>
-    <comp lib="7" loc="(760,800)" name="7474">
+    <comp lib="8" loc="(650,290)" name="74138"/>
+    <comp lib="8" loc="(760,800)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(780,1800)" name="74377">
+    <comp lib="8" loc="(780,1800)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(780,2060)" name="74377">
+    <comp lib="8" loc="(780,2060)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(960,800)" name="7474">
+    <comp lib="8" loc="(960,800)" name="7474">
       <a name="facing" val="south"/>
     </comp>
     <wire from="(1000,1150)" to="(1020,1150)"/>
@@ -21929,54 +21930,54 @@ a 4d 98 5*0 4f 86 9 44
       <a name="facing" val="west"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="7" loc="(100,1060)" name="74193"/>
-    <comp lib="7" loc="(100,570)" name="74193"/>
-    <comp lib="7" loc="(1000,1800)" name="74244">
+    <comp lib="8" loc="(100,1060)" name="74193"/>
+    <comp lib="8" loc="(100,570)" name="74193"/>
+    <comp lib="8" loc="(1000,1800)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1070,1390)" name="74244">
+    <comp lib="8" loc="(1070,1390)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1360,1800)" name="74244">
+    <comp lib="8" loc="(1360,1800)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1470,1390)" name="74244">
+    <comp lib="8" loc="(1470,1390)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1590,380)" name="74157">
+    <comp lib="8" loc="(1590,380)" name="74157">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1590,50)" name="74157">
+    <comp lib="8" loc="(1590,50)" name="74157">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1600,690)" name="74157">
+    <comp lib="8" loc="(1600,690)" name="74157">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1720,540)" name="74138">
+    <comp lib="8" loc="(1720,540)" name="74138">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(1740,210)" name="74138">
+    <comp lib="8" loc="(1740,210)" name="74138">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="7" loc="(1780,260)" name="7404"/>
-    <comp lib="7" loc="(240,1800)" name="74244">
+    <comp lib="8" loc="(1780,260)" name="7404"/>
+    <comp lib="8" loc="(240,1800)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(260,1390)" name="74244">
+    <comp lib="8" loc="(260,1390)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(390,1060)" name="74193"/>
-    <comp lib="7" loc="(390,570)" name="74193"/>
-    <comp lib="7" loc="(600,1800)" name="74244">
+    <comp lib="8" loc="(390,1060)" name="74193"/>
+    <comp lib="8" loc="(390,570)" name="74193"/>
+    <comp lib="8" loc="(600,1800)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(660,1390)" name="74244">
+    <comp lib="8" loc="(660,1390)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(680,1060)" name="74193"/>
-    <comp lib="7" loc="(680,570)" name="74193"/>
-    <comp lib="7" loc="(970,1060)" name="74193"/>
-    <comp lib="7" loc="(970,570)" name="74193"/>
+    <comp lib="8" loc="(680,1060)" name="74193"/>
+    <comp lib="8" loc="(680,570)" name="74193"/>
+    <comp lib="8" loc="(970,1060)" name="74193"/>
+    <comp lib="8" loc="(970,570)" name="74193"/>
     <wire from="(1000,1090)" to="(1000,1220)"/>
     <wire from="(1000,1220)" to="(1110,1220)"/>
     <wire from="(1000,1420)" to="(1000,1440)"/>
@@ -23818,75 +23819,75 @@ a 4d 98 5*0 4f 86 9 44
     <comp lib="1" loc="(970,900)" name="NOT Gate">
       <a name="facing" val="west"/>
     </comp>
-    <comp lib="7" loc="(1230,350)" name="74138"/>
-    <comp lib="7" loc="(1400,1160)" name="74244">
+    <comp lib="8" loc="(1230,350)" name="74138"/>
+    <comp lib="8" loc="(1400,1160)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1400,1420)" name="74244">
+    <comp lib="8" loc="(1400,1420)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1400,1720)" name="74244">
+    <comp lib="8" loc="(1400,1720)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1400,900)" name="74244">
+    <comp lib="8" loc="(1400,900)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1420,2200)" name="74244">
+    <comp lib="8" loc="(1420,2200)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1420,2490)" name="74244">
+    <comp lib="8" loc="(1420,2490)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1770,3090)" name="7474">
+    <comp lib="8" loc="(1770,3090)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1850,900)" name="74138">
+    <comp lib="8" loc="(1850,900)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(230,1170)" name="74377"/>
-    <comp lib="7" loc="(350,680)" name="74157">
+    <comp lib="8" loc="(230,1170)" name="74377"/>
+    <comp lib="8" loc="(350,680)" name="74157">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(350,860)" name="74157">
+    <comp lib="8" loc="(350,860)" name="74157">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(360,3380)" name="7474">
+    <comp lib="8" loc="(360,3380)" name="7474">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(390,2540)" name="74244">
+    <comp lib="8" loc="(390,2540)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(400,2210)" name="74377">
+    <comp lib="8" loc="(400,2210)" name="74377">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(410,2920)" name="74244">
+    <comp lib="8" loc="(410,2920)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(630,2540)" name="74244">
+    <comp lib="8" loc="(630,2540)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(850,2540)" name="74244">
+    <comp lib="8" loc="(850,2540)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(880,1160)" name="74244">
+    <comp lib="8" loc="(880,1160)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(880,1420)" name="74244">
+    <comp lib="8" loc="(880,1420)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(880,660)" name="74138">
+    <comp lib="8" loc="(880,660)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(880,900)" name="74244">
+    <comp lib="8" loc="(880,900)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(900,1720)" name="74244">
+    <comp lib="8" loc="(900,1720)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(900,2910)" name="74244">
+    <comp lib="8" loc="(900,2910)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(910,350)" name="74193"/>
+    <comp lib="8" loc="(910,350)" name="74193"/>
     <wire from="(1000,380)" to="(1000,440)"/>
     <wire from="(1000,440)" to="(1020,440)"/>
     <wire from="(1000,900)" to="(1010,900)"/>
@@ -25648,46 +25649,46 @@ a 4d 98 5*0 4f 86 9 44
     <comp lib="1" loc="(970,780)" name="AND Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="7" loc="(1480,120)" name="74125">
+    <comp lib="8" loc="(1480,120)" name="74125">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1490,450)" name="74244">
+    <comp lib="8" loc="(1490,450)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1490,720)" name="74244">
+    <comp lib="8" loc="(1490,720)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1700,100)" name="74193">
+    <comp lib="8" loc="(1700,100)" name="74193">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1850,100)" name="74138">
+    <comp lib="8" loc="(1850,100)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2010,450)" name="74244">
+    <comp lib="8" loc="(2010,450)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2110,720)" name="74244">
+    <comp lib="8" loc="(2110,720)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(2530,450)" name="74244">
+    <comp lib="8" loc="(2530,450)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(310,340)" name="74138">
+    <comp lib="8" loc="(310,340)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(310,660)" name="74138">
+    <comp lib="8" loc="(310,660)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(810,1200)" name="74138">
+    <comp lib="8" loc="(810,1200)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(810,1370)" name="74138">
+    <comp lib="8" loc="(810,1370)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(870,340)" name="74138">
+    <comp lib="8" loc="(870,340)" name="74138">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(870,660)" name="74138">
+    <comp lib="8" loc="(870,660)" name="74138">
       <a name="facing" val="south"/>
     </comp>
     <wire from="(1310,580)" to="(1460,580)"/>
@@ -26759,30 +26760,30 @@ a 4d 98 5*0 4f 86 9 44
       <a name="label" val="DATA_IN"/>
       <a name="width" val="8"/>
     </comp>
-    <comp lib="7" loc="(1470,790)" name="74244"/>
-    <comp lib="7" loc="(1580,460)" name="74283">
+    <comp lib="8" loc="(1470,790)" name="74244"/>
+    <comp lib="8" loc="(1580,460)" name="74283">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(1810,790)" name="74244"/>
-    <comp lib="7" loc="(1900,460)" name="74283">
+    <comp lib="8" loc="(1810,790)" name="74244"/>
+    <comp lib="8" loc="(1900,460)" name="74283">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(290,810)" name="74244">
+    <comp lib="8" loc="(290,810)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(330,540)" name="74193"/>
-    <comp lib="7" loc="(360,1160)" name="74244">
+    <comp lib="8" loc="(330,540)" name="74193"/>
+    <comp lib="8" loc="(360,1160)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(40,540)" name="74193"/>
-    <comp lib="7" loc="(620,540)" name="74193"/>
-    <comp lib="7" loc="(690,1160)" name="74244">
+    <comp lib="8" loc="(40,540)" name="74193"/>
+    <comp lib="8" loc="(620,540)" name="74193"/>
+    <comp lib="8" loc="(690,1160)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(690,810)" name="74244">
+    <comp lib="8" loc="(690,810)" name="74244">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="7" loc="(910,540)" name="74193"/>
+    <comp lib="8" loc="(910,540)" name="74193"/>
     <wire from="(1000,480)" to="(1000,510)"/>
     <wire from="(1000,570)" to="(1000,750)"/>
     <wire from="(1000,750)" to="(1050,750)"/>
