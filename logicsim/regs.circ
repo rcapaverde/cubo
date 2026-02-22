@@ -22912,10 +22912,6 @@ a 4d 98 5*0 4f 86 9 44
       <a name="facing" val="east"/>
       <a name="label" val="read_address_INTERRUPT"/>
     </comp>
-    <comp lib="0" loc="(1280,780)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="n_int_pending"/>
-    </comp>
     <comp lib="0" loc="(1290,3020)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="FLAG_ZERO"/>
