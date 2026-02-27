@@ -4812,7 +4812,7 @@
 			)
 		)
 	)
-	(global_label "~{UC_D}"
+	(global_label "~{UC_read_addr_src_reg}"
 		(shape input)
 		(at 58.42 58.42 0)
 		(fields_autoplaced yes)
@@ -4824,7 +4824,7 @@
 		)
 		(uuid "9230a735-293d-499d-beb0-510095c86c1a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.2433 58.42 0)
+			(at 82.2088 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5010,7 +5010,7 @@
 			)
 		)
 	)
-	(global_label "~{UC_D}"
+	(global_label "~{UC_read_addr_src_reg}"
 		(shape output)
 		(at 156.21 69.85 270)
 		(fields_autoplaced yes)
@@ -5022,7 +5022,7 @@
 		)
 		(uuid "c8d87215-e046-4a48-817e-183c07a2c7a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 156.21 77.6733 90)
+			(at 156.21 93.6388 90)
 			(effects
 				(font
 					(size 1.27 1.27)
