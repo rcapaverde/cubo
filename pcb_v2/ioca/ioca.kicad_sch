@@ -5089,6 +5089,10 @@
 		(uuid "863a898b-9cb3-4018-8cd7-1d5e6ac3682d")
 	)
 	(no_connect
+		(at 27.94 81.28)
+		(uuid "86995e1f-9feb-46e6-94db-0da9fef0dd42")
+	)
+	(no_connect
 		(at 40.64 64.77)
 		(uuid "92c63171-74e4-41c6-9a66-c0c7c60a6b8b")
 	)
@@ -5119,10 +5123,6 @@
 	(no_connect
 		(at 100.33 91.44)
 		(uuid "b6d04b18-fa38-46a4-9566-1d8e9e6a52de")
-	)
-	(no_connect
-		(at 27.94 93.98)
-		(uuid "bc4096f1-015f-488a-a64d-98519461371d")
 	)
 	(no_connect
 		(at 50.8 140.97)
@@ -5169,8 +5169,8 @@
 		(uuid "dd48b971-1cc4-4e65-be87-4ff2ebd33430")
 	)
 	(no_connect
-		(at 27.94 96.52)
-		(uuid "e38c53c1-b3ab-4842-aace-956d73e29fbf")
+		(at 27.94 83.82)
+		(uuid "e957f429-5f56-4f6d-be24-945e746298fd")
 	)
 	(no_connect
 		(at 165.1 101.6)
@@ -8508,6 +8508,28 @@
 			)
 		)
 	)
+	(global_label "WR_ADDR_3"
+		(shape output)
+		(at 27.94 93.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "08f31916-704d-423a-9f13-56748a2e5164")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 14.1901 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "DATA_{0}"
 		(shape input)
 		(at 242.57 86.36 180)
@@ -9080,28 +9102,6 @@
 			)
 		)
 	)
-	(global_label "WR_ADDR_1"
-		(shape output)
-		(at 27.94 83.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "24537e19-a63b-4a3a-82ca-f954051f953c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 14.1901 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "serial0_out_1"
 		(shape input)
 		(at 196.85 190.5 180)
@@ -9181,28 +9181,6 @@
 		(uuid "28dfe2b7-1a4d-463a-ad65-07b6483a252e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 19.0378 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "WR_ADDR_3"
-		(shape output)
-		(at 27.94 88.9 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "290f9ccf-1305-4b98-8801-075717fae783")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 14.1901 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10400,9 +10378,9 @@
 			)
 		)
 	)
-	(global_label "WR_ADDR_2"
+	(global_label "WR_ADDR_1"
 		(shape output)
-		(at 27.94 86.36 180)
+		(at 27.94 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10410,9 +10388,9 @@
 			)
 			(justify right)
 		)
-		(uuid "68c3eca0-7dd2-436a-8c4e-115937595e22")
+		(uuid "63e7bfbd-4bdf-4c28-8fd6-5a6b6c3af766")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 14.1901 86.36 0)
+			(at 14.1901 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11280,28 +11258,6 @@
 			)
 		)
 	)
-	(global_label "WR_ADDR_4"
-		(shape output)
-		(at 27.94 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8cea2d8e-a180-453c-9930-8de944668425")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 14.1901 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "serial1_out_5"
 		(shape input)
 		(at 317.5 195.58 0)
@@ -11694,28 +11650,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "WR_ADDR_0"
-		(shape output)
-		(at 27.94 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9e686050-22d6-414c-aaec-075c25cbba9b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 14.1901 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -12569,6 +12503,28 @@
 		(uuid "c0e7fa54-3319-4ccc-b158-38828e3c533e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 19.0378 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "WR_ADDR_4"
+		(shape output)
+		(at 27.94 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c4a8eba2-f960-4fa6-9df0-6a1dbe2abc07")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 14.1901 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13766,6 +13722,28 @@
 			)
 		)
 	)
+	(global_label "WR_ADDR_2"
+		(shape output)
+		(at 27.94 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ef981ac9-0b3a-4c5e-a8a9-c39fad0c1c00")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 14.1901 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "~{in_port_f6}"
 		(shape input)
 		(at 130.81 265.43 180)
@@ -14246,6 +14224,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "WR_ADDR_0"
+		(shape output)
+		(at 27.94 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ffaaf916-1330-4c2f-9912-a3fc54708184")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 14.1901 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
