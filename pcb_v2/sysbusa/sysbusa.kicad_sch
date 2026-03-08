@@ -5422,6 +5422,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 256.54) (xy 140.97 256.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "434150ea-b2ce-4485-ad28-1029ed5ae3b0")
+	)
+	(wire
+		(pts
 			(xy 336.55 55.88) (xy 336.55 59.69)
 		)
 		(stroke
@@ -18915,6 +18925,73 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 144.78 256.54 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "85af3a48-b49a-4b3c-96ff-ef3dc83772aa")
+		(property "Reference" "R1"
+			(at 151.13 257.302 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "470R"
+			(at 149.606 259.334 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 144.78 254.762 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 144.78 256.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "97aeda47-3bbc-43e9-ad8b-8d70dbbf64fe")
+		)
+		(pin "2"
+			(uuid "b34f256d-427d-49d8-81b9-e1c93c76a0d4")
+		)
+		(instances
+			(project "sysbusa"
+				(path "/02b9996c-8125-4412-af70-f1d12218c07b"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 340.36 69.85 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19343,7 +19420,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
 			(at 312.42 17.78 0)
 			(effects
 				(font
@@ -21420,10 +21497,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "bcd372dd-a13b-4163-99b1-d93bc224b7ee")
 		(property "Reference" "R21"
-			(at 137.16 257.81 90)
+			(at 131.318 255.016 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21431,7 +21507,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 137.16 255.27 90)
+			(at 131.064 257.048 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23896,7 +23972,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 148.59 256.54 0)
+		(at 139.7 256.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23904,7 +23980,7 @@
 		(dnp no)
 		(uuid "dffaac59-9830-4fd7-bcc7-9deb9b2b7dd6")
 		(property "Reference" "#PWR081"
-			(at 148.59 262.89 0)
+			(at 139.7 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23913,7 +23989,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 145.034 257.81 0)
+			(at 136.144 257.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23921,7 +23997,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 256.54 0)
+			(at 139.7 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23930,7 +24006,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 256.54 0)
+			(at 139.7 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23939,7 +24015,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 148.59 256.54 0)
+			(at 139.7 256.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
