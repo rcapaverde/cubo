@@ -518,7 +518,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../ula8-bitwisea.step",
       "svg": "",
       "vrml": ""
     },
