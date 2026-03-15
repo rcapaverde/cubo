@@ -1,5 +1,7 @@
-const int PIN_DATA[] = { 2, 3, 4, 5, 6, 7, 8, 9 };
-const int PIN_TEST[] = { A0, A1, A2, A3, A4, A5, 13, 12};
+#include <Arduino.h>
+
+const int PIN_DATA[] = {2, 3, 4, 5, 6, 7, 8, 9 };
+const int PIN_TEST[] = {A0, A1, A2, A3, A4, A5, 13, 12};
 
 const int PIN_WRITE_DATA = 10;
 const int PIN_WRITE_DIR = 11;
@@ -92,11 +94,10 @@ void setup()
 
     pinMode(PIN_WRITE_DATA, OUTPUT);
     pinMode(PIN_WRITE_DIR, OUTPUT);
-    pinMode(PIN_READ_ENABLE, OUTPUT);
 
     digitalWrite(PIN_WRITE_DATA, LOW);
     digitalWrite(PIN_WRITE_DIR, LOW);
-    digitalWrite(PIN_READ_ENABLE, HIGH);
+    analogWrite(PIN_READ_ENABLE, 255);
 
     Serial.begin(115200, SERIAL_8N1);
 
@@ -116,10 +117,23 @@ void setup()
         Serial.print(test, HEX);
         Serial.print(" ");
         Serial.println(test == test_data ? "OK" : "ERR");
+        test_data++;
+    }    
 
-        //test_data = test_data * 2
-        //if (test_data == 0)
-        //    test_data = 1;
+    // coloca todos os bits como input
+    set_data_read();
+    set_test_dir(0xFF);
+    //analogWrite(PIN_READ_ENABLE, 128);
+
+    for (int test_data = 0; test_data < 256; )
+    {
+        write_test(test_data);
+        test = read_data();
+        Serial.print(test_data, HEX);
+        Serial.print(" ");
+        Serial.print(test, HEX);
+        Serial.print(" ");
+        Serial.println(test == test_data ? "OK" : "ERR");
         test_data++;
     }    
 }
