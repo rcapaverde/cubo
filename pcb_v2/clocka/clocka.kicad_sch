@@ -5633,7 +5633,7 @@
 		)
 	)
 	(junction
-		(at 120.65 77.47)
+		(at 110.49 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "043e3355-07a6-4a9c-b4ce-a067ca3c380e")
@@ -5669,16 +5669,22 @@
 		(uuid "19bf60c6-792e-4d9e-9c0a-f68a11397f02")
 	)
 	(junction
-		(at 373.38 186.69)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1b8d27e1-9e8a-4e90-a9e3-ad7ecbb45094")
-	)
-	(junction
 		(at 248.92 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1c90bbc8-ba31-4c63-9724-1f65920aa7e4")
+	)
+	(junction
+		(at 345.44 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1fc06fad-6549-46d8-a2c7-a0b16515690d")
+	)
+	(junction
+		(at 60.96 269.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "20440aaf-13e8-4cac-8145-b8dc88682d93")
 	)
 	(junction
 		(at 196.85 175.26)
@@ -5687,7 +5693,7 @@
 		(uuid "23a52fe0-04db-469e-bb48-f1390d8ffccd")
 	)
 	(junction
-		(at 120.65 81.28)
+		(at 110.49 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25a6e890-31a5-4d4d-8091-e64b8e22f5d4")
@@ -5705,10 +5711,10 @@
 		(uuid "2973e804-c43d-4b73-a8f8-bf047c7371bd")
 	)
 	(junction
-		(at 373.38 171.45)
+		(at 110.49 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2b64445e-f970-4cb7-9085-c9831db5e5e5")
+		(uuid "2fd63562-cd99-400d-a5c6-eb0d05ab79bb")
 	)
 	(junction
 		(at 177.8 156.21)
@@ -5745,18 +5751,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "529c57d2-51b2-4516-b34f-278fa3078f17")
-	)
-	(junction
-		(at 120.65 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "52ea3ec8-dd32-4eec-9444-08a5144888eb")
-	)
-	(junction
-		(at 373.38 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "532c5e67-441a-4ab7-a594-515bd020d0e0")
 	)
 	(junction
 		(at 248.92 90.17)
@@ -5801,7 +5795,7 @@
 		(uuid "776c10fc-068e-4c80-814f-ce86d0d52b79")
 	)
 	(junction
-		(at 120.65 88.9)
+		(at 110.49 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "77ea0f58-9c0d-4bb2-87e5-0cbcb2461ef0")
@@ -5819,12 +5813,6 @@
 		(uuid "81308825-17e9-4001-851e-664f23e97581")
 	)
 	(junction
-		(at 373.38 161.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "81f6af4a-93a8-48e5-8bfe-56e2511222dc")
-	)
-	(junction
 		(at 138.43 257.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5837,22 +5825,28 @@
 		(uuid "85c7da51-ee41-4aeb-b33a-e9b343ec26c0")
 	)
 	(junction
+		(at 110.49 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8dfbc21a-fb4a-4483-9087-3a0c470d1a69")
+	)
+	(junction
 		(at 138.43 269.24)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "88925e2c-265d-42ca-82bf-234f968ce7aa")
+		(uuid "8f971dfd-fb1f-4ca8-a6fb-b4c47f563b25")
+	)
+	(junction
+		(at 345.44 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9560416d-0cde-4e84-9eea-be524705320d")
 	)
 	(junction
 		(at 138.43 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "957fa9ef-33ad-4cd8-b21c-39c41fd72f08")
-	)
-	(junction
-		(at 373.38 176.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "972e3b83-c638-4544-ac4b-f0c4641046ee")
 	)
 	(junction
 		(at 336.55 21.59)
@@ -5873,7 +5867,7 @@
 		(uuid "a3704942-90d9-4faa-90ab-7c714a779b0b")
 	)
 	(junction
-		(at 120.65 85.09)
+		(at 110.49 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a6274cf1-c4af-412c-b4c7-e3e8d0b1db99")
@@ -5883,6 +5877,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa356462-5137-43a8-9f4f-e2268422ae09")
+	)
+	(junction
+		(at 125.73 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa409b0d-4a24-439f-a0e8-c4e2a5ebbc6e")
 	)
 	(junction
 		(at 124.46 247.65)
@@ -5907,12 +5907,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b96869ee-7df4-4a4f-8327-baaa95e70cfe")
-	)
-	(junction
-		(at 60.96 269.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ba4e3a2e-2b4c-4fe0-b30e-a8eae4713f5b")
 	)
 	(junction
 		(at 372.11 115.57)
@@ -6077,14 +6071,6 @@
 		(uuid "527e095a-183d-4f21-81a0-d6d973042b46")
 	)
 	(no_connect
-		(at 391.16 173.99)
-		(uuid "5e67feda-8533-4859-87d4-039bc58e5db8")
-	)
-	(no_connect
-		(at 391.16 158.75)
-		(uuid "6893e0ff-19f3-4626-b745-8d1e251e703e")
-	)
-	(no_connect
 		(at 389.89 115.57)
 		(uuid "72004d77-116d-4b1c-a476-c2a92b981fdb")
 	)
@@ -6097,11 +6083,11 @@
 		(uuid "94a6be89-21fc-4f10-b860-9309f21adb1f")
 	)
 	(no_connect
-		(at 391.16 189.23)
+		(at 361.95 137.16)
 		(uuid "b1867718-b1ed-4ff0-bbd0-089746dda3dc")
 	)
 	(no_connect
-		(at 363.22 121.92)
+		(at 361.95 121.92)
 		(uuid "b3e61aec-8044-4c22-80ca-18787f499d4e")
 	)
 	(no_connect
@@ -6125,6 +6111,16 @@
 			(type default)
 		)
 		(uuid "030a15ab-8627-4aa0-b86e-0ea8330b5892")
+	)
+	(wire
+		(pts
+			(xy 140.97 76.2) (xy 140.97 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03479a36-dfcc-4e66-a5e8-36d544d33344")
 	)
 	(wire
 		(pts
@@ -6168,7 +6164,7 @@
 	)
 	(wire
 		(pts
-			(xy 345.44 124.46) (xy 347.98 124.46)
+			(xy 345.44 124.46) (xy 346.71 124.46)
 		)
 		(stroke
 			(width 0)
@@ -6248,7 +6244,17 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 85.09) (xy 120.65 85.09)
+			(xy 345.44 134.62) (xy 346.71 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12cfa5e3-d756-4226-a389-86f371ebbd4a")
+	)
+	(wire
+		(pts
+			(xy 106.68 85.09) (xy 110.49 85.09)
 		)
 		(stroke
 			(width 0)
@@ -6268,7 +6274,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 88.9) (xy 120.65 91.44)
+			(xy 110.49 88.9) (xy 110.49 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6348,16 +6354,6 @@
 	)
 	(wire
 		(pts
-			(xy 373.38 161.29) (xy 375.92 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fc20ca6-bb75-4224-a13e-b364418f0341")
-	)
-	(wire
-		(pts
 			(xy 179.07 110.49) (xy 181.61 110.49)
 		)
 		(stroke
@@ -6365,16 +6361,6 @@
 			(type default)
 		)
 		(uuid "22443d67-38f1-4cf3-aa99-dbd832137d9a")
-	)
-	(wire
-		(pts
-			(xy 373.38 171.45) (xy 373.38 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "234daa78-90de-4b46-b8b3-e299be498868")
 	)
 	(wire
 		(pts
@@ -6395,6 +6381,16 @@
 			(type default)
 		)
 		(uuid "24ab33c0-7535-4406-8077-c2aad06ba8c5")
+	)
+	(wire
+		(pts
+			(xy 125.73 73.66) (xy 125.73 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25bc976f-30d9-419c-8b06-4fddd9a27d1b")
 	)
 	(wire
 		(pts
@@ -6428,7 +6424,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 81.28) (xy 120.65 77.47)
+			(xy 110.49 81.28) (xy 110.49 78.74)
 		)
 		(stroke
 			(width 0)
@@ -6465,16 +6461,6 @@
 			(type default)
 		)
 		(uuid "2eb7dbe0-21fd-4522-ac94-10af1074c0c9")
-	)
-	(wire
-		(pts
-			(xy 373.38 171.45) (xy 375.92 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2edc36ab-4ab5-4734-a81f-9f255f6cbfde")
 	)
 	(wire
 		(pts
@@ -6528,7 +6514,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 81.28) (xy 120.65 81.28)
+			(xy 106.68 81.28) (xy 110.49 81.28)
 		)
 		(stroke
 			(width 0)
@@ -6548,6 +6534,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 83.82) (xy 138.43 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a534f2d-1258-4a45-a7f3-4f2ec06f3234")
+	)
+	(wire
+		(pts
 			(xy 355.6 59.69) (xy 355.6 60.96)
 		)
 		(stroke
@@ -6555,6 +6551,16 @@
 			(type default)
 		)
 		(uuid "3cf0a403-54d8-4742-aaac-a4a37e93093e")
+	)
+	(wire
+		(pts
+			(xy 125.73 76.2) (xy 125.73 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ded32e1-dcff-496d-8498-020846fa05c3")
 	)
 	(wire
 		(pts
@@ -6778,6 +6784,16 @@
 	)
 	(wire
 		(pts
+			(xy 346.71 139.7) (xy 345.44 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54d3ab70-83ac-44e6-abca-375d4297f3cb")
+	)
+	(wire
+		(pts
 			(xy 34.29 262.89) (xy 33.02 262.89)
 		)
 		(stroke
@@ -6908,6 +6924,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 78.74) (xy 110.49 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dd5a7c4-278d-4150-9eb2-c7908a22015c")
+	)
+	(wire
+		(pts
 			(xy 40.64 74.93) (xy 41.91 74.93)
 		)
 		(stroke
@@ -6928,6 +6954,16 @@
 	)
 	(wire
 		(pts
+			(xy 345.44 134.62) (xy 345.44 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61a6b91c-1a45-4a27-85a1-21b38424682a")
+	)
+	(wire
+		(pts
 			(xy 237.49 168.91) (xy 238.76 168.91)
 		)
 		(stroke
@@ -6938,7 +6974,7 @@
 	)
 	(wire
 		(pts
-			(xy 345.44 119.38) (xy 347.98 119.38)
+			(xy 345.44 119.38) (xy 346.71 119.38)
 		)
 		(stroke
 			(width 0)
@@ -6988,7 +7024,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 77.47) (xy 120.65 77.47)
+			(xy 106.68 77.47) (xy 110.49 77.47)
 		)
 		(stroke
 			(width 0)
@@ -7038,17 +7074,7 @@
 	)
 	(wire
 		(pts
-			(xy 373.38 161.29) (xy 373.38 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "762dfd36-0e3e-46cc-b2b0-ef6cca7db680")
-	)
-	(wire
-		(pts
-			(xy 116.84 73.66) (xy 120.65 73.66)
+			(xy 106.68 73.66) (xy 110.49 73.66)
 		)
 		(stroke
 			(width 0)
@@ -7078,16 +7104,6 @@
 	)
 	(wire
 		(pts
-			(xy 373.38 191.77) (xy 373.38 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c05dd96-1480-4ba7-8454-847229488442")
-	)
-	(wire
-		(pts
 			(xy 114.3 204.47) (xy 115.57 204.47)
 		)
 		(stroke
@@ -7095,16 +7111,6 @@
 			(type default)
 		)
 		(uuid "7c413eda-edcd-4046-b9b8-e222edbd0b53")
-	)
-	(wire
-		(pts
-			(xy 373.38 176.53) (xy 373.38 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f98a290-b93b-49b7-bea9-7976cc8a6a65")
 	)
 	(wire
 		(pts
@@ -7168,16 +7174,6 @@
 	)
 	(wire
 		(pts
-			(xy 373.38 176.53) (xy 375.92 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8acab387-adf7-48d0-ba25-ad19bb44d2dd")
-	)
-	(wire
-		(pts
 			(xy 229.87 210.82) (xy 229.87 207.01)
 		)
 		(stroke
@@ -7238,26 +7234,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 73.66) (xy 124.46 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "959545f4-1a06-4bbf-bcd9-74cf5f43b252")
-	)
-	(wire
-		(pts
-			(xy 373.38 156.21) (xy 373.38 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9631dfa0-18c2-405a-8a8b-d062fe332e98")
-	)
-	(wire
-		(pts
 			(xy 115.57 204.47) (xy 115.57 198.12)
 		)
 		(stroke
@@ -7305,16 +7281,6 @@
 			(type default)
 		)
 		(uuid "98e4258a-f420-4bce-b9b8-de518f421827")
-	)
-	(wire
-		(pts
-			(xy 373.38 186.69) (xy 373.38 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9970cbce-e6c3-4e6a-b193-1762687ae56d")
 	)
 	(wire
 		(pts
@@ -7458,6 +7424,16 @@
 	)
 	(wire
 		(pts
+			(xy 345.44 139.7) (xy 345.44 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abf1c64d-290c-4731-97e2-578ac12e06f0")
+	)
+	(wire
+		(pts
 			(xy 336.55 21.59) (xy 336.55 24.13)
 		)
 		(stroke
@@ -7498,7 +7474,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 77.47) (xy 120.65 73.66)
+			(xy 110.49 77.47) (xy 110.49 73.66)
 		)
 		(stroke
 			(width 0)
@@ -7555,16 +7531,6 @@
 			(type default)
 		)
 		(uuid "bbb6e0a3-fd98-42e7-81bb-cdefc087b451")
-	)
-	(wire
-		(pts
-			(xy 373.38 186.69) (xy 375.92 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd28c7d2-2a49-4b35-b703-ff5f997dd15f")
 	)
 	(wire
 		(pts
@@ -7798,7 +7764,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 88.9) (xy 120.65 88.9)
+			(xy 106.68 88.9) (xy 110.49 88.9)
 		)
 		(stroke
 			(width 0)
@@ -7825,16 +7791,6 @@
 			(type default)
 		)
 		(uuid "e419101a-acee-450c-b25b-948086462314")
-	)
-	(wire
-		(pts
-			(xy 375.92 191.77) (xy 373.38 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e480bbfc-e36c-417a-a601-6e6f37aa7f57")
 	)
 	(wire
 		(pts
@@ -7898,7 +7854,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 88.9) (xy 120.65 85.09)
+			(xy 110.49 88.9) (xy 110.49 85.09)
 		)
 		(stroke
 			(width 0)
@@ -8038,7 +7994,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 85.09) (xy 120.65 81.28)
+			(xy 110.49 85.09) (xy 110.49 81.28)
 		)
 		(stroke
 			(width 0)
@@ -8055,16 +8011,6 @@
 			(type default)
 		)
 		(uuid "fc9922e3-9f9a-4e62-b785-1a61b898aee4")
-	)
-	(wire
-		(pts
-			(xy 373.38 156.21) (xy 375.92 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd543838-73b7-4680-95f8-a34616f67539")
 	)
 	(wire
 		(pts
@@ -8132,7 +8078,7 @@
 	)
 	(global_label "set_clock_ext"
 		(shape input)
-		(at 109.22 73.66 180)
+		(at 99.06 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8142,7 +8088,7 @@
 		)
 		(uuid "05584308-6de7-4e1f-9eb9-f60a16445a83")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.5953 73.66 0)
+			(at 83.4353 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8372,28 +8318,6 @@
 			)
 		)
 	)
-	(global_label "clock_ext"
-		(shape input)
-		(at 68.58 30.48 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "298b8fd6-f52f-4128-99e0-9b5324930a33")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.58 18.6653 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "~{clock_manual}"
 		(shape output)
 		(at 252.73 73.66 0)
@@ -8528,7 +8452,7 @@
 	)
 	(global_label "set_clock_xtal2"
 		(shape input)
-		(at 109.22 77.47 180)
+		(at 99.06 77.47 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8538,7 +8462,7 @@
 		)
 		(uuid "3a3b16c3-19d6-475a-acb1-ff7f5c8f4976")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.6602 77.47 0)
+			(at 81.5002 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8550,7 +8474,7 @@
 	)
 	(global_label "set_clock_xtal1"
 		(shape input)
-		(at 109.22 81.28 180)
+		(at 99.06 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8560,7 +8484,7 @@
 		)
 		(uuid "3ad179ef-d6b7-4b76-b683-19571783f780")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.6602 81.28 0)
+			(at 81.5002 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8660,7 +8584,7 @@
 	)
 	(global_label "set_clock_1hz"
 		(shape input)
-		(at 109.22 88.9 180)
+		(at 99.06 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8670,7 +8594,7 @@
 		)
 		(uuid "4328ec07-1e89-44c4-b9e7-cd19b68a3234")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 93.0511 88.9 0)
+			(at 82.8911 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8803,50 +8727,6 @@
 		(uuid "5707b3e8-8c63-4019-b8a3-89e17d3fafdc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 217.6754 264.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "clock_xtal1"
-		(shape input)
-		(at 33.02 30.48 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5b121004-8c81-40f2-81fb-a26bf8c1c160")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 33.02 16.7302 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "set_clock_source"
-		(shape output)
-		(at 124.46 73.66 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5c10cddb-6c43-4061-b9a0-387eef460a55")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 143.5318 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9188,7 +9068,7 @@
 	)
 	(global_label "set_clock_1Khz"
 		(shape input)
-		(at 109.22 85.09 180)
+		(at 99.06 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9198,34 +9078,12 @@
 		)
 		(uuid "930f30b3-11da-4b5e-bc05-6e353fdcd847")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 91.7811 85.09 0)
+			(at 81.6211 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "clock_xtal2"
-		(shape input)
-		(at 57.15 30.48 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "953bfe0e-3114-494a-8448-86e60c6cae3f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 57.15 16.7302 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -9380,28 +9238,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "clock_1hz"
-		(shape input)
-		(at 21.59 30.48 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b185cf38-d753-436d-b96f-fc730dc1e510")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 21.59 18.1211 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -9648,28 +9484,6 @@
 			)
 		)
 	)
-	(global_label "clock_1Khz"
-		(shape input)
-		(at 45.72 30.48 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c5e87bf0-767f-4ed4-8a11-581e801e56a9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.72 16.8511 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "~{disengage_clock}"
 		(shape input)
 		(at 171.45 35.56 180)
@@ -9776,6 +9590,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "set_clock_source"
+		(shape output)
+		(at 138.43 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d2579eec-90d3-49db-98a3-e1721f01db68")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 119.3582 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -10372,7 +10208,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "CLOCK_SELECT"
+		(property "Value" "CLOCK_RESET"
 			(at 118.11 189.2299 90)
 			(effects
 				(font
@@ -10381,7 +10217,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical"
 			(at 115.57 187.96 0)
 			(effects
 				(font
@@ -10448,7 +10284,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical"
 			(at 110.49 193.04 0)
 			(effects
 				(font
@@ -10491,73 +10327,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 45.72 45.72 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "097cc0df-c7b8-4955-ab41-1853c190ede9")
-		(property "Reference" "#PWR015"
-			(at 45.72 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 40.132 47.244 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 45.72 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6717659d-9f89-43f9-87b3-c6ab47767034")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 151.13 170.18 90)
 		(unit 1)
@@ -10582,7 +10351,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical"
 			(at 146.05 170.18 0)
 			(effects
 				(font
@@ -10766,7 +10535,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0c9d1d93-1529-4d86-bef0-1f1ea8c75ef0")
-		(property "Reference" "C22"
+		(property "Reference" "C5"
 			(at 366.268 17.018 90)
 			(effects
 				(font
@@ -10818,7 +10587,7 @@
 		(instances
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C22")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -11064,7 +10833,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 113.03 88.9 180)
+		(at 102.87 88.9 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11073,7 +10842,7 @@
 		(fields_autoplaced yes)
 		(uuid "11ca0842-7d56-4918-8edf-018e36bf867e")
 		(property "Reference" "D5"
-			(at 113.03 82.55 0)
+			(at 102.87 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11081,7 +10850,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 113.03 85.09 0)
+			(at 102.87 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11089,7 +10858,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 113.03 88.9 0)
+			(at 102.87 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11098,7 +10867,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 113.03 88.9 0)
+			(at 102.87 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11107,7 +10876,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 113.03 88.9 0)
+			(at 102.87 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11116,7 +10885,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 113.03 88.9 0)
+			(at 102.87 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11125,7 +10894,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 113.03 88.9 0)
+			(at 102.87 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11248,72 +11017,6 @@
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
 					(reference "U4")
 					(unit 5)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 373.38 153.67 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "156364ed-ac56-4102-82b6-cef7a5a7b120")
-		(property "Reference" "#PWR055"
-			(at 373.38 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 373.38 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 373.38 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 373.38 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 373.38 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "396d5b19-e380-4b35-83f4-adc0d90495f6")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "#PWR055")
-					(unit 1)
 				)
 			)
 		)
@@ -11523,73 +11226,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 57.15 45.72 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "19bd87df-652b-47a1-b47f-9a7490d930b2")
-		(property "Reference" "#PWR023"
-			(at 57.15 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 51.562 47.244 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 57.15 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 57.15 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 57.15 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f1d18ed9-e42a-496a-9c97-1fa0cc2dd6a5")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "#PWR023")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 158.75 177.8 0)
 		(mirror y)
 		(unit 1)
@@ -11731,7 +11367,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1e4827e8-c170-4099-b908-24b31fc78b2e")
-		(property "Reference" "C26"
+		(property "Reference" "C7"
 			(at 366.268 56.388 90)
 			(effects
 				(font
@@ -11783,7 +11419,7 @@
 		(instances
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C26")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -11857,7 +11493,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS86")
-		(at 355.6 121.92 0)
+		(at 354.33 121.92 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11866,7 +11502,7 @@
 		(fields_autoplaced yes)
 		(uuid "241f85bf-b81d-4ca5-b0b6-75993c5fa47d")
 		(property "Reference" "U6"
-			(at 355.2952 113.03 0)
+			(at 354.0252 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11874,7 +11510,7 @@
 			)
 		)
 		(property "Value" "74LS86"
-			(at 355.2952 115.57 0)
+			(at 354.0252 115.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11882,7 +11518,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 355.6 121.92 0)
+			(at 354.33 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11891,7 +11527,7 @@
 			)
 		)
 		(property "Datasheet" "74xx/74ls86.pdf"
-			(at 355.6 121.92 0)
+			(at 354.33 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11900,7 +11536,7 @@
 			)
 		)
 		(property "Description" "Quad 2-input XOR"
-			(at 355.6 121.92 0)
+			(at 354.33 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11968,7 +11604,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "24a3da12-7bf9-43f6-b5f9-98cb99c9b0f1")
-		(property "Reference" "C21"
+		(property "Reference" "C1"
 			(at 347.218 17.018 90)
 			(effects
 				(font
@@ -12020,74 +11656,7 @@
 		(instances
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 158.75 173.99 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "251038d6-403c-4f82-a81c-125ee1f15cb8")
-		(property "Reference" "C11"
-			(at 154.686 169.164 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10nF"
-			(at 154.686 171.704 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
-			(at 157.7848 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 158.75 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 158.75 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d80d1466-081f-43d4-a466-1adef9b70399")
-		)
-		(pin "1"
-			(uuid "01a4c2a3-1c7e-40db-b6ec-31d84a671945")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C11")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -12398,76 +11967,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 21.59 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2d576482-0b2f-458d-afc0-b286c06ca17a")
-		(property "Reference" "R10"
-			(at 24.13 33.0199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1K"
-			(at 24.13 35.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 19.812 34.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 21.59 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 21.59 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5eb54fa6-abe0-4c89-a118-8bd5ac110d1b")
-		)
-		(pin "2"
-			(uuid "df3493d4-bd6f-4907-b6b8-f834c1ad5672")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148")
 		(at 242.57 82.55 180)
 		(unit 1)
@@ -12548,76 +12047,6 @@
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
 					(reference "D14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 57.15 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2db81ba1-10ca-4ac3-8e8b-38676c3ddca7")
-		(property "Reference" "R12"
-			(at 59.69 33.0199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1K"
-			(at 59.69 35.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 55.372 34.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 57.15 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 57.15 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3b01ef95-7e0a-446d-8b2d-e72c8b2e10c6")
-		)
-		(pin "2"
-			(uuid "03fb7e7a-1f62-44b7-8f6f-1d8820569b05")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -12751,7 +12180,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical"
 			(at 110.49 111.76 0)
 			(effects
 				(font
@@ -12795,7 +12224,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 120.65 99.06 0)
+		(at 110.49 99.06 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12804,7 +12233,7 @@
 		(dnp no)
 		(uuid "30dd618c-95f7-4765-a027-402458d7df60")
 		(property "Reference" "#PWR011"
-			(at 120.65 105.41 0)
+			(at 110.49 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12813,7 +12242,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 115.316 99.314 0)
+			(at 105.156 99.314 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12822,7 +12251,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 99.06 0)
+			(at 110.49 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12831,7 +12260,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 99.06 0)
+			(at 110.49 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12840,7 +12269,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 120.65 99.06 0)
+			(at 110.49 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14138,7 +13567,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "427b7cea-eb0a-4494-b3b7-ffdc9158202c")
-		(property "Reference" "C28"
+		(property "Reference" "C9"
 			(at 25.146 250.444 90)
 			(effects
 				(font
@@ -14190,7 +13619,7 @@
 		(instances
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C28")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -14546,7 +13975,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical"
 			(at 110.49 129.54 0)
 			(effects
 				(font
@@ -14656,6 +14085,73 @@
 			(project ""
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
 					(reference "RV1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 158.75 215.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "47ce9d54-a2c0-4753-ab34-29093f38754a")
+		(property "Reference" "C24"
+			(at 154.686 211.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10nF"
+			(at 154.686 213.614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
+			(at 157.7848 212.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 158.75 215.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4ca1d737-60f4-4c00-aecc-a1f4c7b28571")
+		)
+		(pin "1"
+			(uuid "c56363dc-7f04-4944-bb7d-3b1c29b51165")
+		)
+		(instances
+			(project "clocka"
+				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -14952,76 +14448,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 68.58 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4bdfd773-3e3d-41a1-b421-fdb873e1ac68")
-		(property "Reference" "R11"
-			(at 71.12 33.0199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1K"
-			(at 71.12 35.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 66.802 34.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 68.58 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fc12db0a-7b92-4279-a7db-80f875d5ad19")
-		)
-		(pin "2"
-			(uuid "4db677fd-e06b-4cb6-b9ae-ffed4770f1a0")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "R11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 355.6 59.69 0)
 		(unit 1)
@@ -15215,6 +14641,73 @@
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 110.49 140.97 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4ee91813-8656-4e24-bc46-9409fbeb43ad")
+		(property "Reference" "C17"
+			(at 102.616 136.906 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 102.616 139.446 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
+			(at 114.3 140.0048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 110.49 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b402a458-2ed4-41ae-807e-33c928b76ec6")
+		)
+		(pin "1"
+			(uuid "a0a53811-af3d-4e09-9f5c-4250f2429ef4")
+		)
+		(instances
+			(project "clocka"
+				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
+					(reference "C17")
 					(unit 1)
 				)
 			)
@@ -15461,85 +14954,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 68.58 41.91 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "55576919-e27b-44b3-b682-71f3fdb8c420")
-		(property "Reference" "D11"
-			(at 72.39 42.2274 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "EXT"
-			(at 72.39 44.7674 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 68.58 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "224300f5-cbf5-4a40-921e-29d3adef9991")
-		)
-		(pin "1"
-			(uuid "b21ecd12-6a68-4e83-8d51-15a897340783")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 196.85 223.52 180)
 		(unit 1)
@@ -15631,7 +15045,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical"
 			(at 110.49 165.1 0)
 			(effects
 				(font
@@ -16924,7 +16338,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical"
 			(at 110.49 147.32 0)
 			(effects
 				(font
@@ -17119,73 +16533,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 105.41 261.62 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6b05c64e-4606-46cc-a108-e4c4828e2c8d")
-		(property "Reference" "C8"
-			(at 101.346 256.794 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10nF"
-			(at 101.346 259.334 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
-			(at 104.4448 257.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 105.41 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 105.41 261.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f5ee797f-9748-4793-a602-e7f16511a5f3")
-		)
-		(pin "1"
-			(uuid "d0dd69bf-edde-4cc1-9ee7-0308dc1ed969")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 267.97 265.43 0)
 		(mirror y)
@@ -17357,7 +16704,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 113.03 77.47 180)
+		(at 102.87 77.47 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17366,7 +16713,7 @@
 		(fields_autoplaced yes)
 		(uuid "6f18b858-6abe-4318-9fe1-03429118c232")
 		(property "Reference" "D2"
-			(at 113.03 71.12 0)
+			(at 102.87 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17374,7 +16721,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 113.03 73.66 0)
+			(at 102.87 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17382,7 +16729,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 113.03 77.47 0)
+			(at 102.87 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17391,7 +16738,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 113.03 77.47 0)
+			(at 102.87 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17400,7 +16747,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 113.03 77.47 0)
+			(at 102.87 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17409,7 +16756,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 113.03 77.47 0)
+			(at 102.87 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17418,7 +16765,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 113.03 77.47 0)
+			(at 102.87 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17450,7 +16797,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "712559d0-f926-40bb-be7a-098400b1e236")
-		(property "Reference" "C17"
+		(property "Reference" "C8"
 			(at 116.332 274.32 0)
 			(effects
 				(font
@@ -17502,74 +16849,7 @@
 		(instances
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 60.96 273.05 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "71ad4959-cba7-43c0-a604-c835760bc9e5")
-		(property "Reference" "C9"
-			(at 65.532 271.526 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10nF"
-			(at 65.532 268.986 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
-			(at 59.9948 269.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.96 273.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 60.96 273.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cfcda29b-f92e-4cf8-ab59-7ad6ef133e4b")
-		)
-		(pin "1"
-			(uuid "4de6f8a2-262b-48f3-815a-c02c29abd35d")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C9")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -17932,7 +17212,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "760d7309-7034-44a1-9141-df1859f5ba27")
-		(property "Reference" "C19"
+		(property "Reference" "C3"
 			(at 309.118 17.018 90)
 			(effects
 				(font
@@ -17984,7 +17264,7 @@
 		(instances
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C19")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -18208,7 +17488,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a74e6c2-53b9-47ec-afc3-105a2fd51327")
-		(property "Reference" "C15"
+		(property "Reference" "C11"
 			(at 160.782 191.262 90)
 			(effects
 				(font
@@ -18260,7 +17540,7 @@
 		(instances
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C15")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -18400,6 +17680,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 110.49 158.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7bbcdc09-ec95-48ac-9f77-3de71a76f487")
+		(property "Reference" "C18"
+			(at 102.616 154.686 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 102.616 157.226 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
+			(at 114.3 157.7848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 110.49 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2b8cc9fa-2aba-4e57-800d-ff0a95f2f874")
+		)
+		(pin "1"
+			(uuid "3c5f634c-3e21-4ff8-8460-e219a850d5f5")
+		)
+		(instances
+			(project "clocka"
+				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
+					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 317.5 86.36 0)
 		(mirror y)
@@ -18528,85 +17875,6 @@
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
 					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 57.15 41.91 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7f9fae4d-47af-45df-9d9f-77d182393cb6")
-		(property "Reference" "D12"
-			(at 60.96 42.2274 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "XTAL2"
-			(at 60.96 44.7674 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 57.15 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 57.15 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 57.15 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 57.15 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8552eeba-71a4-491d-8987-da644b6906ed")
-		)
-		(pin "1"
-			(uuid "644c1023-f132-4693-bd1d-ccb37262e9f9")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -18784,8 +18052,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 46.99 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "850efd40-7c6e-4825-9d49-2049096227c5")
+		(property "Reference" "C15"
+			(at 39.116 70.866 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 39.116 73.406 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
+			(at 50.8 73.9648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 46.99 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 46.99 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fb0b624e-b201-41df-af10-8b9e1a7cc154")
+		)
+		(pin "1"
+			(uuid "29da8fc4-b766-4b0c-a75b-73bbe3f02d16")
+		)
+		(instances
+			(project "clocka"
+				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS08")
-		(at 383.54 173.99 0)
+		(at 133.35 76.2 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18794,7 +18129,7 @@
 		(fields_autoplaced yes)
 		(uuid "87139bb6-27f3-4788-bbd0-20bcf4070660")
 		(property "Reference" "U7"
-			(at 383.5317 165.1 0)
+			(at 133.3417 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18802,7 +18137,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 383.5317 167.64 0)
+			(at 133.3417 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18810,7 +18145,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 383.54 173.99 0)
+			(at 133.35 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18819,7 +18154,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 383.54 173.99 0)
+			(at 133.35 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18828,7 +18163,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 383.54 173.99 0)
+			(at 133.35 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18955,73 +18290,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 46.99 74.93 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "882e19f0-1d28-4200-bc18-3cdc0b491e36")
-		(property "Reference" "C1"
-			(at 39.116 70.866 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 39.116 73.406 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
-			(at 50.8 73.9648 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 46.99 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 46.99 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "cd30a029-23fd-4f2b-9a7f-340af5b30046")
-		)
-		(pin "1"
-			(uuid "4c0bbbda-f853-4d65-a3ab-5f9872f7d572")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 229.87 218.44 0)
 		(mirror y)
@@ -19083,140 +18351,6 @@
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
 					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 110.49 140.97 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "89569335-345e-460c-8299-a36653a1eec4")
-		(property "Reference" "C3"
-			(at 102.616 136.906 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 102.616 139.446 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
-			(at 114.3 140.0048 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 110.49 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a4d5bc8f-0b30-49d5-862f-3704646e191a")
-		)
-		(pin "1"
-			(uuid "2c814c32-afcf-483a-8254-36fafb801a91")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 21.59 45.72 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "89febb24-f929-477a-abb6-6316fc2768c7")
-		(property "Reference" "#PWR019"
-			(at 21.59 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 16.002 47.244 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 21.59 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 21.59 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 21.59 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "83f5bd60-b759-4715-996e-3c6b543fba6d")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -19365,7 +18499,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8ba84cb8-0b06-4383-9594-f8819a12a7c3")
-		(property "Reference" "C23"
+		(property "Reference" "C6"
 			(at 309.118 56.388 90)
 			(effects
 				(font
@@ -19417,7 +18551,7 @@
 		(instances
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C23")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -19823,6 +18957,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 60.96 273.05 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8fb1a172-ef6b-4e66-a859-85b5c52e540f")
+		(property "Reference" "C21"
+			(at 65.532 271.526 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10nF"
+			(at 65.532 268.986 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
+			(at 59.9948 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 60.96 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "47421d5d-705b-4c3d-bcf2-6f17e29141eb")
+		)
+		(pin "1"
+			(uuid "9457c2dd-5d6e-491a-8fe7-beeb27039f7c")
+		)
+		(instances
+			(project "clocka"
+				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS74")
 		(at 179.07 52.07 0)
 		(unit 2)
@@ -20075,76 +19276,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 33.02 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "933dd0bf-b89f-4415-814a-8b6aabb5ea3b")
-		(property "Reference" "R9"
-			(at 35.56 33.0199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1K"
-			(at 35.56 35.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 31.242 34.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 33.02 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 33.02 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cae37190-3fc9-4c52-be1e-e1fb03f47508")
-		)
-		(pin "2"
-			(uuid "819900d5-5774-4a16-8fef-2dd044772021")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 46.99 68.58 0)
 		(unit 1)
@@ -20161,7 +19292,7 @@
 				)
 			)
 		)
-		(property "Value" "MANUAL"
+		(property "Value" "BREAK"
 			(at 42.164 65.786 0)
 			(effects
 				(font
@@ -20169,7 +19300,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical"
 			(at 46.99 63.5 0)
 			(effects
 				(font
@@ -20486,73 +19617,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 110.49 123.19 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9794528a-98e9-485c-ac37-949de72a34a6")
-		(property "Reference" "C2"
-			(at 102.616 119.126 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 102.616 121.666 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
-			(at 114.3 122.2248 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 110.49 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3f1f46c1-5f53-4342-950b-f51274bc7457")
-		)
-		(pin "1"
-			(uuid "5cfca98d-d31b-45dd-8e2e-a599670ad062")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "74xx:74LS08")
 		(at 119.38 55.88 0)
 		(unit 1)
@@ -20858,6 +19922,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 110.49 176.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9c2fb100-c8e7-4e27-95a1-5a297bea3536")
+		(property "Reference" "C19"
+			(at 102.616 172.466 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 102.616 175.006 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
+			(at 114.3 175.5648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 110.49 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "871709a9-f3c7-46af-ab34-6024836a61e2")
+		)
+		(pin "1"
+			(uuid "bb8a9ba5-5647-4203-a4b5-4ef542726a3e")
+		)
+		(instances
+			(project "clocka"
+				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS125")
 		(at 181.61 118.11 0)
 		(unit 4)
@@ -21027,73 +20158,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 110.49 204.47 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a0b9ad1f-f426-4414-a9b5-4e5fe511ee99")
-		(property "Reference" "C4"
-			(at 102.616 200.406 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 102.616 202.946 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
-			(at 114.3 203.5048 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 110.49 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9ca9a59c-c012-419d-a97b-593ea3e2d67e")
-		)
-		(pin "1"
-			(uuid "3e92ca9a-8e11-4d31-bdd4-b4a82beb34ad")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 125.73 158.75 0)
 		(mirror y)
@@ -21222,76 +20286,6 @@
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
 					(reference "R27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 45.72 34.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a394085f-0573-4191-84d3-e0e15abce695")
-		(property "Reference" "R8"
-			(at 48.26 33.0199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1K"
-			(at 48.26 35.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 43.942 34.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 45.72 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 45.72 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b0d99518-4231-4fe6-b991-779ad45c00de")
-		)
-		(pin "2"
-			(uuid "43abfa4d-4e19-41ff-8f3a-fc1f975d5714")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -21432,7 +20426,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 113.03 85.09 180)
+		(at 102.87 85.09 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21441,7 +20435,7 @@
 		(fields_autoplaced yes)
 		(uuid "a5f9c805-6fa8-4b88-8843-b757d03d5bdb")
 		(property "Reference" "D4"
-			(at 113.03 78.74 0)
+			(at 102.87 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21449,7 +20443,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 113.03 81.28 0)
+			(at 102.87 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21457,7 +20451,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 113.03 85.09 0)
+			(at 102.87 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21466,7 +20460,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 113.03 85.09 0)
+			(at 102.87 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21475,7 +20469,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 113.03 85.09 0)
+			(at 102.87 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21484,7 +20478,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 113.03 85.09 0)
+			(at 102.87 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21493,7 +20487,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 113.03 85.09 0)
+			(at 102.87 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21745,6 +20739,73 @@
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
 					(reference "#PWR085")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 110.49 204.47 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "abe0b4a9-0628-4cc3-a258-2d78c28b8d44")
+		(property "Reference" "C20"
+			(at 102.616 200.406 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 102.616 202.946 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
+			(at 114.3 203.5048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 110.49 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7217ee34-5d97-4648-b092-99595471194d")
+		)
+		(pin "1"
+			(uuid "ab0dfa7b-eeb0-4a98-9f18-db83d1607a37")
+		)
+		(instances
+			(project "clocka"
+				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
+					(reference "C20")
 					(unit 1)
 				)
 			)
@@ -22045,7 +21106,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b1034157-9603-4b88-9e3f-75675daaa475")
-		(property "Reference" "C20"
+		(property "Reference" "C2"
 			(at 328.168 17.018 90)
 			(effects
 				(font
@@ -22097,7 +21158,7 @@
 		(instances
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C20")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -22507,73 +21568,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 158.75 215.9 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ba711666-18fb-4b17-a3dc-0ebc1367eaf1")
-		(property "Reference" "C10"
-			(at 154.686 211.074 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10nF"
-			(at 154.686 213.614 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
-			(at 157.7848 212.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 158.75 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 158.75 215.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0a27f4e6-ddce-48e0-a853-5ba9f8b5b0c9")
-		)
-		(pin "1"
-			(uuid "821927e7-0e43-48b5-bb98-558032a6bd3f")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Timer:NE555P")
 		(at 177.8 212.09 0)
 		(unit 1)
@@ -22863,73 +21857,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 68.58 45.72 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c304fea1-012b-4afd-905d-1b9508c953cd")
-		(property "Reference" "#PWR021"
-			(at 68.58 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 62.992 47.244 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 68.58 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c65c0248-53b0-4fde-9d15-bc2cfcdc8a10")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "#PWR021")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 328.93 21.59 0)
 		(mirror y)
 		(unit 1)
@@ -23178,8 +22105,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c96877d0-0865-4ec4-bd00-119183d1f1ac")
-		(property "Reference" "C7"
+		(uuid "c92187fb-8c4a-4b7b-8e1b-545f38df65ba")
+		(property "Reference" "C25"
 			(at 142.494 269.748 0)
 			(effects
 				(font
@@ -23225,15 +22152,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "f31b6af9-0808-41c7-a04d-0bc52840cfab")
+			(uuid "719c94f2-8271-49f3-8246-5d82bcb93491")
 		)
 		(pin "1"
-			(uuid "d2b8bcfe-9726-4b14-9991-4d1f7f5c7ebd")
+			(uuid "afb53525-82da-40ce-8207-fed944fd0a72")
 		)
 		(instances
-			(project ""
+			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C7")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -23373,87 +22300,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 45.72 41.91 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc25e686-3dbb-4068-b63e-ec9d5c02ee4f")
-		(property "Reference" "D8"
-			(at 49.53 42.2274 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1KHz"
-			(at 49.53 44.7674 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 45.72 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 45.72 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 45.72 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 45.72 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b6d57d2f-2220-4176-a4e3-bf95a5957857")
-		)
-		(pin "1"
-			(uuid "783eab8c-4461-43df-82a6-5557f372bc28")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Diode:1N4148")
-		(at 113.03 73.66 180)
+		(at 102.87 73.66 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23462,7 +22310,7 @@
 		(fields_autoplaced yes)
 		(uuid "cd132c61-74a4-4e7a-a4b9-6768582f6b9f")
 		(property "Reference" "D1"
-			(at 113.03 67.31 0)
+			(at 102.87 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23470,7 +22318,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 113.03 69.85 0)
+			(at 102.87 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23478,7 +22326,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 113.03 73.66 0)
+			(at 102.87 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23487,7 +22335,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 113.03 73.66 0)
+			(at 102.87 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23496,7 +22344,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 113.03 73.66 0)
+			(at 102.87 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23505,7 +22353,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 113.03 73.66 0)
+			(at 102.87 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23514,7 +22362,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 113.03 73.66 0)
+			(at 102.87 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23625,7 +22473,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 383.54 189.23 0)
+		(at 354.33 137.16 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23634,7 +22482,7 @@
 		(fields_autoplaced yes)
 		(uuid "cf7dda8b-4206-479f-9970-8aa26c66801d")
 		(property "Reference" "U7"
-			(at 383.5317 180.34 0)
+			(at 354.3217 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23642,7 +22490,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 383.5317 182.88 0)
+			(at 354.3217 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23650,7 +22498,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 383.54 189.23 0)
+			(at 354.33 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23659,7 +22507,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 383.54 189.23 0)
+			(at 354.33 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23668,7 +22516,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 383.54 189.23 0)
+			(at 354.33 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23831,73 +22679,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 110.49 176.53 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d3341bc0-a70b-443c-8530-8e18c1fa111b")
-		(property "Reference" "C6"
-			(at 102.616 172.466 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 102.616 175.006 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
-			(at 114.3 175.5648 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 110.49 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f4d5f078-d479-4ccd-bc0e-e46bd685a2da")
-		)
-		(pin "1"
-			(uuid "0a9bccae-4318-4c6c-93b1-394d864bda63")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 177.8 195.58 0)
 		(unit 1)
@@ -23988,7 +22769,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical"
 			(at 146.05 212.09 0)
 			(effects
 				(font
@@ -24158,85 +22939,6 @@
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
 					(reference "#PWR072")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 21.59 41.91 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d7c1f102-423e-4910-9e49-6db6aaf3407c")
-		(property "Reference" "D10"
-			(at 25.4 42.2274 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1Hz"
-			(at 25.4 44.7674 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 21.59 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 21.59 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 21.59 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 21.59 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "41ecacb0-54f5-48ad-94b3-c1199f48afd0")
-		)
-		(pin "1"
-			(uuid "95c17547-7a53-4d44-b600-76f03ad78a9f")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -24695,73 +23397,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 110.49 158.75 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dc8844cf-f39f-4086-b92c-622ae64c2fcf")
-		(property "Reference" "C5"
-			(at 102.616 154.686 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 102.616 157.226 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
-			(at 114.3 157.7848 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 110.49 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b31fb424-d1d5-447a-8144-d4bbbb1000cf")
-		)
-		(pin "1"
-			(uuid "b98dccfe-13c1-4b18-ab44-b03a3c132698")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 309.88 60.96 0)
 		(mirror y)
@@ -24837,7 +23472,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "de8ae79d-8350-4204-9a5f-52b2224490ec")
-		(property "Reference" "C25"
+		(property "Reference" "C10"
 			(at 347.218 56.388 90)
 			(effects
 				(font
@@ -24889,7 +23524,74 @@
 		(instances
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C25")
+					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 110.49 123.19 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "df0b4f4d-3158-4334-864b-5b5de6aeca75")
+		(property "Reference" "C16"
+			(at 102.616 119.126 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 102.616 121.666 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
+			(at 114.3 122.2248 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 110.49 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "63e36992-ce7a-42a9-a2f4-5a89eb51323c")
+		)
+		(pin "1"
+			(uuid "45c1bd4a-7e90-4792-b885-474d71eb2178")
+		)
+		(instances
+			(project "clocka"
+				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
+					(reference "C16")
 					(unit 1)
 				)
 			)
@@ -25160,87 +23862,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 33.02 41.91 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e47616f2-5226-480e-b758-1fed4a2e9796")
-		(property "Reference" "D9"
-			(at 36.83 42.2274 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "XTAL1"
-			(at 36.83 44.7674 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 33.02 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 33.02 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 33.02 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 33.02 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "bfa84ffd-0471-4e8b-85cb-e18a9f456b79")
-		)
-		(pin "1"
-			(uuid "18a6d200-bc72-4c8c-a30d-25ef39bd6eb9")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 120.65 95.25 0)
+		(at 110.49 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25249,7 +23872,7 @@
 		(fields_autoplaced yes)
 		(uuid "e590ee89-b0c7-4229-8b24-329f3861729c")
 		(property "Reference" "R7"
-			(at 123.19 93.9799 0)
+			(at 113.03 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25258,7 +23881,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 123.19 96.5199 0)
+			(at 113.03 96.5199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25267,7 +23890,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 118.872 95.25 90)
+			(at 108.712 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25276,7 +23899,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 95.25 0)
+			(at 110.49 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25285,7 +23908,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 120.65 95.25 0)
+			(at 110.49 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25618,75 +24241,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 33.02 45.72 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f342c306-55a5-403f-87ee-9aab23dd209a")
-		(property "Reference" "#PWR017"
-			(at 33.02 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 27.432 47.244 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 33.02 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2a6d8165-2b31-4794-8d22-bb721d3a39a6")
-		)
-		(instances
-			(project "clocka"
-				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "74xx:74LS08")
-		(at 383.54 158.75 0)
+		(at 118.11 76.2 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25695,7 +24251,7 @@
 		(fields_autoplaced yes)
 		(uuid "f4c5c85c-c2dc-4e46-bb3c-dd467c6bb0d8")
 		(property "Reference" "U7"
-			(at 383.5317 149.86 0)
+			(at 118.1017 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25703,7 +24259,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 383.5317 152.4 0)
+			(at 118.1017 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25711,7 +24267,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm"
-			(at 383.54 158.75 0)
+			(at 118.11 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25720,7 +24276,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 383.54 158.75 0)
+			(at 118.11 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25729,7 +24285,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 383.54 158.75 0)
+			(at 118.11 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25797,7 +24353,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f51afdbd-a7bd-4674-9f18-fe153e4f79ce")
-		(property "Reference" "C24"
+		(property "Reference" "C4"
 			(at 328.168 56.388 90)
 			(effects
 				(font
@@ -25849,7 +24405,7 @@
 		(instances
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
-					(reference "C24")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -26094,6 +24650,140 @@
 			(project "clocka"
 				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
 					(reference "RV3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 158.75 173.99 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7edc110-0f8c-423f-a58b-6ea5d983eb24")
+		(property "Reference" "C22"
+			(at 154.686 169.164 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10nF"
+			(at 154.686 171.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
+			(at 157.7848 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 158.75 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1e45b6f5-d6ee-494f-8483-25d8145fc324")
+		)
+		(pin "1"
+			(uuid "3d0c3999-2840-4626-8d87-3b7c274b1ffb")
+		)
+		(instances
+			(project "clocka"
+				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
+					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 105.41 261.62 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f8346399-6ec7-4a91-8275-ca56674c3468")
+		(property "Reference" "C23"
+			(at 101.346 256.794 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10nF"
+			(at 101.346 259.334 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm"
+			(at 104.4448 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 105.41 261.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ee19146d-12a8-4918-abb1-06305a4a2601")
+		)
+		(pin "1"
+			(uuid "e2294f8c-d9f4-49de-aca8-17150562c9c2")
+		)
+		(instances
+			(project "clocka"
+				(path "/d210c3ef-4a71-4fca-b549-97047783e09c"
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -26579,7 +25269,7 @@
 	)
 	(symbol
 		(lib_id "Diode:1N4148")
-		(at 113.03 81.28 180)
+		(at 102.87 81.28 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -26588,7 +25278,7 @@
 		(fields_autoplaced yes)
 		(uuid "fc8fb998-be40-4b05-ad5e-8010d4846adc")
 		(property "Reference" "D3"
-			(at 113.03 74.93 0)
+			(at 102.87 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26596,7 +25286,7 @@
 			)
 		)
 		(property "Value" "1N4148"
-			(at 113.03 77.47 0)
+			(at 102.87 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26604,7 +25294,7 @@
 			)
 		)
 		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-			(at 113.03 81.28 0)
+			(at 102.87 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26613,7 +25303,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
-			(at 113.03 81.28 0)
+			(at 102.87 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26622,7 +25312,7 @@
 			)
 		)
 		(property "Description" "100V 0.15A standard switching diode, DO-35"
-			(at 113.03 81.28 0)
+			(at 102.87 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26631,7 +25321,7 @@
 			)
 		)
 		(property "Sim.Device" "D"
-			(at 113.03 81.28 0)
+			(at 102.87 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26640,7 +25330,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 113.03 81.28 0)
+			(at 102.87 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
