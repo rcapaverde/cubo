@@ -1874,6 +1874,12 @@
 		(uuid "a0bb1a26-83f6-48bf-88f3-16fd2c94ff06")
 	)
 	(junction
+		(at 41.91 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "beb2e9b8-fda8-40f2-9fe2-d164ad92381a")
+	)
+	(junction
 		(at 96.52 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2007,6 +2013,16 @@
 	)
 	(wire
 		(pts
+			(xy 26.67 31.75) (xy 27.94 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11b23a53-c42a-4ea7-a712-fd857a116dfd")
+	)
+	(wire
+		(pts
 			(xy 33.02 60.96) (xy 33.02 52.07)
 		)
 		(stroke
@@ -2024,6 +2040,16 @@
 			(type default)
 		)
 		(uuid "19e5b25c-1526-4d27-99d8-ec13bba12506")
+	)
+	(wire
+		(pts
+			(xy 39.37 21.59) (xy 41.91 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1abff020-7ea1-4bd1-9f12-50d271d89af0")
 	)
 	(wire
 		(pts
@@ -2277,6 +2303,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 36.83) (xy 36.83 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e800157-cd11-476c-a872-7f855545ca98")
+	)
+	(wire
+		(pts
 			(xy 45.72 157.48) (xy 43.18 157.48)
 		)
 		(stroke
@@ -2284,6 +2320,16 @@
 			(type default)
 		)
 		(uuid "6f624718-8a9d-4916-ad17-e8f3dcdf572b")
+	)
+	(wire
+		(pts
+			(xy 38.1 31.75) (xy 39.37 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "723c7259-c472-4add-9d78-9dd54e814b3d")
 	)
 	(wire
 		(pts
@@ -2324,16 +2370,6 @@
 			(type default)
 		)
 		(uuid "7ceedfe6-8beb-4f7e-bd38-d95f76a66f95")
-	)
-	(wire
-		(pts
-			(xy 22.86 31.75) (xy 27.94 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7eee8840-7ba4-4362-9077-886f37e61861")
 	)
 	(wire
 		(pts
@@ -2384,6 +2420,16 @@
 			(type default)
 		)
 		(uuid "91e0b7e1-82a3-454d-8228-cb0bd9dc2d4c")
+	)
+	(wire
+		(pts
+			(xy 26.67 36.83) (xy 26.67 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94527b5c-7120-40ac-b946-2fc08e957ac8")
 	)
 	(wire
 		(pts
@@ -2484,6 +2530,16 @@
 			(type default)
 		)
 		(uuid "b7a22734-6327-4f93-a237-d41e21fe5910")
+	)
+	(wire
+		(pts
+			(xy 39.37 31.75) (xy 39.37 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c94ed862-81a2-4684-8867-4f4f929f9c09")
 	)
 	(wire
 		(pts
@@ -2615,28 +2671,6 @@
 		)
 		(uuid "fbf2e11b-f2d2-4097-acbd-0784073761f6")
 	)
-	(global_label "1Hz_out"
-		(shape input)
-		(at 158.75 38.1 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "01ed9966-a6a2-4367-8c4f-ed0016656e9e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.2054 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "signal_ext"
 		(shape input)
 		(at 171.45 81.28 0)
@@ -2659,9 +2693,31 @@
 			)
 		)
 	)
-	(global_label "1KHz_out"
+	(global_label "xtal1_in"
+		(shape output)
+		(at 171.45 35.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "19cbbb79-33b1-4ccf-97b1-c6b352e7342e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 181.9341 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "step"
 		(shape input)
-		(at 158.75 43.18 180)
+		(at 158.75 68.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2669,9 +2725,9 @@
 			)
 			(justify right)
 		)
-		(uuid "11355c59-0a65-411f-8262-55edbcd472d9")
+		(uuid "1c791021-e514-43d5-b67a-27c534464bcb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 146.9354 43.18 0)
+			(at 151.7734 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2699,50 +2755,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "1Hz_in"
-		(shape output)
-		(at 158.75 35.56 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "24a15ba4-a6c2-48a6-b4ff-ba754f4f0863")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 149.4753 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "xtal1_out"
-		(shape input)
-		(at 171.45 33.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "26300ab1-c871-43c3-a72f-99652fe324ba")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 183.204 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -2835,28 +2847,6 @@
 			)
 		)
 	)
-	(global_label "half_step"
-		(shape input)
-		(at 158.75 68.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "39d10e15-a33c-41c6-bcb9-2ad5c29a3fa1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 147.1169 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "clock_reset_in"
 		(shape input)
 		(at 40.64 181.61 180)
@@ -2870,28 +2860,6 @@
 		(uuid "3bbd272f-03b7-4128-9a23-d57ead831b8a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 24.2291 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "step"
-		(shape input)
-		(at 158.75 66.04 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "48e34338-e065-4f82-802d-3d609c1cd107")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 151.7734 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2945,9 +2913,9 @@
 			)
 		)
 	)
-	(global_label "xtal2_out"
-		(shape input)
-		(at 171.45 38.1 0)
+	(global_label "1KHz_in"
+		(shape output)
+		(at 171.45 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2955,9 +2923,9 @@
 			)
 			(justify left)
 		)
-		(uuid "599e9056-b24d-4203-b1cf-2092a23ae72f")
+		(uuid "624b2a83-8a5a-4dc3-bcb7-fb981966e651")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 183.204 38.1 0)
+			(at 181.9947 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3033,6 +3001,28 @@
 			)
 		)
 	)
+	(global_label "xtal2_out"
+		(shape input)
+		(at 158.75 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6b9752e4-887b-4cbe-8007-1a87d78a30a1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 146.996 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "clock_pulse"
 		(shape input)
 		(at 97.79 27.94 0)
@@ -3077,6 +3067,28 @@
 			)
 		)
 	)
+	(global_label "1Hz_in"
+		(shape output)
+		(at 158.75 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "71cbcfab-1156-4a35-9fcd-b53e85c3984a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.4753 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "clock_1hz"
 		(shape input)
 		(at 46.99 54.61 0)
@@ -3099,9 +3111,9 @@
 			)
 		)
 	)
-	(global_label "ext_out"
+	(global_label "~{clock_stopped}"
 		(shape input)
-		(at 171.45 43.18 0)
+		(at 36.83 36.83 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3109,9 +3121,53 @@
 			)
 			(justify left)
 		)
-		(uuid "80ff6575-ebaa-4009-acb0-42e662428307")
+		(uuid "7532eb65-35a4-42c2-8cdd-8960f81fd39b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.2689 43.18 0)
+			(at 53.2407 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "xtal1_out"
+		(shape input)
+		(at 171.45 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "75a94bd5-c40f-4ce6-a297-8103e5cde146")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 183.204 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "ext_in"
+		(shape output)
+		(at 171.45 30.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "80ee22bb-5744-4fb7-b806-8b04baa060ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 179.999 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3231,9 +3287,9 @@
 			)
 		)
 	)
-	(global_label "xtal2_in"
-		(shape output)
-		(at 171.45 35.56 0)
+	(global_label "ext_out"
+		(shape input)
+		(at 171.45 33.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3241,9 +3297,9 @@
 			)
 			(justify left)
 		)
-		(uuid "a3eec04f-94a3-441c-b6eb-d44e8841d822")
+		(uuid "a2c3173b-cee0-4dfd-acc4-d28fc7fc2357")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.9341 35.56 0)
+			(at 181.2689 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3297,6 +3353,50 @@
 			)
 		)
 	)
+	(global_label "1Hz_out"
+		(shape input)
+		(at 158.75 43.18 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b6d7cbf7-0e1c-494d-b704-6c5ccf8c557a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.2054 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "1KHz_out"
+		(shape input)
+		(at 171.45 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b7c52d6e-d89e-427c-8152-0603b83ff7a2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 183.2646 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "clock_xtal2"
 		(shape output)
 		(at 171.45 73.66 0)
@@ -3315,6 +3415,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "xtal2_in"
+		(shape output)
+		(at 158.75 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bf487bb5-b3a8-4e50-a7a3-91211de69fbb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.2659 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -3407,72 +3529,6 @@
 			)
 		)
 	)
-	(global_label "1KHz_in"
-		(shape output)
-		(at 158.75 40.64 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d63dcdee-489a-4c19-974e-79d659259f17")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 148.2053 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "ext_in"
-		(shape output)
-		(at 171.45 40.64 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "dbc6d132-419e-43fe-ab61-18e973a5e849")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 179.999 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "xtal1_in"
-		(shape output)
-		(at 171.45 30.48 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "dd87e966-fdae-41db-8b2e-880f0bc1b30f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 181.9341 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "clock_xtal1"
 		(shape output)
 		(at 171.45 71.12 0)
@@ -3495,7 +3551,7 @@
 			)
 		)
 	)
-	(global_label "clock_stopped"
+	(global_label "~{clock_stopped}"
 		(shape output)
 		(at 171.45 78.74 0)
 		(fields_autoplaced yes)
@@ -3561,28 +3617,6 @@
 			)
 		)
 	)
-	(global_label "clock_stopped"
-		(shape input)
-		(at 38.1 31.75 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f201362d-add1-4bc2-9912-7bb102e5f067")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 54.5107 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "clock_reset_in"
 		(shape output)
 		(at 158.75 71.12 180)
@@ -3623,6 +3657,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "half_step"
+		(shape input)
+		(at 158.75 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fe52db09-5c60-4625-af70-59a457168635")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 147.1169 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -5323,71 +5379,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 22.86 39.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "66951c02-955a-4b0a-819d-8d617e2b801e")
-		(property "Reference" "#PWR01"
-			(at 22.86 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 26.67 41.148 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 22.86 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 22.86 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ec108b26-77fa-446b-8068-457003dfeb41")
-		)
-		(instances
-			(project "clock-cpa"
-				(path "/2270cbbb-cf9c-4a84-8fb8-e95875acf1ac"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 39.37 109.22 90)
 		(unit 1)
@@ -6618,7 +6609,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 22.86 35.56 0)
+		(at 30.48 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6626,25 +6617,25 @@
 		(dnp no)
 		(uuid "bc3bcf43-cbd4-46f3-ace3-a8cb8e8fad64")
 		(property "Reference" "R12"
-			(at 20.828 36.068 0)
+			(at 31.623 41.783 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "1K"
-			(at 20.828 33.528 0)
+			(at 31.623 39.243 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 21.082 35.56 90)
+			(at 30.48 38.608 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6653,7 +6644,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 22.86 35.56 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6662,7 +6653,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 22.86 35.56 0)
+			(at 30.48 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
