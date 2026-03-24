@@ -14300,15 +14300,15 @@
 		(fields_autoplaced yes)
 		(uuid "5f7f8938-2189-4ba9-8ebd-f8cb2a552bc0")
 		(property "Reference" "Y1"
-			(at 205.74 257.7398 0)
+			(at 204.47 257.7398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "400KHz"
-			(at 205.74 260.2798 0)
+		(property "Value" "XTAL1"
+			(at 204.47 260.2798 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14448,7 +14448,7 @@
 				)
 			)
 		)
-		(property "Value" "1MHz"
+		(property "Value" "XTAL2"
 			(at 238.76 260.2798 0)
 			(effects
 				(font
