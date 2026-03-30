@@ -14772,7 +14772,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 255.27 24.13 0)
 			(effects
 				(font
@@ -15868,7 +15868,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 218.44 24.13 0)
 			(effects
 				(font
@@ -19069,7 +19069,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 312.42 17.78 0)
 			(effects
 				(font
@@ -19170,7 +19170,7 @@
 			(uuid "cc2d2e6f-d5ee-4be4-9b55-9c76232a4a19")
 		)
 		(instances
-			(project ""
+			(project "sysbusa"
 				(path "/02b9996c-8125-4412-af70-f1d12218c07b"
 					(reference "C2")
 					(unit 1)
@@ -24753,7 +24753,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
 			(at 261.62 36.83 0)
 			(effects
 				(font
