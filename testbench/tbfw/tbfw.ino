@@ -20,7 +20,7 @@ typedef struct
     int selected_index;
 } Menu;
 
-const int8_t MPU_DATA[] = {6, 7, A5, A4, A3, A2, A1, A0};
+const int8_t MPU_DATA[] = {4, 5, 6, 7, A3, A2, A1, A0};
 const int8_t MPU_ADDR[] = {8, 9, 10, 11};
 const int8_t MPU_WRITE = 12;
 const int8_t MPU_READ = 13;
@@ -182,6 +182,21 @@ void LCD_init()
     // Clears entire display and sets DDRAM address 0 in address counter
     LCD_write_register(0x01);
     delay(2);
+}
+
+void testbench_bit_set(int bit, int data)
+{
+
+}
+
+int testbench_bit_get(int bit)
+{
+
+}
+
+int testbench_write(int bit)
+{
+
 }
 
 void open_menu_opts(void);
