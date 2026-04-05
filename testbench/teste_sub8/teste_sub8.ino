@@ -105,6 +105,8 @@ void setup()
 
     int test;
 
+    bool result = true;
+
     // coloca todos os bits como output
     set_test_dir(0x00);
 
@@ -112,30 +114,42 @@ void setup()
     {
         write_data(test_data);
         test = read_test();
-        Serial.print(test_data, HEX);
-        Serial.print(" ");
-        Serial.print(test, HEX);
-        Serial.print(" ");
-        Serial.println(test == test_data ? "OK" : "ERR");
+        //Serial.print(test_data, HEX);
+        //Serial.print(" ");
+        //Serial.print(test, HEX);
+        //Serial.print(" ");
+        bool cmp = test == test_data;
+        //Serial.println(cmp ? "OK" : "ERR");
+        result &= cmp;
         test_data++;
     }    
+
+    Serial.print("Write test: ");
+    Serial.println(result ? "OK" : "FAILED");
 
     // coloca todos os bits como input
     set_data_read();
     set_test_dir(0xFF);
     //analogWrite(PIN_READ_ENABLE, 128);
 
+    result = true;
+
     for (int test_data = 0; test_data < 256; )
     {
         write_test(test_data);
         test = read_data();
-        Serial.print(test_data, HEX);
-        Serial.print(" ");
-        Serial.print(test, HEX);
-        Serial.print(" ");
-        Serial.println(test == test_data ? "OK" : "ERR");
+        //Serial.print(test_data, HEX);
+        //Serial.print(" ");
+        //Serial.print(test, HEX);
+        //Serial.print(" ");
+        bool cmp = test == test_data;
+        //Serial.println(test == test_data ? "OK" : "ERR");
+        result &= cmp;
         test_data++;
     }    
+
+    Serial.print("Read test: ");
+    Serial.println(result ? "OK" : "FAILED");
 }
 
 void loop() 
