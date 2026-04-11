@@ -16655,7 +16655,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "PWR"
+		(property "Value" "POWER"
 			(at 58.42 43.4974 90)
 			(effects
 				(font
