@@ -144,13 +144,34 @@ void LCD_setpos(uint8_t row, uint8_t col)
     LCD_write_register(0x80 | (col + row * 0x40));   
 }
 
-void LCD_print(char *str)
+void LCD_print(const char *str)
 {
     while (*str)
     {
         LCD_write_char(*str);
         str++;
     }
+}
+
+void LCD_print(int num)
+{
+    char buffer[12];
+    itoa(num, buffer, 10);
+    LCD_print(buffer);
+}
+
+void LCD_print(float num)
+{
+    char buffer[12];
+    dtostrf(num, 0, 2, buffer);
+    LCD_print(buffer);
+}
+
+void LCD_print(float num, int width, int precision)
+{
+    char buffer[12];
+    dtostrf(num, width, precision, buffer);
+    LCD_print(buffer);
 }
 
 void LCD_init()
@@ -200,19 +221,86 @@ void LCD_init()
     delay(2);
 }
 
-void testbench_bit_set(int bit, int data)
-{
+uint8_t current_testbench_dir[6];
+uint8_t current_testbench_write_data[6];
+uint8_t current_testbench_read_data[6];
+uint8_t new_testbench_dir[6];
+uint8_t new_testbench_write_data[6];
 
+void testbench_init(void)
+{
+    memset(new_testbench_dir, 0xFF, sizeof(new_testbench_dir));
+    memset(new_testbench_write_data, 0x00, sizeof(new_testbench_write_data));
+    memset(current_testbench_dir, 0xFF, sizeof(current_testbench_dir));
+    memset(current_testbench_write_data, 0x00, sizeof(current_testbench_write_data));
+
+    for (int iByte = 0; iByte < 6; iByte++)
+    {
+        multiplex_write(MPU_ADDR_DIR[iByte], new_testbench_dir[iByte]);
+        multiplex_write(MPU_ADDR_DATA[iByte], new_testbench_write_data[iByte]);
+    }
+
+    testbench_read();
 }
 
-int testbench_bit_get(int bit)
+void testbench_bit_dir(uint8_t bit, uint8_t dir)
 {
+    if (bit >= 48)
+        return;
 
+    uint8_t bit_mask = 1 << (bit % 8);
+    uint8_t byte_index = bit >> 3;
+    if (dir)
+        new_testbench_dir[byte_index] &= ~bit_mask;
+    else
+        new_testbench_dir[byte_index] |= bit_mask;
 }
 
-int testbench_write(int bit)
+void testbench_bit_set(uint8_t bit, uint8_t data)
 {
+    if (bit >= 48)
+        return;
 
+    uint8_t bit_mask = 1 << (bit % 8);
+    uint8_t byte_index = bit >> 3;
+    if (data)
+        new_testbench_write_data[byte_index] |= bit_mask;
+    else
+        new_testbench_write_data[byte_index] &= ~bit_mask;
+}
+
+uint8_t testbench_bit_get(uint8_t bit)
+{
+    if (bit >= 48)
+        return 0;
+
+    uint8_t bit_mask = 1 << (bit % 8);
+    uint8_t byte_index = bit >> 3;
+    return (current_testbench_read_data[byte_index] & bit_mask) ? 1 : 0;
+}
+
+void testbench_write(void)
+{
+    for (int iByte = 0; iByte < 6; iByte++)
+    {
+        if (current_testbench_dir[iByte] != new_testbench_dir[iByte])
+        {
+            multiplex_write(MPU_ADDR_DIR[iByte], new_testbench_dir[iByte]);
+            current_testbench_dir[iByte] = new_testbench_dir[iByte];
+        }
+
+        if (current_testbench_write_data[iByte] != new_testbench_write_data[iByte])
+        {
+            multiplex_write(MPU_ADDR_DATA[iByte], new_testbench_write_data[iByte]);
+            current_testbench_write_data[iByte] = new_testbench_write_data[iByte];
+        }
+    }
+}
+
+void testbench_read(void)
+{
+    for (int iByte = 0; iByte < 6; iByte++)
+        current_testbench_read_data[iByte] = multiplex_read(MPU_ADDR_DATA[iByte]);
 }
 
 void open_menu_opts(void);
@@ -675,16 +763,12 @@ void testbench_ammeter(int slot)
             float current = INA.getCurrent();
             float busVoltage = INA.getBusVoltage();
 
-            char temp[16];
-
             LCD_setpos(1, 0);
 
-            dtostrf(current * 1000.0, 1, 1, temp);
-            LCD_print(temp);
+            LCD_print(current * 1000.0, 1, 1);
             LCD_print("mA ");
 
-            dtostrf(busVoltage, 1, 1, temp);
-            LCD_print(temp);
+            LCD_print(busVoltage, 1, 1);
             LCD_print("V ");
         }
 
@@ -703,82 +787,175 @@ void run_testbench_sub8(void)
     LCD_noblink();
     LCD_clear();
 
-    // configurar os canais do testbench para o primeiro conjunto de testes
-    // 0: escrita (do MCU para a placa em teste)
-    // 1: leitura (da placa em teste para o MCU)
-    multiplex_write(MPU_ADDR_DIR[0], 0x1E);
-    multiplex_write(MPU_ADDR_DIR[1], 0xC0);
-    multiplex_write(MPU_ADDR_DIR[4], 0x1E);
-    multiplex_write(MPU_ADDR_DIR[5], 0x00);
+    const uint8_t PIN_TEST[] = {25, 26, 27, 28, 1, 2, 3, 4};
+    const uint8_t PIN_DATA[] = {5, 6, 7, 8, 9, 10, 11, 12};
+    const uint8_t PIN_WRITE_DATA = 34;
+    const uint8_t PIN_WRITE_DIR = 35;
+    const uint8_t PIN_INV_READ_ENABLE = 36;
+
+    LCD_clear_line(1);
+    LCD_print("warm up");
 
     // liga a placa em teste
     multiplex_write(MPU_ADDR_STATUS, MCU_STATE_RUN | MCU_STATE_POWER_A);
 
-    // escreve zeros
-    multiplex_write(MPU_ADDR_DATA[0], 0x00);
-    multiplex_write(MPU_ADDR_DATA[1], 0x00);
+    testbench_init();
 
-    char temp[16];
+    float amps_max = 0;
 
-    // lê e verifica zeros
-    uint8_t data0 = multiplex_read(MPU_ADDR_DATA[0]);
-    uint8_t data4 = multiplex_read(MPU_ADDR_DATA[4]);
-    int8_t data_A = ((data0 & 0x1E) << 3) | ((data4 & 0x1E) >> 1);
+    // dá tempo para a placa estabilizar
+    for (int i = 0; i < 10; i++)
+    {
+        if (ina_ok)
+        {
+            float current = INA.getCurrent() * 1000.0;
+            if (current > amps_max)
+                amps_max = current;
+        }
 
-LCD_clear();
-LCD_print("PONTO 0");
-LCD_setpos(1, 0);
-itoa(data0, temp, 16);
-LCD_print(temp);
-LCD_print(" ");
-itoa(data4, temp, 16);
-LCD_print(temp);
+        delay(50);
+    }
 
-pinMode(8, OUTPUT);
-pinMode(9, OUTPUT);
-pinMode(10, OUTPUT);
-pinMode(11, OUTPUT);
+    bool result = !ina_ok || amps_max > 0.1;
 
-digitalWrite(8, HIGH);
-digitalWrite(9, HIGH);
-digitalWrite(10, HIGH);
-digitalWrite(11, HIGH);
+    if (result)
+    {
+        testbench_bit_dir(PIN_WRITE_DATA, OUTPUT);      // write data
+        testbench_bit_dir(PIN_WRITE_DIR, OUTPUT);       // write dir
+        testbench_bit_dir(PIN_INV_READ_ENABLE, OUTPUT); // inv read enable
 
+        testbench_bit_set(PIN_INV_READ_ENABLE, HIGH);
+        testbench_write();
 
-while (true)
-    delay(10);
-        
-        
-    // escreve uns
-    multiplex_write(MPU_ADDR_DATA[0], 0xE0);
-    multiplex_write(MPU_ADDR_DATA[1], 0x1F);
+        // configura o registro de direção da placa em teste para escrita
+        LCD_clear_line(1);
+        LCD_print("writing...");
 
-LCD_clear();
-LCD_print("PONTO 1");
-LCD_setpos(1, 0);
-itoa(data0, temp, 16);
-LCD_print(temp);
-LCD_print(" ");
-itoa(data4, temp, 16);
-LCD_print(temp);
+        for (int i = 0; i < 8; i++)
+            testbench_bit_dir(PIN_TEST[i], INPUT);  // test 0-7
 
-while (console_read() == 0)
-    delay(10);
+        for (int i = 0; i < 8; i++)
+            testbench_bit_dir(PIN_DATA[i], OUTPUT); // data 0-7
 
-    // lê e verifica uns
-    data0 = multiplex_read(MPU_ADDR_DATA[0]);
-    data4 = multiplex_read(MPU_ADDR_DATA[4]);
-    int8_t data_B = ((data0 & 0x1E) << 3) | ((data4 & 0x1E) >> 1);
+        for (int i = 0; i < 8; i++)
+            testbench_bit_set(PIN_DATA[i], LOW);
+        testbench_write();
 
-    LCD_print("A: ");
-    itoa(data_A, temp, 16);
-    LCD_print(temp);
+        testbench_bit_set(PIN_WRITE_DIR, HIGH);
+        testbench_write();
+        testbench_bit_set(PIN_WRITE_DIR, LOW);
+        testbench_write();
+
+        for (int value = 0; value < 256; value++)
+        {
+            if (ina_ok)
+            {
+                float current = INA.getCurrent() * 1000.0;
+                if (current > amps_max)
+                    amps_max = current;
+            }
+
+            // escreve zeros e uns
+            for (int i = 0; i < 8; i++)
+                testbench_bit_set(PIN_DATA[i], (value >> i) & 0x01);
+            testbench_write();
+
+            testbench_bit_set(PIN_WRITE_DATA, HIGH);
+            testbench_write();
+            testbench_bit_set(PIN_WRITE_DATA, LOW);
+            testbench_write();
+
+            testbench_read();
+
+            int read_back = 0;
+            for (int i = 0; i < 8; i++)
+                read_back |= testbench_bit_get(PIN_TEST[i]) << i;
+
+            if (read_back != value)
+            {
+                result = false;
+                break;
+            }       
+        }            
+    }
     
-    LCD_print(" B: ");
-    itoa(data_B, temp, 16);
-    LCD_print(temp);   
+    // configura o registro de direção da placa em teste para leitura
+    if (result)
+    {
+        LCD_clear_line(1);
+        LCD_print("reading...");
+
+        for (int i = 0; i < 8; i++)
+            testbench_bit_dir(PIN_DATA[i], OUTPUT); // data 0-7
+        testbench_write();
+
+        for (int i = 0; i < 8; i++)
+            testbench_bit_set(PIN_DATA[i], HIGH);
+        testbench_write();
+
+        testbench_bit_set(PIN_WRITE_DIR, HIGH);
+        testbench_write();
+        testbench_bit_set(PIN_WRITE_DIR, LOW);
+        testbench_write();
+
+        for (int i = 0; i < 8; i++)
+            testbench_bit_dir(PIN_TEST[i], OUTPUT);  // test 0-7
+
+        for (int i = 0; i < 8; i++)
+            testbench_bit_dir(PIN_DATA[i], INPUT); // data 0-7
+
+        testbench_write();
+
+        for (int value = 0; value < 256; value++)
+        {
+            if (ina_ok)
+            {
+                float current = INA.getCurrent() * 1000.0;
+                if (current > amps_max)
+                    amps_max = current;
+            }
+
+            // escreve zeros e uns
+            for (int i = 0; i < 8; i++)
+                testbench_bit_set(PIN_TEST[i], (value >> i) & 0x01);
+            testbench_write();
+
+            testbench_bit_set(PIN_INV_READ_ENABLE, LOW);
+            testbench_write();
+
+            testbench_read();
+
+            testbench_bit_set(PIN_INV_READ_ENABLE, HIGH);
+            testbench_write();
+
+            int read_back = 0;
+            for (int i = 0; i < 8; i++)
+                read_back |= testbench_bit_get(PIN_DATA[i]) << i;
+
+            if (read_back != value)
+            {
+                result = false;
+                break;
+            }
+        }            
+    }
 
     run_turn_off_power(true, false);
+
+    if (result)
+    {
+        LCD_clear();
+        LCD_print("TEST PASSED");
+        LCD_setpos(1, 0);
+        LCD_print(amps_max, 1, 1);
+        LCD_print(" mA");
+    }
+    else    
+    {
+        LCD_clear_line(0);
+        LCD_print("TEST FAILED");
+        multiplex_write(MPU_ADDR_STATUS, MCU_STATE_ERROR);
+    }
 
     while (console_read() == 0)
         delay(10);
