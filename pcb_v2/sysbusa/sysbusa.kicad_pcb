@@ -6305,7 +6305,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "31beea87-bcb4-410b-b813-14bac0eb8639")
-		(at 162.56 45.72 90)
+		(at 200.66 44.45 90)
 		(descr "Through hole straight pin header, 2x08, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x08 2.54mm double row")
 		(property "Reference" "J1"
@@ -7768,7 +7768,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "3ebdd540-28ba-41fd-81ed-719aa8ea4e2f")
-		(at 118.11 44.45 90)
+		(at 156.21 43.815 90)
 		(descr "Through hole straight pin header, 2x08, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x08 2.54mm double row")
 		(property "Reference" "J12"
@@ -16479,7 +16479,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "9ca956fb-48ce-4d99-ad11-7c6d5d14db3e")
-		(at 162.56 34.29 90)
+		(at 200.58 33.02 90)
 		(descr "Through hole straight pin header, 2x08, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x08 2.54mm double row")
 		(property "Reference" "J2"
@@ -23127,7 +23127,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "c86a70f8-a368-4500-9836-2a6aa7c11455")
-		(at 118.11 33.655 90)
+		(at 156.21 33.02 90)
 		(descr "Through hole straight pin header, 2x08, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x08 2.54mm double row")
 		(property "Reference" "J7"
@@ -24573,7 +24573,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "d0835ea5-dc6e-4ff0-a663-aee90b4a342b")
-		(at 224.79 33.02 90)
+		(at 108.585 34.29 90)
 		(descr "Through hole straight pin header, 2x08, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x08 2.54mm double row")
 		(property "Reference" "J5"
@@ -25204,7 +25204,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "d5d166c3-903f-4d7c-af17-6f444ab0811d")
-		(at 118.11 55.245 90)
+		(at 156.21 54.61 90)
 		(descr "Through hole straight pin header, 2x08, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x08 2.54mm double row")
 		(property "Reference" "J11"
@@ -29025,7 +29025,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "ff3ffb74-f6a5-44a8-ab96-ec69f171f82f")
-		(at 224.79 43.815 90)
+		(at 108.585 45.085 90)
 		(descr "Through hole straight pin header, 2x08, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x08 2.54mm double row")
 		(property "Reference" "J6"
@@ -29484,15 +29484,15 @@
 		(uuid "861bf729-5ac1-4fcc-bd22-45aeb0c84492")
 	)
 	(gr_rect
-		(start 112.395 27.94)
-		(end 141.605 58.475)
+		(start 102.87 28.575)
+		(end 132.08 48.26)
 		(stroke
 			(width 0.3)
 			(type solid)
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "d65958a2-e4ee-4816-9bc8-6a1b65fb012b")
+		(uuid "15841f5d-97cc-4c7b-87e5-3f85d9622d04")
 	)
 	(gr_rect
 		(start 113.5575 82.4225)
@@ -29517,8 +29517,19 @@
 		(uuid "c33abc7a-ae94-4b47-8bc6-6fa0661a8bc4")
 	)
 	(gr_rect
-		(start 156.845 28.575)
-		(end 186.055 48.895)
+		(start 150.495 27.305)
+		(end 179.705 57.84)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "d65958a2-e4ee-4816-9bc8-6a1b65fb012b")
+	)
+	(gr_rect
+		(start 194.945 27.075)
+		(end 224.155 47.395)
 		(stroke
 			(width 0.3)
 			(type solid)
@@ -29526,17 +29537,6 @@
 		(fill no)
 		(layer "F.SilkS")
 		(uuid "4c566fb9-b16a-431d-b68e-13066a894cd8")
-	)
-	(gr_rect
-		(start 219.075 27.305)
-		(end 248.285 46.99)
-		(stroke
-			(width 0.3)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.SilkS")
-		(uuid "15841f5d-97cc-4c7b-87e5-3f85d9622d04")
 	)
 	(gr_rect
 		(start 249.56 27.31)
@@ -29592,17 +29592,6 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "38caa6fd-2bb4-4396-914d-dd36de4fead4")
-	)
-	(gr_rect
-		(start 280.64 28.75)
-		(end 308.64 34.75)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "51962a32-bace-409a-a645-f822ac5d433f")
 	)
 	(gr_circle
 		(center 312.59 31.4)
@@ -29662,10 +29651,10 @@
 			)
 		)
 	)
-	(gr_text "WRITE"
-		(at 124.9675 81.1525 0)
+	(gr_text "MEM"
+		(at 116.205 50.8 0)
 		(layer "F.SilkS")
-		(uuid "ee393ef1-dfd0-459b-b00e-8aa867b1c577")
+		(uuid "6e41e59b-24bc-4fc2-b6a5-70bd35e74182")
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -29674,10 +29663,10 @@
 			)
 		)
 	)
-	(gr_text "CLU"
-		(at 127 60.325 0)
+	(gr_text "WRITE"
+		(at 124.9675 81.1525 0)
 		(layer "F.SilkS")
-		(uuid "8c427c7f-dfe5-47c0-9200-6e2b9fc37543")
+		(uuid "ee393ef1-dfd0-459b-b00e-8aa867b1c577")
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -29698,10 +29687,10 @@
 			)
 		)
 	)
-	(gr_text "ULA"
-		(at 171.45 50.8 0)
+	(gr_text "CLU"
+		(at 165.1 59.69 0)
 		(layer "F.SilkS")
-		(uuid "29401c7f-0e05-4055-88d4-d4c29189ae68")
+		(uuid "8c427c7f-dfe5-47c0-9200-6e2b9fc37543")
 		(effects
 			(font
 				(size 1.5 1.5)
@@ -29710,10 +29699,10 @@
 			)
 		)
 	)
-	(gr_text "MEM"
-		(at 233.68 48.895 0)
+	(gr_text "ULA"
+		(at 209.55 50.165 0)
 		(layer "F.SilkS")
-		(uuid "6e41e59b-24bc-4fc2-b6a5-70bd35e74182")
+		(uuid "29401c7f-0e05-4055-88d4-d4c29189ae68")
 		(effects
 			(font
 				(size 1.5 1.5)
