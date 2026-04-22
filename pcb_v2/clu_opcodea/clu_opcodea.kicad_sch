@@ -4394,6 +4394,50 @@
 			)
 		)
 	)
+	(global_label "~{UC_const_boot_addr}"
+		(shape output)
+		(at 237.49 69.85 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "197c0fa5-97f4-42cd-b091-d3ab7dad4033")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 237.49 91.8848 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{UC_read_mem_const}"
+		(shape output)
+		(at 247.65 69.85 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "19f22e8a-4ecc-4dbc-9ec6-07bdc0c3f169")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 247.65 92.1269 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "~{UC_write_address}"
 		(shape output)
 		(at 135.89 69.85 270)
@@ -4592,6 +4636,28 @@
 			)
 		)
 	)
+	(global_label "~{UC_const_boot_addr}"
+		(shape input)
+		(at 45.72 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c33de00-da0e-40c5-a9a9-d596475297d2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 23.6852 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "~{UC_save_src_reg}"
 		(shape input)
 		(at 58.42 53.34 0)
@@ -4632,50 +4698,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "~{UC_B}"
-		(shape output)
-		(at 247.65 69.85 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "698ecf56-984d-40cb-b651-3cbaedeee307")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 247.65 77.6733 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "~{UC_B}"
-		(shape input)
-		(at 45.72 48.26 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6e9fa45d-611f-4e77-bad0-39c8d31c29d7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.8967 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -4834,9 +4856,9 @@
 			)
 		)
 	)
-	(global_label "~{UC_C}"
-		(shape output)
-		(at 237.49 69.85 270)
+	(global_label "~{UC_read_mem_const}"
+		(shape input)
+		(at 45.72 48.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4844,9 +4866,9 @@
 			)
 			(justify right)
 		)
-		(uuid "9f4a6145-592c-4973-a70d-25ef4802a38a")
+		(uuid "984b9257-6c71-4e44-90e6-03dd10f42ca4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 237.49 77.6733 90)
+			(at 23.4431 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4935,28 +4957,6 @@
 		(uuid "b4dac415-fadb-438a-8bba-2831cae1eeef")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 186.69 88.4985 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "~{UC_C}"
-		(shape input)
-		(at 45.72 53.34 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b69055e2-11d2-4ba6-be01-e6103d849a4d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.8967 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6039,7 +6039,7 @@
 			(uuid "0cc993ad-16c1-4b93-80af-c8ff5106dfe1")
 		)
 		(instances
-			(project ""
+			(project "clu_opcodea"
 				(path "/339691d7-f136-4bdc-bb08-dd33e05336a9"
 					(reference "U1")
 					(unit 5)
@@ -8728,7 +8728,7 @@
 			(uuid "0cc993ad-16c1-4b93-80af-c8ff5106dfe2")
 		)
 		(instances
-			(project ""
+			(project "clu_opcodea"
 				(path "/339691d7-f136-4bdc-bb08-dd33e05336a9"
 					(reference "U1")
 					(unit 4)
@@ -8918,7 +8918,7 @@
 			(uuid "0cc993ad-16c1-4b93-80af-c8ff5106dfe3")
 		)
 		(instances
-			(project ""
+			(project "clu_opcodea"
 				(path "/339691d7-f136-4bdc-bb08-dd33e05336a9"
 					(reference "U1")
 					(unit 1)
@@ -9242,7 +9242,7 @@
 			(uuid "4cd3e230-eb56-4f25-b0eb-8cf6187e71a2")
 		)
 		(instances
-			(project ""
+			(project "clu_opcodea"
 				(path "/339691d7-f136-4bdc-bb08-dd33e05336a9"
 					(reference "#FLG01")
 					(unit 1)
@@ -9604,7 +9604,7 @@
 			(uuid "0cc993ad-16c1-4b93-80af-c8ff5106dfe4")
 		)
 		(instances
-			(project ""
+			(project "clu_opcodea"
 				(path "/339691d7-f136-4bdc-bb08-dd33e05336a9"
 					(reference "U1")
 					(unit 3)
@@ -9908,7 +9908,7 @@
 			(uuid "5cfe0a95-8499-416a-8cba-c713ee653417")
 		)
 		(instances
-			(project ""
+			(project "clu_opcodea"
 				(path "/339691d7-f136-4bdc-bb08-dd33e05336a9"
 					(reference "D1")
 					(unit 1)
@@ -10098,7 +10098,7 @@
 			(uuid "0cc993ad-16c1-4b93-80af-c8ff5106dfe5")
 		)
 		(instances
-			(project ""
+			(project "clu_opcodea"
 				(path "/339691d7-f136-4bdc-bb08-dd33e05336a9"
 					(reference "U1")
 					(unit 2)
