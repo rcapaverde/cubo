@@ -4394,28 +4394,6 @@
 			)
 		)
 	)
-	(global_label "~{UC_const_boot_addr}"
-		(shape output)
-		(at 237.49 69.85 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "197c0fa5-97f4-42cd-b091-d3ab7dad4033")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 237.49 91.8848 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "~{UC_read_mem_const}"
 		(shape output)
 		(at 247.65 69.85 270)
@@ -4570,6 +4548,28 @@
 			)
 		)
 	)
+	(global_label "~{UC_B}"
+		(shape input)
+		(at 45.72 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "358fc444-ef8b-4d77-a49e-9178a2c70dbb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 37.8967 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "~{UC_A}"
 		(shape output)
 		(at 257.81 69.85 270)
@@ -4636,9 +4636,9 @@
 			)
 		)
 	)
-	(global_label "~{UC_const_boot_addr}"
-		(shape input)
-		(at 45.72 53.34 180)
+	(global_label "~{UC_B}"
+		(shape output)
+		(at 237.49 69.85 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4646,9 +4646,9 @@
 			)
 			(justify right)
 		)
-		(uuid "5c33de00-da0e-40c5-a9a9-d596475297d2")
+		(uuid "50c99bc4-cbcc-424b-bf25-d7c778d2375b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 23.6852 53.34 0)
+			(at 237.49 77.6733 90)
 			(effects
 				(font
 					(size 1.27 1.27)

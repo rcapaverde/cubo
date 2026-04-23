@@ -107,7 +107,7 @@
 	(net 27 "unconnected-(J1-Pin_3-Pad3)")
 	(net 28 "unconnected-(J1-Pin_2-Pad2)")
 	(net 29 "~{UC_read_mem_const}")
-	(net 30 "~{UC_const_boot_addr}")
+	(net 30 "~{UC_B}")
 	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_AnodeUp"
 		(layer "F.Cu")
 		(uuid "0268533b-4cbe-4065-b8da-c92fecbe1d8c")
@@ -480,7 +480,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 30 "~{UC_const_boot_addr}")
+			(net 30 "~{UC_B}")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "60281fad-8b6f-4471-a027-b0586f7c993c")
@@ -7287,7 +7287,7 @@
 			(at 0 25.4 90)
 			(size 9 2.14)
 			(layers "F.Cu" "F.Mask")
-			(net 30 "~{UC_const_boot_addr}")
+			(net 30 "~{UC_B}")
 			(pinfunction "Pin_11")
 			(pintype "passive")
 			(uuid "e4326b84-9034-4df8-a37e-499414b12a69")
@@ -7624,7 +7624,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 30 "~{UC_const_boot_addr}")
+			(net 30 "~{UC_B}")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "331257f1-824a-472c-af88-aefb1a92eb67")
@@ -8794,7 +8794,7 @@
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net 30 "~{UC_const_boot_addr}")
+			(net 30 "~{UC_B}")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "752834b8-751d-49cc-944f-7c32e8434250")
@@ -9388,17 +9388,6 @@
 		(at 58.42 78.105 90)
 		(layer "F.SilkS")
 		(uuid "84dce3ce-5bf4-4117-a9bc-8fcf17f1f497")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "CA"
-		(at 77.47 62.23 90)
-		(layer "F.SilkS")
-		(uuid "61215122-d7a1-4a2e-a106-9d85e079cf4a")
 		(effects
 			(font
 				(size 1 1)
