@@ -11498,7 +11498,7 @@
 		)
 		(uuid "969d6ed5-9495-4783-af56-e1da1531ff68")
 	)
-	(text "opcode R: RESET\nF => UC_clear_interrupt_mask + UC_clear_cond_reg\nL => UC_write_to_pc + UC_read_mem_const\nH => UC_write_to_pc + UC_read_mem_const\n"
+	(text "opcode R: RESET\nF => UC_clear_cond_reg\nL => UC_write_to_pc + UC_read_mem_const\nH => UC_write_to_pc + UC_read_mem_const\n* falta UC_clear_interrupt_mask"
 		(exclude_from_sim no)
 		(at 402.59 225.298 0)
 		(effects
@@ -11542,7 +11542,7 @@
 		)
 		(uuid "e6f6dd30-8c4c-4fb5-87d3-05a1d8c251b1")
 	)
-	(text "opcode 0: SHORT CONTROL\nF => UC_extended_opcode\nL => UC_restart_cycle"
+	(text "opcode 0: SHORT CONTROL\nF => UC_int_ready + UC_extended_opcode\nL => UC_restart_cycle"
 		(exclude_from_sim no)
 		(at 401.32 147.828 0)
 		(effects
@@ -17104,6 +17104,28 @@
 			)
 		)
 	)
+	(global_label "~{UC_clear_pending_int}"
+		(shape output)
+		(at 363.22 209.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1acf7c14-ba0f-44f4-b146-575c3df1f77c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 386.404 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "ADDR_{0}"
 		(shape input)
 		(at 358.14 177.8 0)
@@ -21456,28 +21478,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "~{UC_clear_pending_int}"
-		(shape output)
-		(at 361.95 226.06 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a15e6cf4-cf36-4d49-8ea4-0066b3bf6604")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 385.134 226.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
