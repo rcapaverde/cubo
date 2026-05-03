@@ -28756,7 +28756,7 @@
 		(dnp no)
 		(uuid "2184f19c-1b15-454a-9e5c-adec4c3b2ab2")
 		(property "Reference" "U26"
-			(at 60.96 344.424 0)
+			(at 62.992 346.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28764,7 +28764,7 @@
 			)
 		)
 		(property "Value" "74LS32"
-			(at 60.96 346.964 0)
+			(at 62.484 344.678 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32780,15 +32780,14 @@
 	(symbol
 		(lib_id "74xx:74LS08")
 		(at 76.2 372.11 0)
-		(unit 2)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4e9f044c-34ec-4040-8fa9-14051398c1dc")
 		(property "Reference" "U27"
-			(at 76.1917 363.22 0)
+			(at 75.946 363.474 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32796,7 +32795,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 76.1917 365.76 0)
+			(at 75.946 366.014 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32876,7 +32875,7 @@
 			(project "clua"
 				(path "/5b36383e-a373-4afe-8243-ce444dda2fe3"
 					(reference "U27")
-					(unit 2)
+					(unit 3)
 				)
 			)
 		)
@@ -38005,6 +38004,7 @@
 	(symbol
 		(lib_id "74xx:74LS32")
 		(at 60.96 339.09 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -38012,7 +38012,7 @@
 		(dnp no)
 		(uuid "917c7c4f-5181-4a9c-8ba2-ce7316b84fb5")
 		(property "Reference" "U26"
-			(at 63.246 331.216 0)
+			(at 65.786 335.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -38020,7 +38020,7 @@
 			)
 		)
 		(property "Value" "74LS32"
-			(at 63.246 333.756 0)
+			(at 65.278 332.486 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40179,7 +40179,7 @@
 	(symbol
 		(lib_id "74xx:74LS08")
 		(at 96.52 50.8 0)
-		(unit 4)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -40275,7 +40275,7 @@
 			(project "clua"
 				(path "/5b36383e-a373-4afe-8243-ce444dda2fe3"
 					(reference "U27")
-					(unit 4)
+					(unit 1)
 				)
 			)
 		)
@@ -45733,7 +45733,7 @@
 	(symbol
 		(lib_id "74xx:74LS08")
 		(at 222.25 27.94 0)
-		(unit 3)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -45828,7 +45828,7 @@
 			(project "clua"
 				(path "/5b36383e-a373-4afe-8243-ce444dda2fe3"
 					(reference "U27")
-					(unit 3)
+					(unit 2)
 				)
 			)
 		)
@@ -46429,15 +46429,15 @@
 	(symbol
 		(lib_id "74xx:74LS08")
 		(at 76.2 345.44 0)
-		(unit 1)
+		(mirror x)
+		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e1697d02-042c-45c2-89d3-bc8b984392ad")
 		(property "Reference" "U27"
-			(at 76.1917 336.55 0)
+			(at 77.47 336.296 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46445,7 +46445,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 76.1917 339.09 0)
+			(at 77.216 338.582 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -46525,7 +46525,7 @@
 			(project "clua"
 				(path "/5b36383e-a373-4afe-8243-ce444dda2fe3"
 					(reference "U27")
-					(unit 1)
+					(unit 4)
 				)
 			)
 		)
