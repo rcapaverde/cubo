@@ -20099,7 +20099,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "f231d11a-f7d4-4270-b076-ed907417dfc4")
-		(at 210.79 118.11 90)
+		(at 210.79 128.27 90)
 		(descr "Through hole straight pin header, 2x08, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x08 2.54mm double row")
 		(property "Reference" "J8"
@@ -20526,7 +20526,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "f3f13abf-7354-44dd-8c25-50a18219e21f")
-		(at 210.79 128.27 90)
+		(at 210.82 118.11 90)
 		(descr "Through hole straight pin header, 2x08, 2.54mm pitch, double rows")
 		(tags "Through hole pin header THT 2x08 2.54mm double row")
 		(property "Reference" "J10"
@@ -21697,17 +21697,6 @@
 		)
 	)
 	(gr_rect
-		(start 205.68 103.045)
-		(end 233.68 109.045)
-		(stroke
-			(width 0.1)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.SilkS")
-		(uuid "c74d3a2d-bf2b-4140-ad9d-3e58722ea932")
-	)
-	(gr_rect
 		(start 205.68 113.84)
 		(end 233.68 119.84)
 		(stroke
@@ -21717,6 +21706,17 @@
 		(fill no)
 		(layer "F.SilkS")
 		(uuid "0d23f93d-8620-475b-9d77-393db1a659d2")
+	)
+	(gr_rect
+		(start 205.68 103.045)
+		(end 233.68 109.045)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "c74d3a2d-bf2b-4140-ad9d-3e58722ea932")
 	)
 	(gr_rect
 		(start 205.68 124)
@@ -21739,6 +21739,17 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "6b5c0da4-8532-40be-b557-0838b15989c3")
+	)
+	(gr_circle
+		(center 231.485 137.51)
+		(end 233.085 137.51)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "87e777ed-e05f-43c3-9e6c-32df47f8893b")
 	)
 	(gr_circle
 		(center 33.94 24.415)
@@ -21772,17 +21783,6 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "f0a4270e-2d6e-4139-8eac-cf368ea93705")
-	)
-	(gr_circle
-		(center 231.485 137.51)
-		(end 233.085 137.51)
-		(stroke
-			(width 0.05)
-			(type solid)
-		)
-		(fill no)
-		(layer "Edge.Cuts")
-		(uuid "87e777ed-e05f-43c3-9e6c-32df47f8893b")
 	)
 	(zone
 		(net 2)
