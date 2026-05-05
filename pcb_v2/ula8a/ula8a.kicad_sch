@@ -21263,7 +21263,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "ULA"
+		(property "Value" "ULA SEL"
 			(at 156.21 183.1974 90)
 			(effects
 				(font
