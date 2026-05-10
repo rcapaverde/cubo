@@ -7579,7 +7579,7 @@
 			)
 		)
 	)
-	(global_label "memory_read"
+	(global_label "~{memory_read}"
 		(shape input)
 		(at 209.55 60.96 0)
 		(fields_autoplaced yes)
@@ -7597,6 +7597,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{memory_read}"
+		(shape input)
+		(at 127 35.56 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1154a5d9-7c48-4f46-bb1d-7e6beb2b8bf9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 127 51.0636 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -8987,6 +9009,28 @@
 			)
 		)
 	)
+	(global_label "~{write_enable}"
+		(shape input)
+		(at 144.78 35.56 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "806c0fd4-ec2b-43b8-a865-25087f96d326")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 144.78 50.338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "data_{1}"
 		(shape bidirectional)
 		(at 29.21 48.26 180)
@@ -9669,6 +9713,28 @@
 			)
 		)
 	)
+	(global_label "rom_select"
+		(shape input)
+		(at 160.02 58.42 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b7347275-fdd1-4e30-aacd-9aefbc45593f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 160.02 45.1539 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "addr_{1}"
 		(shape output)
 		(at 71.12 33.02 180)
@@ -10263,7 +10329,7 @@
 			)
 		)
 	)
-	(global_label "memory_read"
+	(global_label "~{memory_read}"
 		(shape input)
 		(at 262.89 60.96 0)
 		(fields_autoplaced yes)
@@ -10581,10 +10647,144 @@
 			(uuid "80f1881a-a920-4bb0-b72f-6b98dea1178c")
 		)
 		(instances
-			(project ""
+			(project "mema"
 				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
 					(reference "U5")
 					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+5V_5")
+		(lib_id "power:+5V")
+		(at 144.78 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c29effb-430c-459e-91ce-3b1a8400fb85")
+		(property "Reference" "#PWR031"
+			(at 144.78 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 144.78 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 144.78 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f138f94a-f7fa-43e1-9b33-05090ed50932")
+		)
+		(instances
+			(project "mema"
+				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_4")
+		(lib_id "power:GND")
+		(at 160.02 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0cef847d-584f-46ef-8a53-1d5ebff06b2e")
+		(property "Reference" "#PWR034"
+			(at 160.02 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 160.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 160.02 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 160.02 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1611935f-fbb9-4c33-8024-a88c4932f3f6")
+		)
+		(instances
+			(project "mema"
+				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
+					(reference "#PWR034")
+					(unit 1)
 				)
 			)
 		)
@@ -10817,6 +11017,144 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 144.78 24.13 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "156dd1de-76a6-44cf-9430-ef871f2cbc30")
+		(property "Reference" "R6"
+			(at 147.32 22.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1K"
+			(at 147.32 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 146.558 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 144.78 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0cb95c2c-06c5-4c22-be4a-16692c1ea313")
+		)
+		(pin "2"
+			(uuid "5e58a47e-4d50-45de-a737-ae8f92006340")
+		)
+		(instances
+			(project "mema"
+				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 160.02 62.23 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "219b600c-b380-44df-955e-d1b38b04d076")
+		(property "Reference" "R8"
+			(at 162.56 60.9599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1K"
+			(at 162.56 63.4999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 161.798 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 160.02 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b8541702-06fd-4f13-ae0b-1036c22d99ed")
+		)
+		(pin "2"
+			(uuid "ac6016f3-b69d-45d5-8361-4f0db9eae8dc")
+		)
+		(instances
+			(project "mema"
+				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x08_Odd_Even")
 		(at 34.29 40.64 0)
 		(unit 1)
@@ -10834,7 +11172,7 @@
 				)
 			)
 		)
-		(property "Value" "bus mem 1"
+		(property "Value" "bus mem"
 			(at 35.56 29.21 0)
 			(effects
 				(font
@@ -11334,7 +11672,7 @@
 			(uuid "48ae36c6-26f5-445f-aa17-6b8f649103f4")
 		)
 		(instances
-			(project ""
+			(project "mema"
 				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
 					(reference "U3")
 					(unit 1)
@@ -11636,7 +11974,7 @@
 			(uuid "ab094af2-c3a0-45e4-882d-48343cc6963e")
 		)
 		(instances
-			(project ""
+			(project "mema"
 				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
 					(reference "U4")
 					(unit 3)
@@ -11771,6 +12109,73 @@
 			(project "mema"
 				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "+5V_5")
+		(lib_id "power:+5V")
+		(at 127 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44517c7c-1761-4c16-b91f-d8f4b0d0c3f8")
+		(property "Reference" "#PWR033"
+			(at 127 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 127 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 127 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b1e793cf-0a73-49b7-860a-c073ea5a26d9")
+		)
+		(instances
+			(project "mema"
+				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -12408,6 +12813,75 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 127 24.13 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "62a0df67-ac98-400e-9c87-975d21ac9a17")
+		(property "Reference" "R7"
+			(at 129.54 22.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1K"
+			(at 129.54 25.3999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 128.778 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f201af7f-3000-419a-91a4-796e0abbf362")
+		)
+		(pin "2"
+			(uuid "98bf4ab1-1e84-408a-8993-4529fcf8f586")
+		)
+		(instances
+			(project "mema"
+				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 231.14 153.67 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12967,7 +13441,7 @@
 			(uuid "80f1881a-a920-4bb0-b72f-6b98dea1178e")
 		)
 		(instances
-			(project ""
+			(project "mema"
 				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
 					(reference "U5")
 					(unit 4)
@@ -13405,7 +13879,7 @@
 			(uuid "80f1881a-a920-4bb0-b72f-6b98dea1178f")
 		)
 		(instances
-			(project ""
+			(project "mema"
 				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
 					(reference "U5")
 					(unit 1)
@@ -13577,7 +14051,7 @@
 			(uuid "80f1881a-a920-4bb0-b72f-6b98dea11790")
 		)
 		(instances
-			(project ""
+			(project "mema"
 				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
 					(reference "U5")
 					(unit 3)
@@ -13948,10 +14422,89 @@
 			(uuid "ab094af2-c3a0-45e4-882d-48343cc6963f")
 		)
 		(instances
-			(project ""
+			(project "mema"
 				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
 					(reference "U4")
 					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 127 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9cdb01ff-2902-4a6d-8d06-080f4a1fb7b5")
+		(property "Reference" "D2"
+			(at 130.81 32.0674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "READ"
+			(at 130.81 34.6074 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm"
+			(at 127 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 127 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 127 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa33edf0-87dc-4cb2-b494-210a635f3032")
+		)
+		(pin "2"
+			(uuid "48eceaeb-63f0-4a34-a81b-ef454e52bbc7")
+		)
+		(instances
+			(project "mema"
+				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
+					(reference "D2")
+					(unit 1)
 				)
 			)
 		)
@@ -14126,7 +14679,7 @@
 			(uuid "c250b70c-08c0-429d-9bae-585c2e3cbb36")
 		)
 		(instances
-			(project ""
+			(project "mema"
 				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
 					(reference "U7")
 					(unit 1)
@@ -14327,6 +14880,85 @@
 			(project "mema"
 				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 144.78 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab80672d-44f2-4a6c-9dd7-afa29683c70e")
+		(property "Reference" "D1"
+			(at 148.59 32.0674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "WRITE"
+			(at 148.59 34.6074 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm"
+			(at 144.78 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 144.78 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 144.78 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 144.78 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba78d54e-3944-4b68-a068-abab8ecb14c5")
+		)
+		(pin "2"
+			(uuid "05e1b915-8f9b-48ea-8a6f-4b901ee5ca33")
+		)
+		(instances
+			(project "mema"
+				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -14937,7 +15569,7 @@
 			(uuid "16b86e0a-cadc-4209-8af8-48b6a9f45591")
 		)
 		(instances
-			(project ""
+			(project "mema"
 				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
 					(reference "U1")
 					(unit 1)
@@ -15343,7 +15975,7 @@
 			(uuid "ab094af2-c3a0-45e4-882d-48343cc69641")
 		)
 		(instances
-			(project ""
+			(project "mema"
 				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
 					(reference "U4")
 					(unit 1)
@@ -15636,7 +16268,7 @@
 				)
 			)
 		)
-		(property "Value" "bus mem 2"
+		(property "Value" "bus mem"
 			(at 77.47 29.21 0)
 			(effects
 				(font
@@ -15722,6 +16354,85 @@
 			(project "mema"
 				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 160.02 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f5be232a-b3ee-4306-9a48-898568fb85ba")
+		(property "Reference" "D3"
+			(at 163.83 70.1674 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "ROM"
+			(at 163.83 72.7074 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D5.0mm"
+			(at 160.02 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 160.02 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 160.02 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f05e64b0-b6c3-484a-807f-2e20ebfc4e04")
+		)
+		(pin "2"
+			(uuid "efb2b5e3-20b5-4509-b69f-a3fb68e22921")
+		)
+		(instances
+			(project "mema"
+				(path "/98924365-9bd1-4f01-bbcb-a70fa683291e"
+					(reference "D3")
 					(unit 1)
 				)
 			)
