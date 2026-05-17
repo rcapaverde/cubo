@@ -12941,6 +12941,10 @@
 		(uuid "0c44081c-cb62-45b7-8d5d-96313efd4f2a")
 	)
 	(no_connect
+		(at 499.11 134.62)
+		(uuid "0e5ecfc5-846e-46cb-969a-635f2570da5b")
+	)
+	(no_connect
 		(at 419.1 167.64)
 		(uuid "1037a6ee-855b-4e06-989c-972f7056291f")
 	)
@@ -14816,16 +14820,6 @@
 	)
 	(wire
 		(pts
-			(xy 499.11 127) (xy 502.92 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58ea5ce8-e1f4-437b-ab3a-9cb63e284178")
-	)
-	(wire
-		(pts
 			(xy 554.99 33.02) (xy 561.34 33.02)
 		)
 		(stroke
@@ -15053,16 +15047,6 @@
 			(type default)
 		)
 		(uuid "67b84e5c-f010-4270-b503-c536c086a2e5")
-	)
-	(wire
-		(pts
-			(xy 499.11 134.62) (xy 499.11 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67c1a3fc-c6fe-4493-9d21-bf4269e8e7d3")
 	)
 	(wire
 		(pts
@@ -17403,16 +17387,6 @@
 			(type default)
 		)
 		(uuid "ead40379-bf4b-4260-822f-275867b2fa88")
-	)
-	(wire
-		(pts
-			(xy 502.92 127) (xy 502.92 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ebb1a434-d8c3-4e9a-9055-1ea3f428f07a")
 	)
 	(wire
 		(pts
@@ -21287,28 +21261,6 @@
 		(uuid "691d6da5-f45b-450f-993a-31afbf2f176f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 287.02 38.5716 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "int_pending"
-		(shape input)
-		(at 502.92 116.84 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "69ceefec-3612-4a62-8a3f-d752a62e07c7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 502.92 102.9693 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27391,7 +27343,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
+		(property "Footprint" "edge_connector:conector 02x08"
 			(at 424.18 125.73 0)
 			(effects
 				(font
@@ -38276,7 +38228,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
+		(property "Footprint" "edge_connector:conector 02x08"
 			(at 424.18 185.42 0)
 			(effects
 				(font
@@ -39849,84 +39801,6 @@
 			(project "clua"
 				(path "/5b36383e-a373-4afe-8243-ce444dda2fe3"
 					(reference "#PWR0132")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 502.92 120.65 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a651619f-1f0b-44a4-ae4a-4cb43ee070eb")
-		(property "Reference" "D27"
-			(at 496.824 120.65 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "IPEND"
-			(at 496.824 123.19 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 502.92 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 502.92 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 502.92 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 502.92 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9808a792-935a-4f70-9e4f-e5530673a9c7")
-		)
-		(pin "1"
-			(uuid "771c6c8c-e17a-4ab4-a3a8-810b4cb65d67")
-		)
-		(instances
-			(project "clua"
-				(path "/5b36383e-a373-4afe-8243-ce444dda2fe3"
-					(reference "D27")
 					(unit 1)
 				)
 			)
@@ -46803,7 +46677,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
+		(property "Footprint" "edge_connector:conector 02x08"
 			(at 424.18 157.48 0)
 			(effects
 				(font
