@@ -23197,7 +23197,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
+		(property "Footprint" "edge_connector:conector 02x08"
 			(at 35.56 205.74 0)
 			(effects
 				(font
@@ -34628,7 +34628,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical"
+		(property "Footprint" "edge_connector:conector 02x08"
 			(at 35.56 172.72 0)
 			(effects
 				(font
