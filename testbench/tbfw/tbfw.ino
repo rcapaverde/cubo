@@ -377,7 +377,7 @@ TestBoard test_boards[] =
 //    {"ULA8-SXA", NULL},
 //    {"ULA8-XORA", NULL},
 //    {"ULA8DA", NULL},
-    {"CLKCPA", run_clock_cpa},
+    {"CLKCP", run_clock_cpa},
     {"TBSUB8", run_testbench_sub8},
     {NULL, NULL}
 };
