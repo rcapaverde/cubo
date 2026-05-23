@@ -365,18 +365,19 @@ typedef struct
 
 TestBoard test_boards[] = 
 {
-    {"SR8A", NULL},
-    {"SGRDA", NULL},
-    {"MGRFA", NULL},
-    {"SR16A", NULL},
-    {"SWRDA", NULL},
-    {"M16RFA", NULL},
-    {"ULA8-ADDERA", NULL},
-    {"ULA8-BITWISEA", NULL},
-    {"ULA8-SHIFTERA", NULL},
-    {"ULA8-SXA", NULL},
-    {"ULA8-XORA", NULL},
-    {"ULA8DA", NULL},
+//    {"SR8A", NULL},
+//    {"SGRDA", NULL},
+//    {"MGRFA", NULL},
+//    {"SR16A", NULL},
+//    {"SWRDA", NULL},
+//    {"M16RFA", NULL},
+//    {"ULA8-ADDERA", NULL},
+//    {"ULA8-BITWISEA", NULL},
+//    {"ULA8-SHIFTERA", NULL},
+//    {"ULA8-SXA", NULL},
+//    {"ULA8-XORA", NULL},
+//    {"ULA8DA", NULL},
+    {"CLKCPA", run_clock_cpa},
     {"TBSUB8", run_testbench_sub8},
     {NULL, NULL}
 };
@@ -643,7 +644,7 @@ void testbench_select_board(void)
         }
     }
 
-    if (selected_board > 0 && test_boards[selected_board].test_board_proc)
+    if (selected_board >= 0 && test_boards[selected_board].test_board_proc)
         test_boards[selected_board].test_board_proc();
 
     menu_show(current_menu);
@@ -959,6 +960,135 @@ void run_testbench_sub8(void)
 
     while (console_read() == 0)
         delay(10);
+
+    multiplex_write(MPU_ADDR_STATUS, 0x00);
+}
+
+void run_clock_cpa(void)
+{
+    LCD_noblink();
+    LCD_clear();
+
+    const uint8_t PIN_LED[] = {8, 9, 10, 12};
+    const uint8_t PIN_CLOCK_IN[] = {1, 25, 2, 3};
+    const uint8_t PIN_CLOCK_OUT[] = {30, 6, 29, 28};
+    const uint8_t PIN_BREAK_IN = 27;
+    const uint8_t PIN_BREAK_OUT = 4;
+    const uint8_t PIN_CLOCK_STOPPED_LED = 13;
+    const uint8_t PIN_STEP_OUT = 33;
+    const uint8_t PIN_HALFSTEP_OUT = 32;
+    const uint8_t PIN_PULSE_LED = 36;
+    const uint8_t PIN_CLOCK_RESET = 34;
+
+    LCD_clear_line(1);
+    LCD_print("warm up");
+
+    // liga a placa em teste
+    multiplex_write(MPU_ADDR_STATUS, MCU_STATE_RUN | MCU_STATE_POWER_C);
+
+    testbench_init();
+
+    for (int i = 0; i < 4; i++)
+        testbench_bit_dir(PIN_LED[i], OUTPUT);
+    for (int i = 0; i < 4; i++)
+        testbench_bit_dir(PIN_CLOCK_IN[i], OUTPUT);
+    for (int i = 0; i < 4; i++)
+        testbench_bit_dir(PIN_CLOCK_OUT[i], INPUT);
+
+    testbench_bit_dir(PIN_BREAK_IN, OUTPUT);
+    testbench_bit_dir(PIN_BREAK_OUT, INPUT);
+    testbench_bit_dir(PIN_CLOCK_STOPPED_LED, OUTPUT);
+    testbench_bit_dir(PIN_STEP_OUT, INPUT);
+    testbench_bit_dir(PIN_HALFSTEP_OUT, INPUT);
+    testbench_bit_dir(PIN_PULSE_LED, OUTPUT);
+    testbench_bit_dir(PIN_CLOCK_RESET, OUTPUT);
+
+    testbench_write();
+
+    // configura o registro de direção da placa em teste para escrita
+    LCD_clear_line(1);
+    LCD_print("testing...");
+
+    // apaga todos os leds de seleção de clock
+    for (int i = 0; i < 4; i++)
+        testbench_bit_set(PIN_LED[i], LOW);
+
+    testbench_bit_set(PIN_CLOCK_STOPPED_LED, LOW);
+
+    // habilita os botões de seleção de clock
+    for (int i = 0; i < 4; i++)
+        testbench_bit_set(PIN_CLOCK_IN[i], HIGH);
+
+    testbench_bit_set(PIN_BREAK_IN, LOW);
+    testbench_bit_set(PIN_CLOCK_RESET, HIGH);
+
+    testbench_write();
+
+    // reseta os capacitores de debounce
+    testbench_read();
+
+    uint8_t button_step = 1;
+    uint8_t button_half_step = 1;
+    uint8_t led_half_step = 0;
+    int selected_clock = -1;
+    while (console_read() == 0)
+    {
+        int new_selected_clock = selected_clock;
+
+        testbench_read();
+
+        if (testbench_bit_get(PIN_BREAK_OUT) == 0)
+        {
+            new_selected_clock = -1;
+        }
+        else
+        {
+            for (int i = 0; i < 4; i++)
+                if (testbench_bit_get(PIN_CLOCK_OUT[i]) != 0)
+                    new_selected_clock = i;
+        }
+
+        if (new_selected_clock != selected_clock)
+        {
+            selected_clock = new_selected_clock;
+            for (int i = 0; i < 4; i++)
+                testbench_bit_set(PIN_LED[i], i == selected_clock);
+            testbench_bit_set(PIN_CLOCK_STOPPED_LED, selected_clock != -1);
+            testbench_bit_set(PIN_PULSE_LED, LOW);
+            testbench_bit_set(PIN_CLOCK_RESET, LOW);
+            testbench_write();
+        }
+
+        if (selected_clock == 0)
+        {
+            testbench_bit_set(PIN_PULSE_LED, (((long)(millis() / 500)) & 1));
+            testbench_write();
+        }
+
+        if (selected_clock == -1)
+        {
+            if (testbench_bit_get(PIN_STEP_OUT) == 0)
+            {
+                button_step = 1 - button_step;
+                led_half_step = button_step;
+                testbench_bit_set(PIN_PULSE_LED, led_half_step);
+                testbench_write();
+            }
+
+            if ((testbench_bit_get(PIN_HALFSTEP_OUT) ^ button_half_step) == 1)
+            {
+                button_half_step = 1 - button_half_step;
+                if (button_half_step == 0)
+                {
+                    led_half_step = 1 - led_half_step;
+                    testbench_bit_set(PIN_PULSE_LED, led_half_step);
+                    testbench_write();
+                }
+            }
+        }
+    }
+
+    run_turn_off_power(true, false);
 
     multiplex_write(MPU_ADDR_STATUS, 0x00);
 }
