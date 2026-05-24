@@ -969,16 +969,16 @@ void run_clock_cpa(void)
     LCD_noblink();
     LCD_clear();
 
-    const uint8_t PIN_LED[] = {8, 9, 10, 12};
-    const uint8_t PIN_CLOCK_IN[] = {1, 25, 2, 3};
-    const uint8_t PIN_CLOCK_OUT[] = {30, 6, 29, 28};
-    const uint8_t PIN_BREAK_IN = 27;
-    const uint8_t PIN_BREAK_OUT = 4;
-    const uint8_t PIN_CLOCK_STOPPED_LED = 13;
-    const uint8_t PIN_STEP_OUT = 33;
-    const uint8_t PIN_HALFSTEP_OUT = 32;
-    const uint8_t PIN_PULSE_LED = 36;
-    const uint8_t PIN_CLOCK_RESET = 34;
+    const uint8_t PIN_LED[] = {32, 33, 34, 36};
+    const uint8_t PIN_CLOCK_IN[] = {25, 1, 26, 27};
+    const uint8_t PIN_CLOCK_OUT[] = {6, 30, 5, 4};
+    const uint8_t PIN_BREAK_IN = 3;
+    const uint8_t PIN_BREAK_OUT = 28;
+    const uint8_t PIN_CLOCK_STOPPED_LED = 37;
+    const uint8_t PIN_STEP_OUT = 9;
+    const uint8_t PIN_HALFSTEP_OUT = 8;
+    const uint8_t PIN_PULSE_LED = 12;
+    const uint8_t PIN_CLOCK_RESET = 10;
 
     LCD_clear_line(1);
     LCD_print("warm up");
