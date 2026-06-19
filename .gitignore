@@ -7,3 +7,10 @@ pcb_v2/*/fp-lib-table
 pcb_v2/*/*.brep
 pcb_v2/*/plot
 pcb/*/*-backups/*
+pcb_v3/*/*-backups
+pcb_v3/*/*.kicad_prl
+pcb_v3/*/fp-info-cache
+pcb_v3/*/fp-lib-table
+pcb_v3/*/*.brep
+pcb_v3/*/plot
+
