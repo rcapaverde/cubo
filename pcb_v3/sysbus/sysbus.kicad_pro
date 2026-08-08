@@ -470,7 +470,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "sysbusa.kicad_pro",
+    "filename": "sysbus.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -506,7 +506,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "plot",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "../sysbusa.step",

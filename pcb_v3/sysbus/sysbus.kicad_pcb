@@ -38,7 +38,7 @@
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
 		(pcbplotparams
-			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(layerselection 0x00000000_00000000_55555555_575555ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions no)
@@ -72,9 +72,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "plot")
 		)
 	)
 	(net 0 "")
@@ -20480,7 +20480,7 @@
 			)
 		)
 	)
-	(gr_text "Rev.3A julho/2026"
+	(gr_text "Rev.3-A julho/2026"
 		(at 316.23 54.61 90)
 		(layer "F.SilkS")
 		(uuid "b80b76cc-45d0-4cd3-8146-e5d878dab114")
