@@ -2790,6 +2790,173 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1N4148"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "100V 0.15A standard switching diode, DO-35"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?35*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "GND_2"
 			(power)
 			(pin_numbers
@@ -4298,6 +4465,12 @@
 		(uuid "dfb01b9c-81e7-4b84-a88c-aec5442b152e")
 	)
 	(junction
+		(at 88.9 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1f07e91-71b7-4eb2-82cd-e6fe3d545f5f")
+	)
+	(junction
 		(at 99.06 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4330,6 +4503,10 @@
 		(uuid "3c3f3b44-bdf9-4a9d-9da4-29846516ed26")
 	)
 	(no_connect
+		(at 29.21 29.21)
+		(uuid "49bfa64c-2842-4f53-93d4-525de10df0e0")
+	)
+	(no_connect
 		(at 146.05 63.5)
 		(uuid "5109af7f-70f1-464a-9e31-8dacdab102da")
 	)
@@ -4350,20 +4527,12 @@
 		(uuid "70c50247-7256-44fc-b9de-2637e1f3f01e")
 	)
 	(no_connect
-		(at 29.21 24.13)
-		(uuid "894bb206-932e-42eb-8d3a-355720071c13")
-	)
-	(no_connect
 		(at 161.29 25.4)
 		(uuid "8a8ecb5e-3cb2-4252-8c15-cc97cb2d9a4b")
 	)
 	(no_connect
 		(at 146.05 35.56)
 		(uuid "901c5166-6607-40e9-9e35-8df5b546b3c1")
-	)
-	(no_connect
-		(at 29.21 29.21)
-		(uuid "991c34d5-bebd-4047-867a-d0e2dffd8195")
 	)
 	(no_connect
 		(at 146.05 66.04)
@@ -4384,10 +4553,6 @@
 	(no_connect
 		(at 171.45 38.1)
 		(uuid "dc5e038c-62a8-4fe9-b418-05531d9b96e9")
-	)
-	(no_connect
-		(at 171.45 63.5)
-		(uuid "e9fe2cb6-554e-461c-b317-a9383265c629")
 	)
 	(no_connect
 		(at 146.05 38.1)
@@ -4412,6 +4577,16 @@
 			(type default)
 		)
 		(uuid "0390b302-e8e6-455a-a6c4-a91047303591")
+	)
+	(wire
+		(pts
+			(xy 88.9 36.83) (xy 88.9 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05a80ac7-ea03-4dd2-b996-78257b2fb899")
 	)
 	(wire
 		(pts
@@ -4462,6 +4637,16 @@
 			(type default)
 		)
 		(uuid "1606262f-a1b7-46dd-a3a1-18eaa133bcc6")
+	)
+	(wire
+		(pts
+			(xy 88.9 39.37) (xy 91.44 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16adab02-c8f0-491b-9b02-8a2ba0883240")
 	)
 	(wire
 		(pts
@@ -4692,6 +4877,16 @@
 			(type default)
 		)
 		(uuid "a2bc52fc-8323-4b79-a247-46efc80bcf4d")
+	)
+	(wire
+		(pts
+			(xy 86.36 39.37) (xy 88.9 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab2b3a38-5cc2-4be8-b636-dc009223fa71")
 	)
 	(wire
 		(pts
@@ -4998,28 +5193,6 @@
 		(uuid "10a5768b-95ac-4b58-8302-f71c3250a605")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 17.4052 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "rom_select"
-		(shape input)
-		(at 29.21 26.67 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "114643b9-4ec8-4d6e-8da1-b9f4c73bfa0a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 15.9439 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5447,6 +5620,28 @@
 			)
 		)
 	)
+	(global_label "~{rom_0_select}"
+		(shape input)
+		(at 86.36 46.99 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3fe0e2e4-1c49-41e7-aff9-f432b276d9e8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 86.36 62.4332 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "addr_{11}"
 		(shape input)
 		(at 29.21 62.23 180)
@@ -5658,6 +5853,28 @@
 		(uuid "615ef505-af23-42f7-94c8-6a8b04fac036")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 65.0844 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{rom_1_select}"
+		(shape output)
+		(at 171.45 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "63e91824-3fa5-4398-8ecd-f639705521c0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.8932 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6195,6 +6412,28 @@
 			)
 		)
 	)
+	(global_label "~{rom_0_select}"
+		(shape input)
+		(at 29.21 24.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a96aa39f-f73f-4a15-9b0e-b9e336709b8e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 13.7668 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "~{read_addr_sel}"
 		(shape input)
 		(at 234.95 30.48 0)
@@ -6279,6 +6518,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{rom_1_select}"
+		(shape input)
+		(at 29.21 26.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ad0dae92-050d-40f0-b43a-6f93b9263b5d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 13.7668 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -6701,6 +6962,28 @@
 			)
 		)
 	)
+	(global_label "~{rom_1_select}"
+		(shape input)
+		(at 91.44 46.99 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d8fa1d09-272e-4f6b-a135-8922e73801b0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 91.44 62.4332 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "addr_{5}"
 		(shape output)
 		(at 111.76 114.3 0)
@@ -6723,7 +7006,7 @@
 			)
 		)
 	)
-	(global_label "rom_select"
+	(global_label "~{rom_0_select}"
 		(shape output)
 		(at 171.45 53.34 0)
 		(fields_autoplaced yes)
@@ -6735,7 +7018,7 @@
 		)
 		(uuid "da5766f4-958c-4227-9e53-9b36667274d8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 184.7161 53.34 0)
+			(at 186.8932 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7031,25 +7314,70 @@
 			)
 		)
 	)
-	(global_label "rom_select"
-		(shape input)
-		(at 86.36 29.21 90)
+	(symbol
+		(lib_name "+5V_5")
+		(lib_id "power:+5V")
+		(at 88.9 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ffce138f-3e6f-4911-95ed-0f69bb01e6eb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 86.36 15.9439 90)
+		(uuid "00dd4a14-2602-4c78-960a-d796dc51dec6")
+		(property "Reference" "#PWR07"
+			(at 88.9 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 88.9 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 88.9 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9832d5be-38ce-438f-9dad-97f391c20848")
+		)
+		(instances
+			(project "rom-writer"
+				(path "/c4343d4e-93f5-42e1-b4fa-46cab26d26e8"
+					(reference "#PWR07")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -8369,7 +8697,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 86.36 40.64 90)
+		(at 88.9 33.02 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8378,7 +8706,7 @@
 		(fields_autoplaced yes)
 		(uuid "57275bb4-d44d-4c90-80e2-493141e2e9be")
 		(property "Reference" "D3"
-			(at 90.17 40.9574 90)
+			(at 92.71 33.3374 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8387,7 +8715,7 @@
 			)
 		)
 		(property "Value" "SEL"
-			(at 90.17 43.4974 90)
+			(at 92.71 35.8774 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8396,7 +8724,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm"
-			(at 86.36 40.64 0)
+			(at 88.9 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8405,7 +8733,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 40.64 0)
+			(at 88.9 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8414,7 +8742,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 86.36 40.64 0)
+			(at 88.9 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8423,7 +8751,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 86.36 40.64 0)
+			(at 88.9 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8709,73 +9037,6 @@
 			(project "rom-writer"
 				(path "/c4343d4e-93f5-42e1-b4fa-46cab26d26e8"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_4")
-		(lib_id "power:GND")
-		(at 86.36 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f867baf-e579-43fc-974c-b1bdd9fe96a8")
-		(property "Reference" "#PWR024"
-			(at 86.36 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 86.36 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 86.36 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 86.36 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 86.36 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ceb9f025-9d5d-4392-9d14-b8b6fe5e71ee")
-		)
-		(instances
-			(project "rom-writer"
-				(path "/c4343d4e-93f5-42e1-b4fa-46cab26d26e8"
-					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -9137,6 +9398,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148")
+		(at 86.36 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "77dd8394-892d-44c2-8399-68758b4b0403")
+		(property "Reference" "D6"
+			(at 80.772 43.18 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 77.47 45.466 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 86.36 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 86.36 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 86.36 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 86.36 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 86.36 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aa7d1f55-ceea-435e-b07b-c0c1ee5541a0")
+		)
+		(pin "1"
+			(uuid "60a82837-0fe6-4fe9-aa22-637152c86103")
+		)
+		(instances
+			(project "rom-writer"
+				(path "/c4343d4e-93f5-42e1-b4fa-46cab26d26e8"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_4")
 		(lib_id "power:GND")
 		(at 64.77 41.91 0)
@@ -9198,6 +9546,93 @@
 			(project "rom-writer"
 				(path "/c4343d4e-93f5-42e1-b4fa-46cab26d26e8"
 					(reference "#PWR0108")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 91.44 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7f5f43d7-7776-42df-ae15-a9a55e43c825")
+		(property "Reference" "D7"
+			(at 96.52 42.672 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 93.218 44.958 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 91.44 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 91.44 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 91.44 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 91.44 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 91.44 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2983651c-ba90-4eb0-a847-5bfc74f0c543")
+		)
+		(pin "1"
+			(uuid "81c7cc15-195e-451e-af0f-b4a2a6d703b3")
+		)
+		(instances
+			(project "rom-writer"
+				(path "/c4343d4e-93f5-42e1-b4fa-46cab26d26e8"
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -9474,7 +9909,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 86.36 33.02 180)
+		(at 88.9 25.4 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9483,7 +9918,7 @@
 		(fields_autoplaced yes)
 		(uuid "8a0e9aed-b521-4ce4-b64b-38a06bb78286")
 		(property "Reference" "R9"
-			(at 88.9 31.7499 0)
+			(at 91.44 24.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9492,7 +9927,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 88.9 34.2899 0)
+			(at 91.44 26.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9501,7 +9936,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 88.138 33.02 90)
+			(at 90.678 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9510,7 +9945,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 86.36 33.02 0)
+			(at 88.9 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9519,7 +9954,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 86.36 33.02 0)
+			(at 88.9 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
